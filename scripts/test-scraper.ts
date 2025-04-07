@@ -15,7 +15,7 @@ async function main() {
       console.log('Website:', festival.website || 'N/A');
       console.log('Location(s):', festival.locations?.join(', ') || 'Unknown');
       console.log('Source:', festival.source);
-      console.log('Last Updated:', festival.lastUpdated);
+      console.log('Last Updated:', festival.last_updated);
     });
   } catch (error) {
     console.error('Error running scraper:', error);
