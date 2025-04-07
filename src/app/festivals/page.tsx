@@ -1,8 +1,9 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { format } from 'date-fns';
 import Link from 'next/link';
+import debounce from 'lodash/debounce';
 
 // Define the Festival type inline
 interface Festival {
@@ -35,6 +36,29 @@ export default function FestivalsPage() {
     status: '',
     isInterested: null,
   });
+
+  // Create a debounced version of the API call
+  const debouncedNotesUpdate = useCallback(
+    debounce(async (id: string, notes: string) => {
+      try {
+        const response = await fetch('/api/festivals', {
+          method: 'PATCH',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            id,
+            notes,
+          }),
+        });
+
+        if (!response.ok) throw new Error('Failed to update notes');
+      } catch (error) {
+        console.error('Error updating notes:', error);
+      }
+    }, 500),
+    []
+  );
 
   useEffect(() => {
     fetchFestivals();
@@ -117,30 +141,16 @@ export default function FestivalsPage() {
     }
   };
 
-  const handleNotesChange = async (id: string, notes: string) => {
-    try {
-      const response = await fetch('/api/festivals', {
-        method: 'PATCH',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          id,
-          notes,
-        }),
-      });
-
-      if (!response.ok) throw new Error('Failed to update notes');
-      
-      // Update the local state without refreshing the entire list
-      setFestivals(prevFestivals => 
-        prevFestivals.map(festival => 
-          festival.id === id ? { ...festival, notes } : festival
-        )
-      );
-    } catch (error) {
-      console.error('Error updating notes:', error);
-    }
+  const handleNotesChange = (id: string, notes: string) => {
+    // Update local state immediately
+    setFestivals(prevFestivals => 
+      prevFestivals.map(festival => 
+        festival.id === id ? { ...festival, notes } : festival
+      )
+    );
+    
+    // Debounce the API call
+    debouncedNotesUpdate(id, notes);
   };
 
   const filteredFestivals = festivals.filter(festival => {
