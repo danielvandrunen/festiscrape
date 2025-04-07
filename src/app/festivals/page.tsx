@@ -172,8 +172,8 @@ export default function FestivalsPage() {
     return true;
   });
 
-  const sources = [...new Set(festivals.map(f => f.source))];
-  const statuses = [...new Set(festivals.map(f => f.status))];
+  const sources = Array.from(new Set(festivals.map(f => f.source)));
+  const statuses = Array.from(new Set(festivals.map(f => f.status)));
 
   return (
     <div className="space-y-6">
