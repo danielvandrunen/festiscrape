@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, useCallback } from 'react';
-import { format } from 'date-fns';
+import { format, parseISO, startOfMonth, endOfMonth } from 'date-fns';
 import Link from 'next/link';
 import debounce from 'lodash/debounce';
 
@@ -27,9 +27,15 @@ interface FilterOptions {
   isInterested: boolean | null;
 }
 
+interface MonthGroup {
+  month: Date;
+  festivals: Festival[];
+}
+
 export default function FestivalsPage() {
   const [festivals, setFestivals] = useState<Festival[]>([]);
   const [loading, setLoading] = useState(true);
+  const [currentMonth, setCurrentMonth] = useState<Date>(new Date());
   const [filters, setFilters] = useState<FilterOptions>({
     search: '',
     source: '',
@@ -97,6 +103,18 @@ export default function FestivalsPage() {
     }
   };
 
+  const handleNotesChange = (id: string, notes: string) => {
+    // Update local state immediately
+    setFestivals(prevFestivals => 
+      prevFestivals.map(festival => 
+        festival.id === id ? { ...festival, notes } : festival
+      )
+    );
+    
+    // Debounce the API call
+    debouncedNotesUpdate(id, notes);
+  };
+
   const handleArchive = async (id: string) => {
     try {
       const response = await fetch('/api/festivals', {
@@ -141,49 +159,66 @@ export default function FestivalsPage() {
     }
   };
 
-  const handleNotesChange = (id: string, notes: string) => {
-    // Update local state immediately
-    setFestivals(prevFestivals => 
-      prevFestivals.map(festival => 
-        festival.id === id ? { ...festival, notes } : festival
-      )
-    );
-    
-    // Debounce the API call
-    debouncedNotesUpdate(id, notes);
+  // Group festivals by month
+  const groupFestivalsByMonth = (festivals: Festival[]): MonthGroup[] => {
+    const groups = festivals.reduce((acc, festival) => {
+      const date = parseISO(festival.date);
+      const monthStart = startOfMonth(date);
+      const key = monthStart.toISOString();
+
+      if (!acc[key]) {
+        acc[key] = {
+          month: monthStart,
+          festivals: [],
+        };
+      }
+
+      acc[key].festivals.push(festival);
+      return acc;
+    }, {} as Record<string, MonthGroup>);
+
+    return Object.values(groups).sort((a, b) => a.month.getTime() - b.month.getTime());
   };
 
+  // Filter festivals based on current filters
   const filteredFestivals = festivals.filter(festival => {
-    // Exclude archived festivals from the main view
-    if (festival.status === 'archived') {
-      return false;
-    }
-    
-    // Search filter
-    if (filters.search && !festival.name.toLowerCase().includes(filters.search.toLowerCase())) {
-      return false;
-    }
-    
-    // Source filter
-    if (filters.source && festival.source !== filters.source) {
-      return false;
-    }
-    
-    // Status filter
-    if (filters.status && festival.status !== filters.status) {
-      return false;
-    }
-    
-    // Interested filter
-    if (filters.isInterested !== null && festival.is_interested !== filters.isInterested) {
-      return false;
-    }
-    
-    return true;
+    const matchesSearch = festival.name.toLowerCase().includes(filters.search.toLowerCase()) ||
+      festival.locations?.some(loc => loc.toLowerCase().includes(filters.search.toLowerCase()));
+    const matchesSource = !filters.source || festival.source === filters.source;
+    const matchesStatus = !filters.status || festival.status === filters.status;
+    const matchesInterested = filters.isInterested === null || festival.is_interested === filters.isInterested;
+
+    return matchesSearch && matchesSource && matchesStatus && matchesInterested;
   });
 
+  // Get unique sources and statuses for filters
   const sources = Array.from(new Set(festivals.map(f => f.source)));
   const statuses = Array.from(new Set(festivals.map(f => f.status)));
+
+  // Group filtered festivals by month
+  const monthGroups = groupFestivalsByMonth(filteredFestivals);
+
+  // Navigation functions for months
+  const goToPreviousMonth = () => {
+    setCurrentMonth(prev => {
+      const newDate = new Date(prev);
+      newDate.setMonth(prev.getMonth() - 1);
+      return newDate;
+    });
+  };
+
+  const goToNextMonth = () => {
+    setCurrentMonth(prev => {
+      const newDate = new Date(prev);
+      newDate.setMonth(prev.getMonth() + 1);
+      return newDate;
+    });
+  };
+
+  // Get festivals for current month
+  const currentMonthFestivals = monthGroups.find(group => 
+    startOfMonth(group.month).getTime() === startOfMonth(currentMonth).getTime()
+  )?.festivals || [];
 
   return (
     <div className="space-y-6">
@@ -263,6 +298,25 @@ export default function FestivalsPage() {
           </div>
         </div>
       </div>
+
+      {/* Month Navigation */}
+      <div className="flex justify-between items-center bg-white p-4 rounded-lg shadow-md">
+        <button
+          onClick={goToPreviousMonth}
+          className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50"
+        >
+          Previous Month
+        </button>
+        <h2 className="text-xl font-semibold">
+          {format(currentMonth, 'MMMM yyyy')}
+        </h2>
+        <button
+          onClick={goToNextMonth}
+          className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50"
+        >
+          Next Month
+        </button>
+      </div>
       
       {/* Festival List */}
       {loading ? (
@@ -294,24 +348,22 @@ export default function FestivalsPage() {
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-gray-200">
-                {filteredFestivals.length > 0 ? (
-                  filteredFestivals.map((festival) => (
+                {currentMonthFestivals.length > 0 ? (
+                  currentMonthFestivals.map((festival) => (
                     <tr key={festival.id} className="hover:bg-gray-50">
                       <td className="px-3 sm:px-6 py-4 whitespace-nowrap">
-                        <div className="flex items-center justify-between">
-                          <div className="flex-1">
-                            <div className="text-sm font-medium text-gray-900">{festival.name}</div>
-                            {festival.website && (
-                              <a
-                                href={festival.website}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-xs text-blue-600 hover:text-blue-800 mt-1 block"
-                              >
-                                Visit Website
-                              </a>
-                            )}
-                          </div>
+                        <div className="flex items-center">
+                          <div className="text-sm font-medium text-gray-900">{festival.name}</div>
+                          {festival.website && (
+                            <a
+                              href={festival.website}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="ml-2 text-xs text-blue-600 hover:text-blue-800"
+                            >
+                              Visit Website
+                            </a>
+                          )}
                           <div className="flex items-center space-x-2 ml-4">
                             {festival.status === 'active' && (
                               <button
@@ -366,84 +418,12 @@ export default function FestivalsPage() {
                 ) : (
                   <tr>
                     <td colSpan={5} className="px-6 py-4 text-center text-sm text-gray-500">
-                      No festivals found matching your filters.
+                      No festivals found for {format(currentMonth, 'MMMM yyyy')}.
                     </td>
                   </tr>
                 )}
               </tbody>
             </table>
-          </div>
-          
-          {/* Mobile view for festival details */}
-          <div className="md:hidden">
-            {filteredFestivals.length > 0 && (
-              <div className="p-4 space-y-4">
-                {filteredFestivals.map((festival) => (
-                  <div key={festival.id} className="border rounded-lg p-4 space-y-2">
-                    <div className="flex justify-between items-start">
-                      <h3 className="text-lg font-medium">{festival.name}</h3>
-                      <div className="flex space-x-2">
-                        {festival.status === 'active' && (
-                          <button
-                            onClick={() => handleArchive(festival.id)}
-                            className="text-indigo-600 hover:text-indigo-900 text-sm"
-                            title="Archive festival"
-                          >
-                            Archive
-                          </button>
-                        )}
-                        <button
-                          onClick={() => handleToggleFavorite(festival.id, festival.is_favorite)}
-                          className={`px-2 py-1 rounded-full ${
-                            festival.is_favorite 
-                              ? 'bg-yellow-400 text-white hover:bg-yellow-500' 
-                              : 'bg-gray-200 text-gray-600 hover:bg-gray-300'
-                          }`}
-                          title={festival.is_favorite ? 'Remove from favorites' : 'Add to favorites'}
-                        >
-                          {festival.is_favorite ? '★' : '☆'}
-                        </button>
-                      </div>
-                    </div>
-                    
-                    <div className="grid grid-cols-2 gap-2 text-sm">
-                      <div>
-                        <span className="font-medium">Date:</span> {format(new Date(festival.date), 'MMM d, yyyy')}
-                      </div>
-                      <div>
-                        <span className="font-medium">Location:</span> {festival.locations?.join(', ') || 'N/A'}
-                      </div>
-                      <div>
-                        <span className="font-medium">Source:</span> {festival.source}
-                      </div>
-                    </div>
-                    
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700">Notes</label>
-                      <input
-                        type="text"
-                        value={festival.notes || ''}
-                        onChange={(e) => handleNotesChange(festival.id, e.target.value)}
-                        placeholder="Add notes..."
-                        className="mt-1 block w-full px-2 py-1 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500"
-                        maxLength={40}
-                      />
-                    </div>
-                    
-                    {festival.website && (
-                      <a
-                        href={festival.website}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-sm text-blue-600 hover:text-blue-800"
-                      >
-                        Visit Website
-                      </a>
-                    )}
-                  </div>
-                ))}
-              </div>
-            )}
           </div>
         </div>
       )}
