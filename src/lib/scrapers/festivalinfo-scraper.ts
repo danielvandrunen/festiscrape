@@ -32,6 +32,7 @@ export class FestivalInfoScraper extends BaseScraper {
                 locations: location ? [location] : undefined,
                 status: 'active',
                 is_interested: false,
+                is_favorite: false,
                 source: 'festivalinfo',
                 last_updated: new Date(),
                 artists: [], // We'll need to scrape individual festival pages for artists
@@ -99,6 +100,7 @@ export class FestivalInfoScraper extends BaseScraper {
               locations: location ? [location] : undefined,
               status: 'active',
               is_interested: false,
+              is_favorite: false,
               source: 'festivalinfo',
               last_updated: new Date(),
               artists: [], // We'll need to scrape individual festival pages for artists

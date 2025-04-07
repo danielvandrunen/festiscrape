@@ -1,5 +1,5 @@
 import React from 'react';
-import { FestivalFilters } from '@/types';
+import type { FestivalFilters } from '@/types';
 import { Button } from '@/components/ui/button';
 
 interface FestivalFiltersProps {

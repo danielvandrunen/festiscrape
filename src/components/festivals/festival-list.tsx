@@ -76,7 +76,7 @@ export function FestivalList({
                 )}
               </td>
               <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                {festival.numberOfActs || '-'}
+                {festival.num_acts || '-'}
               </td>
               <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
                 {festival.locations?.join(', ') || '-'}
@@ -94,11 +94,11 @@ export function FestivalList({
                     {festival.status === 'archived' ? 'Unarchive' : 'Archive'}
                   </Button>
                   <Button
-                    variant={festival.isInterested ? 'default' : 'outline'}
+                    variant={festival.is_interested ? 'default' : 'outline'}
                     size="sm"
                     onClick={() => onInterested(festival)}
                   >
-                    {festival.isInterested ? 'Interested' : 'Not Interested'}
+                    {festival.is_interested ? 'Interested' : 'Not Interested'}
                   </Button>
                 </div>
               </td>

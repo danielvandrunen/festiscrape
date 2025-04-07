@@ -23,7 +23,11 @@
     ],
     "strictNullChecks": true,
     "target": "es2015",
-    "downlevelIteration": true
+    "downlevelIteration": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
   "include": [
     "next-env.d.ts",

@@ -54,6 +54,7 @@ export class FollowTheBeatScraper extends BaseScraper {
             locations: location ? [location] : undefined,
             status: 'active',
             is_interested: false,
+            is_favorite: false,
             source: 'followthebeat',
             last_updated: new Date(),
             artists: [], // We'll need to scrape individual festival pages for artists

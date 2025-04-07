@@ -64,6 +64,7 @@ export class EBLiveScraper extends BaseScraper {
             locations: location ? [location] : undefined,
             status: 'active',
             is_interested: false,
+            is_favorite: false,
             source: 'eblive',
             last_updated: new Date(),
             artists: [], // We'll need to scrape individual festival pages for artists
