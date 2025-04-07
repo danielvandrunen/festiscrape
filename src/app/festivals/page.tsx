@@ -378,7 +378,7 @@ export default function FestivalsPage() {
                               onClick={() => handleToggleFavorite(festival.id, festival.is_favorite)}
                               className={`inline-flex items-center justify-center w-8 h-8 rounded-full transition-colors duration-200 ${
                                 festival.is_favorite 
-                                  ? 'bg-yellow-400 text-white hover:bg-yellow-500' 
+                                  ? 'bg-green-500 text-white hover:bg-green-600' 
                                   : 'bg-gray-100 text-gray-400 hover:bg-gray-200 hover:text-gray-600'
                               }`}
                               title={festival.is_favorite ? 'Remove from favorites' : 'Add to favorites'}
