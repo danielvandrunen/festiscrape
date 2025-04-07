@@ -345,6 +345,9 @@ export default function FestivalsPage() {
                   <th scope="col" className="hidden lg:table-cell px-3 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                     Notes
                   </th>
+                  <th scope="col" className="px-3 sm:px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    Actions
+                  </th>
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-gray-200">
@@ -364,28 +367,6 @@ export default function FestivalsPage() {
                               Visit Website
                             </a>
                           )}
-                          <div className="flex items-center space-x-2 ml-4">
-                            {festival.status === 'active' && (
-                              <button
-                                onClick={() => handleArchive(festival.id)}
-                                className="inline-flex items-center px-2 py-1 text-xs font-medium text-indigo-600 hover:text-indigo-900 border border-transparent hover:border-indigo-300 rounded-md transition-colors duration-200"
-                                title="Archive festival"
-                              >
-                                Archive
-                              </button>
-                            )}
-                            <button
-                              onClick={() => handleToggleFavorite(festival.id, festival.is_favorite)}
-                              className={`inline-flex items-center justify-center w-8 h-8 rounded-full transition-colors duration-200 ${
-                                festival.is_favorite 
-                                  ? 'bg-green-500 text-white hover:bg-green-600' 
-                                  : 'bg-gray-100 text-gray-400 hover:bg-gray-200 hover:text-gray-600'
-                              }`}
-                              title={festival.is_favorite ? 'Remove from favorites' : 'Add to favorites'}
-                            >
-                              {festival.is_favorite ? '★' : '☆'}
-                            </button>
-                          </div>
                         </div>
                       </td>
                       <td className="px-3 sm:px-6 py-4 whitespace-nowrap">
@@ -403,15 +384,38 @@ export default function FestivalsPage() {
                           {festival.source}
                         </span>
                       </td>
-                      <td className="hidden lg:table-cell px-3 sm:px-6 py-4 whitespace-nowrap">
-                        <input
-                          type="text"
+                      <td className="hidden lg:table-cell px-3 sm:px-6 py-4">
+                        <textarea
                           value={festival.notes || ''}
                           onChange={(e) => handleNotesChange(festival.id, e.target.value)}
+                          className="w-full text-sm text-gray-900 border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                          rows={1}
                           placeholder="Add notes..."
-                          className="w-40 px-2 py-1 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500"
-                          maxLength={40}
                         />
+                      </td>
+                      <td className="px-3 sm:px-6 py-4 whitespace-nowrap">
+                        <div className="flex items-center justify-end space-x-2">
+                          {festival.status === 'active' && (
+                            <button
+                              onClick={() => handleArchive(festival.id)}
+                              className="inline-flex items-center px-2.5 py-1.5 text-xs font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors duration-200"
+                              title="Archive festival"
+                            >
+                              Archive
+                            </button>
+                          )}
+                          <button
+                            onClick={() => handleToggleFavorite(festival.id, festival.is_favorite)}
+                            className={`inline-flex items-center justify-center w-8 h-8 rounded-full transition-colors duration-200 ${
+                              festival.is_favorite 
+                                ? 'bg-green-500 text-white hover:bg-green-600' 
+                                : 'bg-gray-100 text-gray-400 hover:bg-gray-200 hover:text-gray-600'
+                            }`}
+                            title={festival.is_favorite ? 'Remove from favorites' : 'Add to favorites'}
+                          >
+                            {festival.is_favorite ? '★' : '☆'}
+                          </button>
+                        </div>
                       </td>
                     </tr>
                   ))
