@@ -34,17 +34,16 @@ export class PartyflockScraper extends BaseScraper {
         const country = 'Netherlands';
 
         // Create festival object
-        const festival: Festival = {
+        const festival = {
           id: `${name}-${date.toISOString()}-${location}`.toLowerCase().replace(/[^a-z0-9]/g, '-'),
           name,
           date,
           website: `https://partyflock.nl${$entry.find('a[href*="/event/"]').attr('href')}`,
           locations: [`${location}, ${city}, ${country}`],
-          source: 'partyflock',
-          status: 'active',
+          source: 'partyflock' as const,
+          status: 'active' as const,
           is_interested: false,
           is_favorite: false,
-          artists: [],
           last_updated: new Date()
         };
 

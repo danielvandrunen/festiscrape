@@ -1,25 +1,23 @@
 import { createClient } from '@supabase/supabase-js';
 
 export function getSupabaseClient(url?: string, key?: string) {
-  const supabaseUrl = url || process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const supabaseAnonKey = key || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-
-  if (!supabaseUrl || !supabaseAnonKey) {
-    throw new Error('Missing Supabase environment variables');
+  if (!url || !key) {
+    throw new Error('Supabase URL and key must be provided');
   }
 
-  console.log('Creating Supabase client with URL:', supabaseUrl);
-  return createClient(supabaseUrl, supabaseAnonKey);
+  console.log('Creating Supabase client with URL:', url);
+  return createClient(url, key);
 }
-
-// Export a default client instance
-export const supabase = getSupabaseClient();
 
 /**
  * Clears all festivals from the database
  * @returns The number of deleted festivals
  */
 export async function clearAllFestivals(url?: string, key?: string) {
+  if (!url || !key) {
+    throw new Error('Supabase URL and key must be provided');
+  }
+
   console.log('Initializing Supabase client for clearing festivals...');
   const client = getSupabaseClient(url, key);
 

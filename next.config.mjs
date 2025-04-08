@@ -1,16 +1,25 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
-    esmExternals: 'loose'
+    esmExternals: true,
   },
   webpack: (config, { isServer }) => {
-    // Add support for ESM modules
-    config.resolve.extensionAlias = {
-      '.js': ['.js', '.ts', '.tsx']
+    // Fix for undici module
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      'undici': 'node-fetch',
     };
     
+    // Add transpilePackages for ESM modules
+    config.module.rules.push({
+      test: /\.m?js/,
+      resolve: {
+        fullySpecified: false,
+      },
+    });
+    
     return config;
-  }
+  },
 };
 
 export default nextConfig; 

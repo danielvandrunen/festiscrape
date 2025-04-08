@@ -19,7 +19,7 @@ export interface Festival {
   source: 'festileaks' | 'festivalinfo' | 'eblive' | 'followthebeat' | 'partyflock';
   last_updated: Date;
   created_at?: Date;
-  artists: Artist[];
+  artists?: Artist[];
 }
 
 export interface ScrapeResult {

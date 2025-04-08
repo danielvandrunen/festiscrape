@@ -18,7 +18,7 @@ export abstract class BaseScraper {
 
   protected async fetchPage(url: string, retries = 3): Promise<string> {
     const browser = await puppeteer.launch({
-      headless: true,
+      headless: "new",
       args: ['--no-sandbox', '--disable-setuid-sandbox']
     });
 
@@ -26,7 +26,7 @@ export abstract class BaseScraper {
       const page = await browser.newPage();
       
       // Set a reasonable timeout
-      page.setDefaultNavigationTimeout(30000);
+      page.setDefaultNavigationTimeout(60000);
       
       // Enable request interception to block unnecessary resources
       await page.setRequestInterception(true);
@@ -43,7 +43,17 @@ export abstract class BaseScraper {
       for (let i = 0; i < retries; i++) {
         try {
           await page.goto(url, { waitUntil: 'networkidle0' });
-          return await page.content();
+          
+          // Wait for the main content to load
+          await page.waitForSelector('tbody.hl', { timeout: 30000 });
+          
+          // Wait a bit more to ensure dynamic content is loaded
+          await new Promise(resolve => setTimeout(resolve, 2000));
+          
+          // Get the page content
+          const content = await page.content();
+          console.log('Page loaded successfully. Content length:', content.length);
+          return content;
         } catch (error) {
           lastError = error;
           const errorMessage = error instanceof Error ? error.message : 'Unknown error';

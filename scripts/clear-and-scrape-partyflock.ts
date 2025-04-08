@@ -1,39 +1,55 @@
 import { clearAllFestivals, getSupabaseClient } from '../src/lib/supabase/client';
-import { PartyflockScraper } from './scrapers/partyflock';
+import { PartyflockScraperSimple } from '../src/lib/scrapers/partyflock-scraper-simple';
+import { config } from 'dotenv';
+import { resolve } from 'path';
 
-// Supabase credentials
-const PROJECT_REF = 'ykbmxkzxbcfqjqfnqrqc';
-const SUPABASE_URL = `https://${PROJECT_REF}.supabase.co`;
-const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlrYm14a3p4YmNmcWpxZm5xcnFjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc0OTY5NzAsImV4cCI6MjAyMzA3Mjk3MH0.Ue_WS1NHgiBVgX-TF0kYoVcT_vNviBDjg_lHHBUXvYE';
+// Load environment variables from .env.local
+config({ path: resolve(process.cwd(), '.env.local') });
+
+// Get Supabase credentials from environment variables
+const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
+const SUPABASE_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+
+if (!SUPABASE_URL || !SUPABASE_KEY) {
+  console.error('Missing Supabase environment variables. Please check your .env.local file.');
+  process.exit(1);
+}
 
 async function main() {
   try {
+    console.log('Starting Partyflock scraping process...');
+    console.log('Using Supabase URL:', SUPABASE_URL);
+    
+    // Initialize Supabase client
     const supabase = getSupabaseClient(SUPABASE_URL, SUPABASE_KEY);
     
-    console.log('Clearing all festivals from the database...');
+    // Clear existing festivals
+    console.log('Clearing existing festivals...');
     const deletedCount = await clearAllFestivals(SUPABASE_URL, SUPABASE_KEY);
-    console.log(`Deleted ${deletedCount} festivals from the database.`);
+    console.log(`Deleted ${deletedCount} existing festivals`);
 
-    console.log('Running Partyflock scraper...');
-    const scraper = new PartyflockScraper();
+    // Scrape new festivals
     console.log('Scraping festivals from Partyflock...');
+    const scraper = new PartyflockScraperSimple();
     const festivals = await scraper.scrape();
-    console.log(`Found ${festivals.length} festivals from Partyflock.`);
+    console.log(`Found ${festivals.length} festivals from Partyflock`);
 
-    // Insert festivals into the database
-    console.log('Inserting festivals into the database...');
+    // Insert new festivals
+    console.log('Inserting new festivals into database...');
     const { data, error } = await supabase
       .from('festivals')
       .insert(festivals);
 
     if (error) {
-      console.error('Error inserting festivals:', error);
       throw error;
     }
 
-    console.log(`Successfully inserted ${festivals.length} festivals into the database.`);
+    console.log('Successfully inserted festivals into database');
   } catch (error) {
-    console.error('Error:', error instanceof Error ? error.stack : error);
+    console.error('Error during scraping process:', error);
+    if (error instanceof Error) {
+      console.error('Error stack:', error.stack);
+    }
     process.exit(1);
   }
 }
