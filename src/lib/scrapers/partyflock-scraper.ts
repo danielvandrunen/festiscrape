@@ -1,6 +1,7 @@
 import { BaseScraper } from './base-scraper';
 import { Festival } from '../../types/festival';
-import * as puppeteer from 'puppeteer';
+import chromium from 'chrome-aws-lambda';
+import { Browser, Page } from 'puppeteer-core';
 
 export class PartyflockScraper extends BaseScraper {
   name = 'partyflock';
@@ -11,7 +12,7 @@ export class PartyflockScraper extends BaseScraper {
     await new Promise(resolve => setTimeout(resolve, delay));
   }
 
-  private async simulateHumanScroll(page: puppeteer.Page): Promise<void> {
+  private async simulateHumanScroll(page: Page): Promise<void> {
     await page.evaluate(async () => {
       const scrollHeight = document.documentElement.scrollHeight;
       let totalHeight = 0;
@@ -43,21 +44,16 @@ export class PartyflockScraper extends BaseScraper {
   async scrape(): Promise<Festival[]> {
     const festivals: Festival[] = [];
     const processedNames = new Set<string>();
+    let browser: Browser | null = null;
 
     try {
-      const browser = await puppeteer.launch({
+      // Launch browser with chrome-aws-lambda
+      browser = await chromium.puppeteer.launch({
+        args: chromium.args,
+        defaultViewport: chromium.defaultViewport,
+        executablePath: await chromium.executablePath,
         headless: true,
-        args: [
-          '--no-sandbox',
-          '--disable-setuid-sandbox',
-          '--disable-dev-shm-usage',
-          '--disable-accelerated-2d-canvas',
-          '--disable-gpu',
-          '--window-size=1920,1080',
-          '--disable-web-security',
-          '--disable-features=IsolateOrigins,site-per-process',
-          '--disable-blink-features=AutomationControlled'
-        ]
+        ignoreHTTPSErrors: true
       });
 
       const page = await browser.newPage();
@@ -293,12 +289,14 @@ export class PartyflockScraper extends BaseScraper {
         festivals.push(festival);
       }
 
-      await browser.close();
+      return festivals;
     } catch (error) {
-      console.error('Error scraping Partyflock:', error);
+      console.error('Error in PartyflockScraper:', error);
+      throw error;
+    } finally {
+      if (browser) {
+        await browser.close();
+      }
     }
-
-    console.log(`Found ${festivals.length} unique festivals from Partyflock`);
-    return festivals;
   }
 } 
