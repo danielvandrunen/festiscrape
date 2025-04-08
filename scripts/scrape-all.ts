@@ -3,6 +3,7 @@ import { FestileaksScraper } from './scrapers/festileaks.js';
 import { FestivalInfoScraper } from './scrapers/festivalinfo.js';
 import { EBLiveScraper } from './scrapers/eblive.js';
 import { FollowTheBeatScraper } from './scrapers/followthebeat.js';
+import { PartyflockScraper } from './scrapers/partyflock.js';
 import type { Festival } from '../src/types';
 import dotenv from 'dotenv';
 
@@ -22,6 +23,7 @@ async function main() {
       new FestivalInfoScraper(),
       new EBLiveScraper(),
       new FollowTheBeatScraper(),
+      new PartyflockScraper(),
     ];
 
     // Run all scrapers in parallel

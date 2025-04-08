@@ -8,7 +8,7 @@ export interface Festival {
   capacity?: number;
   status: 'active' | 'archived';
   is_interested: boolean;
-  source: 'festileaks' | 'festivalinfo' | 'eblive' | 'followthebeat';
+  source: 'festileaks' | 'festivalinfo' | 'eblive' | 'followthebeat' | 'partyflock';
   last_updated: Date;
   created_at?: Date;
 }

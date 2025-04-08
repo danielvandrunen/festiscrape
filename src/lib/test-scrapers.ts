@@ -2,6 +2,7 @@ import { FestivalInfoScraper } from './scrapers/festivalinfo-scraper';
 import { FestileaksScraper } from './scrapers/festileaks-scraper';
 import { EBLiveScraper } from './scrapers/eblive-scraper';
 import { FollowTheBeatScraper } from './scrapers/followthebeat-scraper';
+import { PartyflockScraper } from './scrapers/partyflock-scraper';
 
 async function testScraper(name: string, scraper: any) {
   console.log(`\nTesting ${name} scraper...`);
@@ -22,6 +23,7 @@ async function testAllScrapers() {
     { name: 'Festileaks', scraper: new FestileaksScraper() },
     { name: 'EBLive', scraper: new EBLiveScraper() },
     { name: 'FollowTheBeat', scraper: new FollowTheBeatScraper() },
+    { name: 'Partyflock', scraper: new PartyflockScraper() },
   ];
 
   for (const { name, scraper } of scrapers) {
@@ -29,5 +31,4 @@ async function testAllScrapers() {
   }
 }
 
-// Run the tests
-testAllScrapers().catch(console.error); 
+export { testAllScrapers }; 

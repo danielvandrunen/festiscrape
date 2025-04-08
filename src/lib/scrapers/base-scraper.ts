@@ -1,12 +1,92 @@
 import { Festival } from '../../types/festival';
-import * as cheerio from 'cheerio';
 import puppeteer from 'puppeteer';
+import * as cheerio from 'cheerio';
 
 export abstract class BaseScraper {
   abstract name: string;
   abstract baseUrl: string;
-
   abstract scrape(): Promise<Festival[]>;
+
+  protected async fetchPage(url: string, retries = 3): Promise<string> {
+    const browser = await puppeteer.launch({
+      headless: true,
+      args: ['--no-sandbox', '--disable-setuid-sandbox']
+    });
+
+    try {
+      const page = await browser.newPage();
+      
+      // Set a reasonable timeout
+      page.setDefaultNavigationTimeout(30000);
+      
+      // Enable request interception to block unnecessary resources
+      await page.setRequestInterception(true);
+      page.on('request', (request) => {
+        const resourceType = request.resourceType();
+        if (['image', 'stylesheet', 'font', 'media'].includes(resourceType)) {
+          request.abort();
+        } else {
+          request.continue();
+        }
+      });
+
+      let lastError;
+      for (let i = 0; i < retries; i++) {
+        try {
+          await page.goto(url, { waitUntil: 'networkidle0' });
+          return await page.content();
+        } catch (error) {
+          lastError = error;
+          console.warn(`Attempt ${i + 1} failed for ${url}:`, error.message);
+          if (i < retries - 1) {
+            await new Promise(resolve => setTimeout(resolve, 2000 * (i + 1))); // Exponential backoff
+          }
+        }
+      }
+      throw lastError;
+    } finally {
+      await browser.close();
+    }
+  }
+
+  protected async fetchAllPages(baseUrl: string, nextSelector: string): Promise<string[]> {
+    const pages: string[] = [];
+    const browser = await puppeteer.launch({
+      headless: true,
+      args: ['--no-sandbox', '--disable-setuid-sandbox']
+    });
+    
+    try {
+      const page = await browser.newPage();
+      let currentUrl = baseUrl;
+      let pageCount = 0;
+      const maxPages = 100; // Safety limit
+      
+      while (currentUrl && pageCount < maxPages) {
+        console.log(`Fetching page ${pageCount + 1}: ${currentUrl}`);
+        
+        await page.goto(currentUrl, { waitUntil: 'networkidle0' });
+        pages.push(await page.content());
+        
+        // Find next page link
+        const nextUrl = await page.evaluate((selector) => {
+          const nextLink = document.querySelector(selector);
+          return nextLink ? nextLink.getAttribute('href') : null;
+        }, nextSelector);
+        
+        if (!nextUrl) break;
+        currentUrl = new URL(nextUrl, baseUrl).toString();
+        pageCount++;
+        
+        // Add a small delay between requests
+        await new Promise(resolve => setTimeout(resolve, 1000));
+      }
+    } finally {
+      await browser.close();
+    }
+    
+    return pages;
+  }
 
   protected parseDutchDate(dateStr: string): Date | undefined {
     // Convert Dutch month names to English
@@ -26,108 +106,55 @@ export abstract class BaseScraper {
       // Handle date ranges (take the first date)
       dateStr = dateStr.split(/\s*(?:t\/m|-)\s*/)[0];
 
-      // Extract day and month
-      const dateMatch = dateStr.match(/(\d{1,2})\s+([a-z]+)(?:\s+(\d{4}))?/i);
-      if (dateMatch) {
-        const day = parseInt(dateMatch[1], 10);
-        const dutchMonth = dateMatch[2].toLowerCase();
-        const englishMonth = dutchToEnglish[dutchMonth] || dutchMonth;
-        const year = dateMatch[3] ? parseInt(dateMatch[3], 10) : new Date().getFullYear();
-        
-        // Construct date string
-        const dateString = `${day} ${englishMonth} ${year}`;
-        const date = new Date(dateString);
-        
-        // Validate date
-        if (!isNaN(date.getTime())) {
-          return date;
+      // Try multiple date formats
+      const patterns = [
+        // Format: "21 juni 2024" or "21 juni"
+        /(\d{1,2})\s+([a-z]+)(?:\s+(\d{4}))?/i,
+        // Format: "21-06-2024"
+        /(\d{1,2})-(\d{1,2})-(\d{4})/,
+        // Format: "21.06.2024"
+        /(\d{1,2})\.(\d{1,2})\.(\d{4})/
+      ];
+
+      for (const pattern of patterns) {
+        const match = dateStr.match(pattern);
+        if (match) {
+          let day, month, year;
+          
+          if (pattern === patterns[0]) {
+            // Text month format
+            day = parseInt(match[1], 10);
+            const dutchMonth = match[2].toLowerCase();
+            const englishMonth = dutchToEnglish[dutchMonth] || dutchMonth;
+            month = new Date(`${englishMonth} 1, 2000`).getMonth();
+            year = match[3] ? parseInt(match[3], 10) : new Date().getFullYear();
+          } else {
+            // Numeric format
+            day = parseInt(match[1], 10);
+            month = parseInt(match[2], 10) - 1;
+            year = parseInt(match[3], 10);
+          }
+          
+          const date = new Date(year, month, day);
+          
+          // Validate date
+          if (!isNaN(date.getTime()) && date >= new Date()) {
+            return date;
+          }
         }
       }
     } catch (e) {
-      // Ignore date parse errors
+      console.error('Error parsing date:', dateStr, e);
     }
 
     return undefined;
   }
 
-  protected async fetchPage(url: string): Promise<string> {
-    const browser = await puppeteer.launch({
-      headless: true,
-      args: ['--no-sandbox', '--disable-setuid-sandbox', '--ignore-certificate-errors']
-    });
-    try {
-      const page = await browser.newPage();
-      await page.setDefaultNavigationTimeout(60000); // Increase timeout to 60 seconds
-      await page.goto(url, { waitUntil: 'networkidle0' });
-      
-      // Wait for dynamic content
-      await new Promise(resolve => setTimeout(resolve, 10000)); // Increase wait time to 10 seconds
-      
-      // Click any cookie consent buttons
-      try {
-        await page.click('button[id*="cookie"], button[class*="cookie"], button[id*="consent"], button[class*="consent"]');
-      } catch (e) {
-        // Ignore if no cookie button found
-      }
-
-      // Wait for any cookie consent dialogs to disappear
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      // Scroll to bottom to trigger lazy loading
-      await page.evaluate(async () => {
-        await new Promise<void>((resolve) => {
-          let totalHeight = 0;
-          const distance = 100;
-          const maxScrolls = 50; // Limit the number of scrolls to avoid infinite loops
-          let scrollCount = 0;
-          const timer = setInterval(() => {
-            const scrollHeight = document.body.scrollHeight;
-            window.scrollBy(0, distance);
-            totalHeight += distance;
-            scrollCount++;
-            
-            if(totalHeight >= scrollHeight || scrollCount >= maxScrolls){
-              clearInterval(timer);
-              resolve();
-            }
-          }, 100);
-        });
-      });
-      
-      // Wait for any lazy-loaded content
-      await new Promise(resolve => setTimeout(resolve, 5000)); // Increase wait time to 5 seconds
-      
-      const html = await page.content();
-      console.log(`HTML length: ${html.length}`);
-      console.log('First 500 characters:', html.substring(0, 500));
-      return html;
-    } finally {
-      await browser.close();
-    }
-  }
-
-  protected async fetchAllPages(baseUrl: string, nextPageSelector: string): Promise<string[]> {
-    const pages: string[] = [];
-    let currentUrl = baseUrl;
-    let hasNextPage = true;
-    let pageCount = 0;
-    const maxPages = 10; // Limit the number of pages to avoid infinite loops
-
-    while (hasNextPage && pageCount < maxPages) {
-      const html = await this.fetchPage(currentUrl);
-      pages.push(html);
-      pageCount++;
-
-      const $ = cheerio.load(html);
-      const nextPageLink = $(nextPageSelector).attr('href');
-      
-      if (nextPageLink) {
-        currentUrl = new URL(nextPageLink, baseUrl).toString();
-      } else {
-        hasNextPage = false;
-      }
-    }
-
-    return pages;
+  protected validateFestival(festival: Festival): boolean {
+    if (!festival.name || festival.name.length < 3) return false;
+    if (!festival.date || isNaN(festival.date.getTime())) return false;
+    if (festival.date < new Date()) return false;
+    if (!festival.website) return false;
+    return true;
   }
 } 

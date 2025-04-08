@@ -16,7 +16,7 @@ export interface Festival {
   status: 'active' | 'archived';
   is_interested: boolean;
   is_favorite: boolean;
-  source: 'festileaks' | 'festivalinfo' | 'eblive' | 'followthebeat';
+  source: 'festileaks' | 'festivalinfo' | 'eblive' | 'followthebeat' | 'partyflock';
   last_updated: Date;
   created_at?: Date;
   artists: Artist[];
