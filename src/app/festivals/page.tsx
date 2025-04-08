@@ -35,7 +35,6 @@ interface MonthGroup {
 export default function FestivalsPage() {
   const [festivals, setFestivals] = useState<Festival[]>([]);
   const [loading, setLoading] = useState(true);
-  const [currentMonth, setCurrentMonth] = useState<Date>(new Date());
   const [filters, setFilters] = useState<FilterOptions>({
     search: '',
     source: '',
@@ -78,11 +77,6 @@ export default function FestivalsPage() {
       if (!response.ok) throw new Error('Failed to fetch festivals');
       const data = await response.json();
       console.log('Received festivals:', data);
-      
-      // Check if we have festivals for months other than April
-      const months = data.map(f => new Date(f.date).getMonth()).filter((v, i, a) => a.indexOf(v) === i);
-      console.log('Months with festivals:', months);
-      
       setFestivals(data);
     } catch (error) {
       console.error('Error fetching festivals:', error);
@@ -196,106 +190,18 @@ export default function FestivalsPage() {
   // Group filtered festivals by month
   const monthGroups = groupFestivalsByMonth(filteredFestivals);
 
-  // Navigation functions for months
-  const goToPreviousMonth = () => {
-    setCurrentMonth(prev => addMonths(prev, -1));
-  };
-
-  const goToNextMonth = () => {
-    setCurrentMonth(prev => addMonths(prev, 1));
-  };
-
-  // Get festivals for current month
-  const currentMonthFestivals = filteredFestivals.filter(festival => 
-    isSameMonth(parseISO(festival.date), currentMonth)
-  );
-
-  // Check if we have any festivals in the current month
-  const hasCurrentMonthFestivals = currentMonthFestivals.length > 0;
-
-  // Get the next month with festivals
-  const findAdjacentMonthWithFestivals = (startMonth: Date, direction: 1 | -1): Date => {
-    let testMonth = addMonths(startMonth, direction);
-    
-    // Look through all festivals to find the next/previous month with festivals
-    const monthsWithFestivals = new Set(
-      filteredFestivals.map(festival => {
-        const date = parseISO(festival.date);
-        return startOfMonth(date).toISOString();
-      })
-    );
-    
-    // Convert to array and sort
-    const sortedMonths = Array.from(monthsWithFestivals)
-      .map(month => new Date(month))
-      .sort((a, b) => a.getTime() - b.getTime());
-    
-    if (sortedMonths.length === 0) {
-      return startMonth;
-    }
-    
-    // Find the closest month in the direction we're looking
-    const currentMonthStr = startMonth.toISOString();
-    const currentIndex = sortedMonths.findIndex(month => month.toISOString() === currentMonthStr);
-    
-    if (direction === 1) {
-      // Looking forward
-      const nextMonth = sortedMonths.find((month, index) => 
-        index > currentIndex
-      );
-      return nextMonth || sortedMonths[0];
-    } else {
-      // Looking backward
-      const prevMonth = sortedMonths.find((month, index) => 
-        index < currentIndex
-      );
-      return prevMonth || sortedMonths[sortedMonths.length - 1];
-    }
-  };
-
-  // Auto-navigate to a month with festivals if current month has none
-  useEffect(() => {
-    if (!hasCurrentMonthFestivals && filteredFestivals.length > 0) {
-      // Find the next or previous month that has festivals
-      const nextMonthWithFestivals = findAdjacentMonthWithFestivals(currentMonth, 1);
-      const prevMonthWithFestivals = findAdjacentMonthWithFestivals(currentMonth, -1);
-      
-      // Choose the closest month
-      const nextDiff = Math.abs(nextMonthWithFestivals.getTime() - currentMonth.getTime());
-      const prevDiff = Math.abs(prevMonthWithFestivals.getTime() - currentMonth.getTime());
-      
-      if (nextDiff <= prevDiff) {
-        setCurrentMonth(nextMonthWithFestivals);
-      } else {
-        setCurrentMonth(prevMonthWithFestivals);
-      }
-    }
-  }, [currentMonth, filteredFestivals, hasCurrentMonthFestivals]);
-
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Header */}
+    <div className="min-h-screen bg-gray-50 py-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8">
-          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
-            <h1 className="text-2xl font-semibold text-gray-900">Festivals</h1>
-            <div className="flex items-center space-x-4">
-              <Link 
-                href="/festivals/archived" 
-                className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50"
-              >
-                Archived Festivals
-              </Link>
-              <Link 
-                href="/festivals/favorites"
-                className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-md hover:bg-blue-700"
-              >
-                Favorite Festivals
-              </Link>
-            </div>
-          </div>
+          <h1 className="text-3xl font-bold text-gray-900">Festivals</h1>
+          <p className="mt-2 text-sm text-gray-700">
+            Browse and manage your festivals
+          </p>
+        </div>
 
-          {/* Filters */}
+        {/* Filters */}
+        <div className="mb-8">
           <div className="bg-white rounded-lg shadow-sm border border-gray-200">
             <div className="p-4">
               <h2 className="text-base font-medium text-gray-700 mb-4">Filters</h2>
@@ -365,59 +271,45 @@ export default function FestivalsPage() {
           </div>
         </div>
 
-        {/* Month Navigation */}
-        <div className="bg-white rounded-lg shadow-sm border border-gray-200 mb-6">
-          <div className="px-4 py-3 flex items-center justify-between">
-            <button
-              onClick={goToPreviousMonth}
-              className="inline-flex items-center px-3 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-            >
-              ←&nbsp;Previous Month
-            </button>
-            <h2 className="text-lg font-medium text-gray-900">
-              {format(currentMonth, 'MMMM yyyy')}
-            </h2>
-            <button
-              onClick={goToNextMonth}
-              className="inline-flex items-center px-3 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-            >
-              Next Month&nbsp;→
-            </button>
-          </div>
-        </div>
-
         {/* Festival List */}
         {loading ? (
           <div className="text-center py-12">
-            <div className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-blue-600 border-r-transparent"></div>
-            <p className="mt-4 text-gray-600">Loading festivals...</p>
+            <div className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-blue-600 border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]" />
+            <p className="mt-4 text-sm text-gray-500">Loading festivals...</p>
           </div>
         ) : (
-          <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
-            <div className="overflow-x-auto">
-              <table className="min-w-full divide-y divide-gray-200">
-                <thead className="bg-gray-50">
-                  <tr>
-                    <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                      Festival
-                    </th>
-                    <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                      Date
-                    </th>
-                    <th scope="col" className="hidden sm:table-cell px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                      Location
-                    </th>
-                    <th scope="col" className="hidden md:table-cell px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                      Source
-                    </th>
-                    <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                      Actions
-                    </th>
-                  </tr>
-                </thead>
-                <tbody className="bg-white divide-y divide-gray-200">
-                  {currentMonthFestivals.length > 0 ? (
-                    currentMonthFestivals.map((festival) => (
+          <div className="bg-white shadow-sm rounded-lg overflow-hidden">
+            <table className="min-w-full divide-y divide-gray-200">
+              <thead className="bg-gray-50">
+                <tr>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    Festival
+                  </th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    Date
+                  </th>
+                  <th className="hidden sm:table-cell px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    Location
+                  </th>
+                  <th className="hidden md:table-cell px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    Source
+                  </th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    Actions
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="bg-white divide-y divide-gray-200">
+                {monthGroups.map((group) => (
+                  <React.Fragment key={group.month.toISOString()}>
+                    <tr className="bg-gray-50">
+                      <td colSpan={5} className="px-6 py-3">
+                        <h3 className="text-lg font-medium text-gray-900">
+                          {format(group.month, 'MMMM yyyy')}
+                        </h3>
+                      </td>
+                    </tr>
+                    {group.festivals.map((festival) => (
                       <tr key={festival.id} className="hover:bg-gray-50">
                         <td className="px-6 py-4 whitespace-nowrap">
                           <div className="flex items-center">
@@ -470,18 +362,19 @@ export default function FestivalsPage() {
                           </div>
                         </td>
                       </tr>
-                    ))
-                  ) : (
-                    <tr>
-                      <td colSpan={5} className="px-6 py-12 text-center text-sm text-gray-500 bg-gray-50">
-                        <p className="font-medium">No festivals found</p>
-                        <p className="mt-1">There are no festivals scheduled for {format(currentMonth, 'MMMM yyyy')}.</p>
-                      </td>
-                    </tr>
-                  )}
-                </tbody>
-              </table>
-            </div>
+                    ))}
+                  </React.Fragment>
+                ))}
+                {monthGroups.length === 0 && (
+                  <tr>
+                    <td colSpan={5} className="px-6 py-12 text-center text-sm text-gray-500 bg-gray-50">
+                      <p className="font-medium">No festivals found</p>
+                      <p className="mt-1">Try adjusting your filters to see more results.</p>
+                    </td>
+                  </tr>
+                )}
+              </tbody>
+            </table>
           </div>
         )}
       </div>
