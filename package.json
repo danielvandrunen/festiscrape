@@ -34,7 +34,6 @@
     "puppeteer": "^24.6.0",
     "react": "^18",
     "react-dom": "^18",
-    "sequential-thinking-mcp": "^1.0.0",
     "tailwind-merge": "^2.2.1",
     "turndown": "^7.2.0",
     "uuid": "^11.1.0"
