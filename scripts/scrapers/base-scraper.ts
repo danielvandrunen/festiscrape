@@ -1,6 +1,6 @@
-import type { Festival } from '../../src/types';
+import type { Festival } from '@/types';
 import { v4 as uuidv4 } from 'uuid';
-import axios from 'axios';
+import axios, { AxiosError } from 'axios';
 import * as cheerio from 'cheerio';
 import https from 'https';
 
@@ -15,6 +15,22 @@ export abstract class BaseScraper {
     console.log(`Fetching page: ${url}`);
     try {
       const response = await axios.get(url, {
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+          'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+          'Accept-Language': 'en-US,en;q=0.9,nl;q=0.8',
+          'Accept-Encoding': 'gzip, deflate, br',
+          'Cache-Control': 'no-cache',
+          'Pragma': 'no-cache',
+          'Sec-Ch-Ua': '"Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"',
+          'Sec-Ch-Ua-Mobile': '?0',
+          'Sec-Ch-Ua-Platform': '"macOS"',
+          'Sec-Fetch-Dest': 'document',
+          'Sec-Fetch-Mode': 'navigate',
+          'Sec-Fetch-Site': 'none',
+          'Sec-Fetch-User': '?1',
+          'Upgrade-Insecure-Requests': '1'
+        },
         httpsAgent: new https.Agent({
           rejectUnauthorized: false
         })
@@ -22,7 +38,11 @@ export abstract class BaseScraper {
       console.log(`Successfully fetched page: ${url}`);
       return cheerio.load(response.data);
     } catch (error) {
-      console.error(`Error fetching page ${url}:`, error.message);
+      if (error instanceof AxiosError) {
+        console.error(`Error fetching page ${url}:`, error.message);
+      } else {
+        console.error(`Unknown error fetching page ${url}`);
+      }
       throw error;
     }
   }
@@ -39,7 +59,11 @@ export abstract class BaseScraper {
       // Return festivals with metadata already added
       return festivals;
     } catch (error) {
-      console.error(`Error in ${this.constructor.name}:`, error.message);
+      if (error instanceof Error) {
+        console.error(`Error in ${this.constructor.name}:`, error.message);
+      } else {
+        console.error(`Unknown error in ${this.constructor.name}`);
+      }
       return [];
     }
   }
@@ -109,7 +133,11 @@ export abstract class BaseScraper {
 
       console.warn(`Could not parse date: ${dateStr}`);
     } catch (e) {
-      console.error('Error parsing date:', dateStr, e);
+      if (e instanceof Error) {
+        console.error('Error parsing date:', dateStr, e.message);
+      } else {
+        console.error('Unknown error parsing date:', dateStr);
+      }
     }
 
     return undefined;
