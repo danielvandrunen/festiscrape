@@ -26,58 +26,60 @@ interface Festival {
   last_updated: Date;
 }
 
-async function analyzePartyflockHtml() {
+async function analyzeFestileaksHtml() {
   try {
     // Read the HTML file
-    const htmlPath = path.join(process.cwd(), 'test-data', 'festivals & strandfeesten · festival agenda.html');
+    const htmlPath = path.join(process.cwd(), 'test-data', 'Festivalagenda _ Festileaks.com.html');
     const html = fs.readFileSync(htmlPath, 'utf8');
     
     // Load the HTML into cheerio
     const $ = cheerio.load(html);
     
-    console.log('Analyzing Partyflock HTML structure...\n');
+    console.log('Analyzing Festileaks HTML structure...\n');
     
     const festivals: Festival[] = [];
     
-    // Find all festival rows in the tables
-    $('tbody.hl').each((i, element) => {
-      const $row = $(element).find('tr').first();
-      if (!$row.length) return;
+    // Find all festival entries
+    $('.festivals-list-item').each((i, element) => {
+      const $festival = $(element);
       
-      // Get festival info from the row
-      const $cells = $row.find('td');
-      const $nameCell = $cells.eq(0);
-      const $locationCell = $cells.eq(2);
+      // Get festival name and URL
+      const $nameLink = $festival.find('.festival-title');
+      const name = $nameLink.text().trim();
+      const url = $festival.find('a.festival-item').attr('href') || '';
       
-      // Get the date from the meta tag
-      const dateText = $nameCell.find('meta[itemprop="startDate"]').attr('content');
+      // Get date
+      const dateText = $festival.find('.festival-date').text().trim();
+      // Handle date ranges like "11-12 april 2025" or "12 april 2025"
+      const dateMatch = dateText.match(/(\d{1,2})(?:-(\d{1,2}))?\s+([a-zA-Z]+)\s+(\d{4})/);
       
-      // Debug output for the first few rows
-      if (i < 5) {
-        console.log('\nAnalyzing row:', i + 1);
-        console.log('Date text:', dateText);
-        console.log('Row HTML:', $row.html());
-      }
-      
-      const $link = $nameCell.find('a').first();
-      const name = $link.text().trim();
-      const url = $link.attr('href') || '';
-      
-      // Get location from the first link in the location cell
-      const $locationLink = $locationCell.find('a').first();
-      const location = $locationLink.length ? $locationLink.text().trim() : $locationCell.text().trim();
-      
-      if (name && dateText) {
-        const date = new Date(dateText);
+      if (name && dateMatch) {
+        const [_, startDay, endDay, month, year] = dateMatch;
+        const monthMap: { [key: string]: number } = {
+          'januari': 0, 'februari': 1, 'maart': 2, 'april': 3,
+          'mei': 4, 'juni': 5, 'juli': 6, 'augustus': 7,
+          'september': 8, 'oktober': 9, 'november': 10, 'december': 11
+        };
+        
+        // Use the first day of the festival
+        const date = new Date(parseInt(year), monthMap[month.toLowerCase()], parseInt(startDay));
+        
+        // Get location
+        const location = $festival.find('.festival-location span').last().text().trim();
+        
+        // Get status
+        const statusElement = $festival.find('.festival-status');
+        const status = statusElement.length ? statusElement.text().trim().toLowerCase() : 'active';
+        
         if (!isNaN(date.getTime())) {
           festivals.push({
             id: uuidv4(),
             name,
             date,
-            website: url.startsWith('http') ? url : `https://partyflock.nl${url}`,
+            website: url.startsWith('http') ? url : `https://festileaks.com${url}`,
             locations: location ? [location] : undefined,
-            source: 'partyflock',
-            status: 'active',
+            source: 'festileaks',
+            status,
             is_interested: false,
             last_updated: new Date()
           });
@@ -95,6 +97,7 @@ async function analyzePartyflockHtml() {
       console.log(`- ${festival.name}`);
       console.log(`  Location: ${festival.locations?.join(', ') || 'N/A'}`);
       console.log(`  Date: ${festival.date.toISOString()}`);
+      console.log(`  Status: ${festival.status}`);
       console.log(`  URL: ${festival.website}\n`);
     });
     
@@ -126,4 +129,4 @@ async function analyzePartyflockHtml() {
   }
 }
 
-analyzePartyflockHtml(); 
+analyzeFestileaksHtml(); 
