@@ -20,6 +20,10 @@ export async function OPTIONS() {
   return corsResponse({});
 }
 
+export const maxDuration = 300; // 5 minutes
+export const dynamic = 'force-dynamic';
+export const runtime = 'nodejs';
+
 export async function POST(request: NextRequest) {
   try {
     console.log('Starting Partyflock scraping process...');
@@ -36,6 +40,22 @@ export async function POST(request: NextRequest) {
       return corsResponse({ error: 'Configuration error: Missing Supabase credentials' }, 500);
     }
 
+    // Run the Partyflock scraper first to minimize database operations
+    console.log('Running Partyflock scraper...');
+    let festivals;
+    try {
+      const scraper = new PartyflockScraper();
+      festivals = await scraper.scrape();
+      console.log(`Scraped ${festivals.length} festivals from Partyflock`);
+      
+      if (!festivals.length) {
+        return corsResponse({ error: 'No festivals found' }, 404);
+      }
+    } catch (scrapeError) {
+      console.error('Error during scraping:', scrapeError);
+      return corsResponse({ error: 'Failed to scrape festivals' }, 500);
+    }
+
     console.log('Clearing existing festivals...');
     try {
       // Clear all festivals
@@ -46,29 +66,23 @@ export async function POST(request: NextRequest) {
       return corsResponse({ error: 'Failed to clear existing festivals' }, 500);
     }
 
-    // Run the Partyflock scraper directly
-    console.log('Running Partyflock scraper...');
-    let festivals;
-    try {
-      const scraper = new PartyflockScraper();
-      festivals = await scraper.scrape();
-      console.log(`Scraped ${festivals.length} festivals from Partyflock`);
-    } catch (scrapeError) {
-      console.error('Error during scraping:', scrapeError);
-      return corsResponse({ error: 'Failed to scrape festivals' }, 500);
-    }
-
-    // Insert festivals into database
+    // Insert festivals into database in batches
     console.log('Inserting festivals into database...');
     try {
       const supabase = getSupabaseClient(supabaseUrl, supabaseKey);
-      const { error: insertError } = await supabase
-        .from('festivals')
-        .insert(festivals);
-        
-      if (insertError) {
-        console.error('Error inserting festivals:', insertError);
-        return corsResponse({ error: 'Failed to insert festivals into database' }, 500);
+      const batchSize = 100;
+      
+      for (let i = 0; i < festivals.length; i += batchSize) {
+        const batch = festivals.slice(i, i + batchSize);
+        const { error: insertError } = await supabase
+          .from('festivals')
+          .insert(batch);
+          
+        if (insertError) {
+          console.error(`Error inserting batch ${i / batchSize + 1}:`, insertError);
+          return corsResponse({ error: 'Failed to insert festivals into database' }, 500);
+        }
+        console.log(`Inserted batch ${i / batchSize + 1} of ${Math.ceil(festivals.length / batchSize)}`);
       }
     } catch (insertError) {
       console.error('Error during database insertion:', insertError);

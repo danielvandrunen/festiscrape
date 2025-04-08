@@ -12,7 +12,7 @@
     "scrape:watch": "nodemon --watch scripts --ext ts --exec 'npm run scrape'",
     "test:scraper": "tsx scripts/test-scraper.ts",
     "test:partyflock": "ts-node scripts/test-partyflock.ts",
-    "clear-and-scrape:partyflock": "ts-node scripts/clear-and-scrape-partyflock.ts",
+    "clear-and-scrape:partyflock": "NODE_OPTIONS='--loader ts-node/esm' ts-node scripts/clear-and-scrape-partyflock.ts",
     "test:partyflock-scraper": "NODE_OPTIONS='--loader ts-node/esm' ts-node scripts/test-partyflock-scraper.ts"
   },
   "dependencies": {
