@@ -217,21 +217,40 @@ export default function FestivalsPage() {
   const findAdjacentMonthWithFestivals = (startMonth: Date, direction: 1 | -1): Date => {
     let testMonth = addMonths(startMonth, direction);
     
-    // Look ahead/back up to 12 months
-    for (let i = 0; i < 12; i++) {
-      const hasFestivals = filteredFestivals.some(festival => 
-        isSameMonth(parseISO(festival.date), testMonth)
-      );
-      
-      if (hasFestivals) {
-        return testMonth;
-      }
-      
-      testMonth = addMonths(testMonth, direction);
+    // Look through all festivals to find the next/previous month with festivals
+    const monthsWithFestivals = new Set(
+      filteredFestivals.map(festival => {
+        const date = parseISO(festival.date);
+        return startOfMonth(date).toISOString();
+      })
+    );
+    
+    // Convert to array and sort
+    const sortedMonths = Array.from(monthsWithFestivals)
+      .map(month => new Date(month))
+      .sort((a, b) => a.getTime() - b.getTime());
+    
+    if (sortedMonths.length === 0) {
+      return startMonth;
     }
     
-    // If no month with festivals is found, return the original month
-    return startMonth;
+    // Find the closest month in the direction we're looking
+    const currentMonthStr = startMonth.toISOString();
+    const currentIndex = sortedMonths.findIndex(month => month.toISOString() === currentMonthStr);
+    
+    if (direction === 1) {
+      // Looking forward
+      const nextMonth = sortedMonths.find((month, index) => 
+        index > currentIndex
+      );
+      return nextMonth || sortedMonths[0];
+    } else {
+      // Looking backward
+      const prevMonth = sortedMonths.find((month, index) => 
+        index < currentIndex
+      );
+      return prevMonth || sortedMonths[sortedMonths.length - 1];
+    }
   };
 
   // Auto-navigate to a month with festivals if current month has none
