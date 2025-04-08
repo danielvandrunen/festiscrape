@@ -14,10 +14,14 @@ export function Navbar() {
     const fetchCount = async () => {
       try {
         const response = await fetch('/api/festivals/count');
+        if (!response.ok) {
+          throw new Error('Failed to fetch count');
+        }
         const data = await response.json();
         setPartyflockCount(data.count);
       } catch (error) {
         console.error('Error fetching Partyflock count:', error);
+        setPartyflockCount(0);
       }
     };
 
@@ -30,26 +34,24 @@ export function Navbar() {
     setScrapeStatus('Running scraper...');
     
     try {
-      // In a real app, you would use a proper auth token
       const response = await fetch('/api/scrape/partyflock', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
-          'Authorization': 'Bearer dummy-token' // Replace with real auth in production
+          'Content-Type': 'application/json'
         }
       });
       
-      const data = await response.json();
-      
-      if (response.ok) {
-        setScrapeStatus(`Success! ${data.count} festivals scraped.`);
-        setPartyflockCount(data.count);
-      } else {
-        setScrapeStatus(`Error: ${data.error}`);
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || 'Failed to run scraper');
       }
+      
+      const data = await response.json();
+      setScrapeStatus(`Success! ${data.count} festivals scraped.`);
+      setPartyflockCount(data.count);
     } catch (error) {
       console.error('Error running scraper:', error);
-      setScrapeStatus('Error running scraper. Check console for details.');
+      setScrapeStatus(error instanceof Error ? error.message : 'Error running scraper. Check console for details.');
     } finally {
       setIsLoading(false);
     }

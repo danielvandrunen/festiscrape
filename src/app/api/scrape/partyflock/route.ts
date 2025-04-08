@@ -1,58 +1,74 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { clearAllFestivals, supabase } from '@/lib/supabase/client';
-import { exec } from 'child_process';
-import { promisify } from 'util';
+import { clearAllFestivals, getSupabaseClient } from '@/lib/supabase/client';
+import { PartyflockScraper } from '@/lib/scrapers/partyflock-scraper';
 
-const execAsync = promisify(exec);
+// Helper function to create a response with CORS headers
+function corsResponse(data: any, status = 200) {
+  return new NextResponse(JSON.stringify(data), {
+    status,
+    headers: {
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+      'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+    },
+  });
+}
+
+// Handle CORS preflight requests
+export async function OPTIONS() {
+  return corsResponse({});
+}
 
 export async function POST(request: NextRequest) {
   try {
-    // Check for authorization
-    const authHeader = request.headers.get('authorization');
-    if (!authHeader || !authHeader.startsWith('Bearer ')) {
-      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
-    }
+    // Get Supabase client with environment variables
+    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+    const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
-    const token = authHeader.split(' ')[1];
-    // In a real app, you would validate this token against your auth system
-    // For now, we'll just check if it's not empty
-    if (!token) {
-      return NextResponse.json({ error: 'Invalid token' }, { status: 401 });
+    if (!supabaseUrl || !supabaseKey) {
+      console.error('Missing Supabase environment variables');
+      return corsResponse({ error: 'Configuration error' }, 500);
     }
 
     // Clear all festivals
-    const deletedCount = await clearAllFestivals();
+    const deletedCount = await clearAllFestivals(supabaseUrl, supabaseKey);
     console.log(`Deleted ${deletedCount} festivals from the database.`);
 
-    // Run the Partyflock scraper using the npm script
+    // Run the Partyflock scraper directly
     console.log('Running Partyflock scraper...');
-    const { stdout, stderr } = await execAsync('npm run clear-and-scrape:partyflock');
+    const scraper = new PartyflockScraper();
+    const festivals = await scraper.scrape();
     
-    if (stderr) {
-      console.error('Error running scraper:', stderr);
-      return NextResponse.json({ error: 'Failed to run scraper' }, { status: 500 });
+    // Insert festivals into database
+    const supabase = getSupabaseClient(supabaseUrl, supabaseKey);
+    const { error: insertError } = await supabase
+      .from('festivals')
+      .insert(festivals);
+      
+    if (insertError) {
+      console.error('Error inserting festivals:', insertError);
+      return corsResponse({ error: 'Failed to insert festivals' }, 500);
     }
-    
-    console.log('Scraper output:', stdout);
-    
+
     // Get the count of festivals from the database
-    const { count, error } = await supabase
+    const { count, error: countError } = await supabase
       .from('festivals')
       .select('*', { count: 'exact', head: true })
       .eq('source', 'partyflock');
       
-    if (error) {
-      console.error('Error getting festival count:', error);
-      return NextResponse.json({ error: 'Failed to get festival count' }, { status: 500 });
+    if (countError) {
+      console.error('Error getting festival count:', countError);
+      return corsResponse({ error: 'Failed to get festival count' }, 500);
     }
 
-    return NextResponse.json({ 
+    return corsResponse({ 
       success: true, 
-      message: `Successfully scraped and inserted festivals from Partyflock.`,
+      message: `Successfully scraped and inserted ${festivals.length} festivals from Partyflock.`,
       count: count || 0
     });
   } catch (error) {
     console.error('Error running Partyflock scraper:', error);
-    return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
+    return corsResponse({ error: 'Internal server error' }, 500);
   }
 } 

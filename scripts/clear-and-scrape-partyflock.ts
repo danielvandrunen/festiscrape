@@ -9,6 +9,7 @@ async function main() {
 
     console.log('Running Partyflock scraper...');
     const scraper = new PartyflockScraper();
+    console.log('Scraping festivals from Partyflock...');
     const festivals = await scraper.scrape();
     console.log(`Found ${festivals.length} festivals from Partyflock.`);
 
