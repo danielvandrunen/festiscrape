@@ -1,0 +1,61 @@
+import type { Festival } from '../../src/types';
+import { BaseScraper } from './base-scraper.js';
+import { load } from 'cheerio';
+
+export class FestileaksScraper extends BaseScraper {
+  baseUrl = 'https://festileaks.nl/festivals/';
+
+  public async parseFestivals($: ReturnType<typeof load>): Promise<Festival[]> {
+    const festivals: Festival[] = [];
+
+    try {
+      const elements = $('.festival-item');
+      console.log(`Found ${elements.length} potential festival elements`);
+
+      elements.each((_, element) => {
+        try {
+          const $element = $(element);
+          
+          const name = $element.find('.festival-title').text().trim();
+          if (!name) {
+            console.warn('Skipping element - no name found');
+            return;
+          }
+
+          const dateText = $element.find('.festival-date').text().trim();
+          const date = this.parseDutchDate(dateText);
+          if (!date) {
+            console.warn(`Skipping ${name} - no valid date found in: ${dateText}`);
+            return;
+          }
+
+          const locationText = $element.find('.festival-location').text().trim();
+          const locations = locationText ? [locationText] : [];
+
+          const website = $element.find('a.festival-link').attr('href') || '';
+
+          festivals.push({
+            id: this.generateId(),
+            name,
+            date,
+            website,
+            locations,
+            source: 'festileaks',
+            status: 'active',
+            is_interested: false,
+            last_updated: new Date()
+          });
+
+          console.log(`Successfully parsed festival: ${name}`);
+        } catch (error) {
+          console.error('Error parsing festival element:', error);
+        }
+      });
+
+      return festivals;
+    } catch (error) {
+      console.error('Error parsing festivals:', error);
+      throw error;
+    }
+  }
+} 

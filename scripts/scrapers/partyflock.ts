@@ -1,106 +1,72 @@
-import { Festival } from '@/types';
+import type { Festival } from '../../src/types';
 import { BaseScraper } from './base-scraper';
-import type { CheerioAPI } from 'cheerio';
+import { load } from 'cheerio';
 
 export class PartyflockScraper extends BaseScraper {
   baseUrl = 'https://partyflock.nl/agenda/festivals';
 
-  public async parseFestivals($: CheerioAPI): Promise<Festival[]> {
-    const festivals: Festival[] = [];
+  public async parseFestivals($: ReturnType<typeof load>): Promise<Festival[]> {
+    try {
+      const festivals: Festival[] = [];
 
-    // Look for festival elements - they might be in different structures
-    // First try the schema.org Event type
-    const events = $('[itemtype="https://schema.org/Event"]');
-    console.log(`Found ${events.length} elements with schema.org Event type`);
-
-    if (events.length === 0) {
-      // Try alternative selectors if schema.org elements aren't found
-      const festivalElements = $('.festival-item, .event-item, .agenda-item, [class*="festival"], [class*="event"]');
-      console.log(`Found ${festivalElements.length} elements with festival/event related classes`);
+      // Try to find festival elements using schema.org Event type first
+      let elements = $('[itemtype="http://schema.org/Event"]');
       
-      festivalElements.each((_, element) => {
+      // If no schema.org elements found, try alternative selectors
+      if (elements.length === 0) {
+        elements = $('.festival-item, .event-item, .agenda-item, article');
+      }
+
+      console.log(`Found ${elements.length} potential festival elements`);
+
+      elements.each((_: number, element: cheerio.Element) => {
         try {
           const $element = $(element);
           
-          // Try to find the name in various ways
-          let name = $element.find('[itemprop="name"], .name, .title, h2, h3').first().text().trim();
-          
-          // Try to find the date
-          let dateStr = $element.find('[itemprop="startDate"], .date, .datum, time').first().text().trim();
-          let date = dateStr ? this.parseDutchDate(dateStr) : undefined;
-          
-          // Try to find the location
-          let location = $element.find('[itemprop="addressLocality"], .location, .locatie').first().text().trim();
-          
-          // Try to find the website
-          let website = $element.find('a').first().attr('href');
-          
-          console.log('Parsing event:', { name, dateStr, location, website });
-          
-          if (name && date && !isNaN(date.getTime())) {
-            festivals.push({
-              id: this.generateId(),
-              name,
-              date,
-              website: website ? new URL(website, this.baseUrl).toString() : undefined,
-              locations: location ? [location] : [],
-              source: 'partyflock',
-              status: 'active',
-              is_interested: false,
-              last_updated: new Date()
-            });
-          } else {
-            console.log('Skipping event due to missing or invalid data:', { name, date });
+          // Try to get name from multiple possible locations
+          const name = $element.find('[itemprop="name"], .event-name, h2, h3').first().text().trim();
+          if (!name) {
+            console.warn('Skipping element - no name found');
+            return;
           }
+
+          // Try to get date from multiple possible locations
+          const dateText = $element.find('[itemprop="startDate"], .event-date, .date').first().text().trim();
+          const date = this.parseDutchDate(dateText);
+          if (!date) {
+            console.warn(`Skipping ${name} - no valid date found in: ${dateText}`);
+            return;
+          }
+
+          // Try to get location from multiple possible locations
+          const locationText = $element.find('[itemprop="location"], .event-location, .location').first().text().trim();
+          const locations = locationText ? [locationText] : [];
+
+          // Try to get website from multiple possible locations
+          const website = $element.find('[itemprop="url"], a[href]').first().attr('href') || '';
+
+          festivals.push({
+            id: this.generateId(),
+            name,
+            date,
+            website,
+            locations,
+            source: 'partyflock',
+            status: 'active',
+            is_interested: false,
+            last_updated: new Date()
+          });
+
+          console.log(`Successfully parsed festival: ${name}`);
         } catch (error) {
-          console.warn(`Failed to parse festival event: ${error instanceof Error ? error.message : String(error)}`);
+          console.error('Error parsing festival element:', error);
         }
       });
-    } else {
-      // Process schema.org Event elements
-      events.each((_, event) => {
-        try {
-          const $event = $(event);
-          
-          // Extract date from meta tag or text content
-          const dateStr = $event.find('meta[itemprop="startDate"]').attr('content') || 
-                          $event.find('[itemprop="startDate"]').text().trim();
-          const date = dateStr ? new Date(dateStr) : undefined;
-          
-          // Extract name from various possible locations
-          const name = $event.find('span[itemprop="name"], [itemprop="name"]').first().text().trim() ||
-                      $event.find('h2, h3, .name, .title').first().text().trim();
-          
-          // Extract location from meta tag or text content
-          const location = $event.find('meta[itemprop="addressLocality"]').attr('content') ||
-                          $event.find('[itemprop="addressLocality"]').text().trim();
-          
-          // Extract website URL
-          const website = $event.find('a[itemprop="url"], a').first().attr('href');
 
-          console.log('Parsing event:', { dateStr, name, location, website });
-
-          if (name && date && !isNaN(date.getTime())) {
-            festivals.push({
-              id: this.generateId(),
-              name,
-              date,
-              website: website ? new URL(website, this.baseUrl).toString() : undefined,
-              locations: location ? [location] : [],
-              source: 'partyflock',
-              status: 'active',
-              is_interested: false,
-              last_updated: new Date()
-            });
-          } else {
-            console.log('Skipping event due to missing or invalid data:', { name, date });
-          }
-        } catch (error) {
-          console.warn(`Failed to parse festival event: ${error instanceof Error ? error.message : String(error)}`);
-        }
-      });
+      return festivals;
+    } catch (error) {
+      console.error('Error parsing festivals:', error);
+      throw error;
     }
-
-    return festivals;
   }
 } 

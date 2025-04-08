@@ -1,0 +1,92 @@
+import { Festival } from '../../src/types';
+import { BaseScraper } from './base-scraper.js';
+import { load } from 'cheerio';
+
+export class EBLiveScraper extends BaseScraper {
+  public baseUrl = 'https://www.eblive.nl/festivals/';
+
+  public async parseFestivals($: ReturnType<typeof load>): Promise<Festival[]> {
+    const festivals: Festival[] = [];
+
+    try {
+      const elements = $('.event-item');
+      console.log(`Found ${elements.length} potential festival elements`);
+
+      elements.each((_, element) => {
+        try {
+          const $element = $(element);
+          
+          const name = $element.find('.event-title').text().trim();
+          if (!name) {
+            console.warn('Skipping element - no name found');
+            return;
+          }
+
+          const dateText = $element.find('.event-date').text().trim();
+          const date = this.parseDutchDate(dateText);
+          if (!date) {
+            console.warn(`Skipping ${name} - no valid date found in: ${dateText}`);
+            return;
+          }
+
+          const locationText = $element.find('.event-location').text().trim();
+          const locations = locationText ? [locationText] : [];
+
+          const website = $element.find('a.event-link').attr('href') || '';
+
+          festivals.push({
+            id: this.generateId(),
+            name,
+            date,
+            website,
+            locations,
+            source: 'eblive',
+            status: 'active',
+            is_interested: false,
+            last_updated: new Date()
+          });
+
+          console.log(`Successfully parsed festival: ${name}`);
+        } catch (error) {
+          console.error('Error parsing festival element:', error);
+        }
+      });
+
+      return festivals;
+    } catch (error) {
+      console.error('Error parsing festivals:', error);
+      throw error;
+    }
+  }
+
+  protected parseDutchDate(dateText: string): Date | undefined {
+    try {
+      // Example format: "25 februari 2024"
+      const months: { [key: string]: number } = {
+        'januari': 0, 'februari': 1, 'maart': 2, 'april': 3,
+        'mei': 4, 'juni': 5, 'juli': 6, 'augustus': 7,
+        'september': 8, 'oktober': 9, 'november': 10, 'december': 11
+      };
+
+      const parts = dateText.toLowerCase().split(' ');
+      if (parts.length !== 3) {
+        console.warn(`Invalid date format: ${dateText}`);
+        return undefined;
+      }
+
+      const day = parseInt(parts[0], 10);
+      const month = months[parts[1]];
+      const year = parseInt(parts[2], 10);
+
+      if (isNaN(day) || month === undefined || isNaN(year)) {
+        console.warn(`Invalid date components: day=${day}, month=${month}, year=${year}`);
+        return undefined;
+      }
+
+      return new Date(year, month, day);
+    } catch (error) {
+      console.error('Error parsing date:', error);
+      return undefined;
+    }
+  }
+}

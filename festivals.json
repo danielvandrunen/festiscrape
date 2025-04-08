@@ -1,0 +1,5826 @@
+[
+  {
+    "name": "Hop on hop off Festival",
+    "date": "2025-04-06T15:00:00+02:00",
+    "location": "Kunstijsbaan Breda",
+    "city": "Breda",
+    "country": "Unknown"
+  },
+  {
+    "name": "Rewire",
+    "date": "2025-04-06T14:00:00+02:00",
+    "location": "Grote Markt",
+    "city": "Den Haag",
+    "country": "Unknown"
+  },
+  {
+    "name": "Brêgepop Festival",
+    "date": "2025-04-11T18:00:00+02:00",
+    "location": "Evenemententerrein Bregepop",
+    "city": "Scharsterbrug",
+    "country": "Unknown"
+  },
+  {
+    "name": "Luca v/d Hombergh · All Night Long",
+    "date": "2025-04-11T23:00:00+02:00",
+    "location": "Foodhall Mout",
+    "city": "Venlo",
+    "country": "Unknown"
+  },
+  {
+    "name": "REBiRTH Festival · United through Madness",
+    "date": "2025-04-11T16:00:00+02:00",
+    "location": "Festivalterrein Raamse Akkers",
+    "city": "Haaren",
+    "country": "Unknown"
+  },
+  {
+    "name": "Waterpoort Festival",
+    "date": "2025-04-11T21:00:00+02:00",
+    "location": "Park Buiten de Waterpoort",
+    "city": "Gorinchem",
+    "country": "Unknown"
+  },
+  {
+    "name": "Brêgepop Festival",
+    "date": "2025-04-12T17:00:00+02:00",
+    "location": "Evenemententerrein Bregepop",
+    "city": "Scharsterbrug",
+    "country": "Unknown"
+  },
+  {
+    "name": "FOUX · Lente Festival",
+    "date": "2025-04-12T21:00:00+02:00",
+    "location": "Azorra Beachclub",
+    "city": "Scheveningen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Liquicity Springfestival",
+    "date": "2025-04-12T16:00:00+02:00",
+    "location": "Maassilo",
+    "city": "Rotterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Overstag Festival",
+    "date": "2025-04-13T00:00:00+02:00",
+    "location": "Levenslang",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Patroon Indoor Festival",
+    "date": "2025-04-12T17:00:00+02:00",
+    "location": "Area 51 Skatepark",
+    "city": "Eindhoven",
+    "country": "Unknown"
+  },
+  {
+    "name": "Polaar · Club Festival",
+    "date": "2025-04-13T00:00:00+02:00",
+    "location": "Rotunde - Alter Katholikentagsbahnhof",
+    "city": "Bochum",
+    "country": "Unknown"
+  },
+  {
+    "name": "Pump up the 90s",
+    "date": "2025-04-12T10:30:00+02:00",
+    "location": "Evenementenhal Hardenberg",
+    "city": "Hardenberg",
+    "country": "Unknown"
+  },
+  {
+    "name": "REBiRTH Festival · United through Madness",
+    "date": "2025-04-12T14:00:00+02:00",
+    "location": "Festivalterrein Raamse Akkers",
+    "city": "Haaren",
+    "country": "Unknown"
+  },
+  {
+    "name": "Transmission",
+    "date": "2025-04-12T16:00:00+02:00",
+    "location": "GelreDome",
+    "city": "Arnhem",
+    "country": "Unknown"
+  },
+  {
+    "name": "Waterpoort Festival",
+    "date": "2025-04-12T14:00:00+02:00",
+    "location": "Park Buiten de Waterpoort",
+    "city": "Gorinchem",
+    "country": "Unknown"
+  },
+  {
+    "name": "We are iT Festival",
+    "date": "2025-04-12T15:00:00+02:00",
+    "location": "Contactweg 60",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Brêgepop Festival",
+    "date": "2025-04-13T17:00:00+02:00",
+    "location": "Evenemententerrein Bregepop",
+    "city": "Scharsterbrug",
+    "country": "Unknown"
+  },
+  {
+    "name": "REBiRTH Festival · United through Madness",
+    "date": "2025-04-13T15:00:00+02:00",
+    "location": "Festivalterrein Raamse Akkers",
+    "city": "Haaren",
+    "country": "Unknown"
+  },
+  {
+    "name": "Waterpoort Festival",
+    "date": "2025-04-13T14:00:00+02:00",
+    "location": "Park Buiten de Waterpoort",
+    "city": "Gorinchem",
+    "country": "Unknown"
+  },
+  {
+    "name": "Havelbeats Festival",
+    "date": "2025-04-15T16:00:00+02:00",
+    "location": "Kunst- & Kulturquartier Schiffbauergasse",
+    "city": "Potsdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Havelbeats Festival",
+    "date": "2025-04-16T14:00:00+02:00",
+    "location": "Kunst- & Kulturquartier Schiffbauergasse",
+    "city": "Potsdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Momo Festival",
+    "date": "2025-04-17T17:00:00+02:00",
+    "location": "Perron",
+    "city": "Rotterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Friday By Night",
+    "date": "2025-04-19T00:00:00+02:00",
+    "location": "NDSM Loods",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "HIVE · Weekender",
+    "date": "2025-04-19T00:00:00+02:00",
+    "location": "Anomalie Art Club",
+    "city": "Berlin",
+    "country": "Unknown"
+  },
+  {
+    "name": "Momo Festival",
+    "date": "2025-04-18T14:00:00+02:00",
+    "location": "Perron",
+    "city": "Rotterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Shelter · UNUM Festival",
+    "date": "2025-04-19T01:00:00+02:00",
+    "location": "Shelter",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "The Society of Art · Open Air",
+    "date": "2025-04-18T17:00:00+02:00",
+    "location": "Go Beach Club",
+    "city": "Barcelona",
+    "country": "Unknown"
+  },
+  {
+    "name": "Tijdreis",
+    "date": "2025-04-18T23:00:00+02:00",
+    "location": "Palace",
+    "city": "Groningen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Weidepop Festival · Tribute Day",
+    "date": "2025-04-18T19:00:00+02:00",
+    "location": "Speelweide",
+    "city": "Noord-Scharwoude",
+    "country": "Unknown"
+  },
+  {
+    "name": "Free Your Mind · Easter Special",
+    "date": "2025-04-19T16:00:00+02:00",
+    "location": "AFAS Live",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Friday By Night",
+    "date": "2025-04-20T01:00:00+02:00",
+    "location": "NDSM Loods",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Gruwelijk Fikkie Stoken",
+    "date": "2025-04-19T22:00:00+02:00",
+    "location": "Evenemententerrein Drouwenermond",
+    "city": "Drouwenermond",
+    "country": "Unknown"
+  },
+  {
+    "name": "Hangar Festival",
+    "date": "2025-04-19T14:00:00+02:00",
+    "location": "Quai De Heembeek",
+    "city": "Brussel",
+    "country": "Unknown"
+  },
+  {
+    "name": "Het enige echte Koninginnedag Feest",
+    "date": "2025-04-19T17:00:00+02:00",
+    "location": "Het Sieraad",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "High Rollers",
+    "date": "2025-04-19T16:00:00+02:00",
+    "location": "HAL 25",
+    "city": "Alkmaar",
+    "country": "Unknown"
+  },
+  {
+    "name": "HIVE · Weekender",
+    "date": "2025-04-19T14:00:00+02:00",
+    "location": "Anomalie Art Club",
+    "city": "Berlin",
+    "country": "Unknown"
+  },
+  {
+    "name": "Lingepop Festival",
+    "date": "2025-04-19T16:00:00+02:00",
+    "location": "Park Lingezegen",
+    "city": "Elst",
+    "country": "Unknown"
+  },
+  {
+    "name": "Momo Festival",
+    "date": "2025-04-19T14:00:00+02:00",
+    "location": "Perron",
+    "city": "Rotterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Shelter · Circular",
+    "date": "2025-04-20T01:00:00+02:00",
+    "location": "Shelter",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Those Were The Days Festival",
+    "date": "2025-04-20T01:00:00+02:00",
+    "location": "Waagnatie",
+    "city": "Antwerpen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Unknown Electronics",
+    "date": "2025-04-19T23:00:00+02:00",
+    "location": "OT301",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Urban Festival",
+    "date": "2025-04-20T00:00:00+02:00",
+    "location": "Sotto's",
+    "city": "Zottegem",
+    "country": "Unknown"
+  },
+  {
+    "name": "Weidepop Festival · Lekker Hollands",
+    "date": "2025-04-19T17:00:00+02:00",
+    "location": "Speelweide",
+    "city": "Noord-Scharwoude",
+    "country": "Unknown"
+  },
+  {
+    "name": "Ópalo",
+    "date": "2025-04-20T00:00:00+02:00",
+    "location": "BRET",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Ecstatic Dancing",
+    "date": "2025-04-20T16:00:00+02:00",
+    "location": "Asgaard",
+    "city": "Leeuwarden",
+    "country": "Unknown"
+  },
+  {
+    "name": "Faceless",
+    "date": "2025-04-20T21:30:00+02:00",
+    "location": "Turbinenhalle",
+    "city": "Oberhausen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Friday By Night",
+    "date": "2025-04-21T01:00:00+02:00",
+    "location": "NDSM Loods",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Garnizoen",
+    "date": "2025-04-20T15:00:00+02:00",
+    "location": "be-MINE",
+    "city": "Beringen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Gruwelijk Fikkie Stoken",
+    "date": "2025-04-20T14:00:00+02:00",
+    "location": "Evenemententerrein Drouwenermond",
+    "city": "Drouwenermond",
+    "country": "Unknown"
+  },
+  {
+    "name": "Hangar Festival",
+    "date": "2025-04-20T14:00:00+02:00",
+    "location": "Quai De Heembeek",
+    "city": "Brussel",
+    "country": "Unknown"
+  },
+  {
+    "name": "Lingepop Festival",
+    "date": "2025-04-20T16:00:00+02:00",
+    "location": "Park Lingezegen",
+    "city": "Elst",
+    "country": "Unknown"
+  },
+  {
+    "name": "MODUL'AIR Festival · A day into night Easter Sunday",
+    "date": "2025-04-20T16:00:00+02:00",
+    "location": "Flanders Expo",
+    "city": "Gent",
+    "country": "Unknown"
+  },
+  {
+    "name": "Moon · Indoor Festival",
+    "date": "2025-04-20T17:00:00+02:00",
+    "location": "Now&Wow",
+    "city": "Rotterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Those Were The Days Festival",
+    "date": "2025-04-21T01:00:00+02:00",
+    "location": "Waagnatie",
+    "city": "Antwerpen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Weidepop Festival · Boeren Rock",
+    "date": "2025-04-20T16:00:00+02:00",
+    "location": "Speelweide",
+    "city": "Noord-Scharwoude",
+    "country": "Unknown"
+  },
+  {
+    "name": "Brick Lane Jazz Festival",
+    "date": "2025-04-25T20:00:00+02:00",
+    "location": "Unknown",
+    "city": "London",
+    "country": "Unknown"
+  },
+  {
+    "name": "Code Nassau",
+    "date": "2025-04-25T18:00:00+02:00",
+    "location": "Schootsveld",
+    "city": "Sittard",
+    "country": "Unknown"
+  },
+  {
+    "name": "De Helden van Oranje",
+    "date": "2025-04-25T19:00:00+02:00",
+    "location": "Stadspark",
+    "city": "Groningen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Deventer Koningsfestival",
+    "date": "2025-04-25T20:00:00+02:00",
+    "location": "Brink",
+    "city": "Deventer",
+    "country": "Unknown"
+  },
+  {
+    "name": "King-S Festival Konings Nacht",
+    "date": "2025-04-25T20:00:00+02:00",
+    "location": "Strijp-S",
+    "city": "Eindhoven",
+    "country": "Unknown"
+  },
+  {
+    "name": "Kingdance Festival · The Weekender",
+    "date": "2025-04-25T18:00:00+02:00",
+    "location": "Wijthmenerplas",
+    "city": "Zwolle",
+    "country": "Unknown"
+  },
+  {
+    "name": "Kingsday",
+    "date": "2025-04-25T20:00:00+02:00",
+    "location": "Roermondsplein",
+    "city": "Arnhem",
+    "country": "Unknown"
+  },
+  {
+    "name": "Shelter",
+    "date": "2025-04-26T01:00:00+02:00",
+    "location": "Shelter",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "The Real Tempo · Kingsnight edition",
+    "date": "2025-04-26T00:00:00+02:00",
+    "location": "Club Organza",
+    "city": "Maarssen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Uit Je Stekker Kingsnight Festival",
+    "date": "2025-04-25T19:00:00+02:00",
+    "location": "Stadseiland Stek",
+    "city": "Nijmegen",
+    "country": "Unknown"
+  },
+  {
+    "name": "We Are Royals Festival",
+    "date": "2025-04-25T21:00:00+02:00",
+    "location": "Schouwburg Amphion",
+    "city": "Doetinchem",
+    "country": "Unknown"
+  },
+  {
+    "name": "ZoeterMeerOranje",
+    "date": "2025-04-25T19:00:00+02:00",
+    "location": "Parkeerplaats Pilatusdam",
+    "city": "Zoetermeer",
+    "country": "Unknown"
+  },
+  {
+    "name": "Brick Lane Jazz Festival",
+    "date": "2025-04-26T14:00:00+02:00",
+    "location": "Unknown",
+    "city": "London",
+    "country": "Unknown"
+  },
+  {
+    "name": "BURST",
+    "date": "2025-04-26T13:00:00+02:00",
+    "location": "Meerpark",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Code Nassau · Limburgse Middag",
+    "date": "2025-04-26T16:00:00+02:00",
+    "location": "Schootsveld",
+    "city": "Sittard",
+    "country": "Unknown"
+  },
+  {
+    "name": "DE REACTIE · Kingsday",
+    "date": "2025-04-26T19:00:00+02:00",
+    "location": "Universiteit Twente",
+    "city": "Enschede",
+    "country": "Unknown"
+  },
+  {
+    "name": "Deventer Koningsfestival",
+    "date": "2025-04-26T14:00:00+02:00",
+    "location": "Brink",
+    "city": "Deventer",
+    "country": "Unknown"
+  },
+  {
+    "name": "Eatbrain Indoor Festival",
+    "date": "2025-04-27T01:00:00+02:00",
+    "location": "Now&Wow",
+    "city": "Rotterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Free Your Mind · Kingsday",
+    "date": "2025-04-26T15:00:00+02:00",
+    "location": "Breda International Airport",
+    "city": "Bosschenhoofd",
+    "country": "Unknown"
+  },
+  {
+    "name": "King-S Festival Konings Dag",
+    "date": "2025-04-26T15:00:00+02:00",
+    "location": "Strijp-S",
+    "city": "Eindhoven",
+    "country": "Unknown"
+  },
+  {
+    "name": "Kingdance Festival · The Weekender",
+    "date": "2025-04-26T14:00:00+02:00",
+    "location": "Wijthmenerplas",
+    "city": "Zwolle",
+    "country": "Unknown"
+  },
+  {
+    "name": "Kings & Queens Festival",
+    "date": "2025-04-26T16:00:00+02:00",
+    "location": "Stadseiland Stek",
+    "city": "Nijmegen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Kingsday",
+    "date": "2025-04-26T20:00:00+02:00",
+    "location": "Roermondsplein",
+    "city": "Arnhem",
+    "country": "Unknown"
+  },
+  {
+    "name": "Kingsday Festival",
+    "date": "2025-04-26T17:00:00+02:00",
+    "location": "Prinsentuin",
+    "city": "Leeuwarden",
+    "country": "Unknown"
+  },
+  {
+    "name": "KingSize Festival",
+    "date": "2025-04-26T20:00:00+02:00",
+    "location": "Markt",
+    "city": "Arnhem",
+    "country": "Unknown"
+  },
+  {
+    "name": "Kingsland",
+    "date": "2025-04-26T14:00:00+02:00",
+    "location": "Olympisch Stadion",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Kralingse Bos Festival",
+    "date": "2025-04-26T15:00:00+02:00",
+    "location": "Kralingse Bos",
+    "city": "Rotterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Kroonjuweel Festival",
+    "date": "2025-04-26T15:00:00+02:00",
+    "location": "Keilecafé",
+    "city": "Rotterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Oranjebitter Festival",
+    "date": "2025-04-26T16:00:00+02:00",
+    "location": "Roel Langerakpark",
+    "city": "Rotterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Oranjeroes Festival",
+    "date": "2025-04-26T15:00:00+02:00",
+    "location": "Zuiderpark",
+    "city": "Den Haag",
+    "country": "Unknown"
+  },
+  {
+    "name": "Ra:dius Festival · Kingsday",
+    "date": "2025-04-26T15:00:00+02:00",
+    "location": "Het Radium",
+    "city": "Maastricht",
+    "country": "Unknown"
+  },
+  {
+    "name": "Shelter · VBX",
+    "date": "2025-04-26T22:00:00+02:00",
+    "location": "Shelter",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "SMÈRRIG Koningsdag Festival",
+    "date": "2025-04-26T16:00:00+02:00",
+    "location": "Pettelaarse Schans",
+    "city": "'s-Hertogenbosch",
+    "country": "Unknown"
+  },
+  {
+    "name": "Supersized Kingsday Festival",
+    "date": "2025-04-26T14:00:00+02:00",
+    "location": "Aquabest",
+    "city": "Best",
+    "country": "Unknown"
+  },
+  {
+    "name": "Verknipt Kingsday Festival",
+    "date": "2025-04-26T14:00:00+02:00",
+    "location": "Hembrugterrein",
+    "city": "Zaandam",
+    "country": "Unknown"
+  },
+  {
+    "name": "We Are Royals Festival",
+    "date": "2025-04-26T17:00:00+02:00",
+    "location": "Schouwburg Amphion",
+    "city": "Doetinchem",
+    "country": "Unknown"
+  },
+  {
+    "name": "ZoeterMeerOranje",
+    "date": "2025-04-26T14:00:00+02:00",
+    "location": "Parkeerplaats Pilatusdam",
+    "city": "Zoetermeer",
+    "country": "Unknown"
+  },
+  {
+    "name": "Brick Lane Jazz Festival",
+    "date": "2025-04-27T14:00:00+02:00",
+    "location": "Unknown",
+    "city": "London",
+    "country": "Unknown"
+  },
+  {
+    "name": "KingSize Festival",
+    "date": "2025-04-27T14:00:00+02:00",
+    "location": "Markt",
+    "city": "Arnhem",
+    "country": "Unknown"
+  },
+  {
+    "name": "Hai in den Mai Festival · Love is the Key",
+    "date": "2025-05-01T20:00:00+02:00",
+    "location": "Waldfrieden",
+    "city": "Stemwede",
+    "country": "Unknown"
+  },
+  {
+    "name": "Horst Arts & Music Festival",
+    "date": "2025-05-01T15:00:00+02:00",
+    "location": "Asiat Park",
+    "city": "Vilvoorde",
+    "country": "Unknown"
+  },
+  {
+    "name": "Hai in den Mai Festival · Love is the Key",
+    "date": "2025-05-02T14:00:00+02:00",
+    "location": "Waldfrieden",
+    "city": "Stemwede",
+    "country": "Unknown"
+  },
+  {
+    "name": "Horst Arts & Music Festival",
+    "date": "2025-05-02T14:00:00+02:00",
+    "location": "Asiat Park",
+    "city": "Vilvoorde",
+    "country": "Unknown"
+  },
+  {
+    "name": "UDNZ Festival",
+    "date": "2025-05-02T19:00:00+02:00",
+    "location": "Bevrijdingspark Uden",
+    "city": "Uden",
+    "country": "Unknown"
+  },
+  {
+    "name": "Chakra party · Gaat Los in 'T Bos",
+    "date": "2025-05-03T16:00:00+02:00",
+    "location": "Bosvreugd Cultuurbos",
+    "city": "Tilburg",
+    "country": "Unknown"
+  },
+  {
+    "name": "Duality",
+    "date": "2025-05-03T19:00:00+02:00",
+    "location": "Lotto Mons expo",
+    "city": "Mons",
+    "country": "Unknown"
+  },
+  {
+    "name": "First of Season Festival",
+    "date": "2025-05-03T16:00:00+02:00",
+    "location": "Sjavieee",
+    "city": "Molenbeersel",
+    "country": "Unknown"
+  },
+  {
+    "name": "Geheime Liefde",
+    "date": "2025-05-03T14:00:00+02:00",
+    "location": "Fort bij de Vechten",
+    "city": "Bunnik",
+    "country": "Unknown"
+  },
+  {
+    "name": "Hai in den Mai Festival · Love is the Key",
+    "date": "2025-05-03T14:00:00+02:00",
+    "location": "Waldfrieden",
+    "city": "Stemwede",
+    "country": "Unknown"
+  },
+  {
+    "name": "Horst Arts & Music Festival",
+    "date": "2025-05-03T14:00:00+02:00",
+    "location": "Asiat Park",
+    "city": "Vilvoorde",
+    "country": "Unknown"
+  },
+  {
+    "name": "Hrieps Muziekfestival",
+    "date": "2025-05-03T14:30:00+02:00",
+    "location": "Feestterrein",
+    "city": "Grijpskerke",
+    "country": "Unknown"
+  },
+  {
+    "name": "Industry Festival",
+    "date": "2025-05-03T17:00:00+02:00",
+    "location": "City Theater",
+    "city": "Schijndel",
+    "country": "Unknown"
+  },
+  {
+    "name": "Lunatics Outdoor · Welcome to the Monkeytown of Cash",
+    "date": "2025-05-03T16:00:00+02:00",
+    "location": "Hoeve Galderzicht",
+    "city": "Breda",
+    "country": "Unknown"
+  },
+  {
+    "name": "Midnight Mafia · Cinco de Mayo",
+    "date": "2025-05-03T18:00:00+02:00",
+    "location": "Sydney Showground",
+    "city": "Sydney",
+    "country": "Unknown"
+  },
+  {
+    "name": "UDNZ Festival",
+    "date": "2025-05-03T15:00:00+02:00",
+    "location": "Bevrijdingspark Uden",
+    "city": "Uden",
+    "country": "Unknown"
+  },
+  {
+    "name": "Wavy · Spring Festival",
+    "date": "2025-05-03T15:00:00+02:00",
+    "location": "Thuishaven terrein",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Hai in den Mai Festival · Love is the Key",
+    "date": "2025-05-04T14:00:00+02:00",
+    "location": "Waldfrieden",
+    "city": "Stemwede",
+    "country": "Unknown"
+  },
+  {
+    "name": "Bevrijdingsfestival",
+    "date": "2025-05-05T14:30:00+02:00",
+    "location": "Pettelaarse Schans",
+    "city": "'s-Hertogenbosch",
+    "country": "Unknown"
+  },
+  {
+    "name": "Bevrijdingsfestival",
+    "date": "2025-05-05T16:00:00+02:00",
+    "location": "Park Transwijk",
+    "city": "Utrecht",
+    "country": "Unknown"
+  },
+  {
+    "name": "Bevrijdingsfestival Overijssel",
+    "date": "2025-05-05T13:00:00+02:00",
+    "location": "Park de Wezenlanden",
+    "city": "Zwolle",
+    "country": "Unknown"
+  },
+  {
+    "name": "Rong Open Air Festival",
+    "date": "2025-05-08T15:00:00+02:00",
+    "location": "Il Fosos Square",
+    "city": "Valletta",
+    "country": "Unknown"
+  },
+  {
+    "name": "Fairytale Festival",
+    "date": "2025-05-09T19:00:00+02:00",
+    "location": "De Nieuwe Pater",
+    "city": "Kaatsheuvel",
+    "country": "Unknown"
+  },
+  {
+    "name": "Rong Open Air Festival",
+    "date": "2025-05-09T14:00:00+02:00",
+    "location": "Il Fosos Square",
+    "city": "Valletta",
+    "country": "Unknown"
+  },
+  {
+    "name": "TAPT Festival",
+    "date": "2025-05-09T19:00:00+02:00",
+    "location": "Flevopark",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Beter Kom Je Niet Festival",
+    "date": "2025-05-10T13:00:00+02:00",
+    "location": "Breepark",
+    "city": "Breda",
+    "country": "Unknown"
+  },
+  {
+    "name": "Elektronik Zoo",
+    "date": "2025-05-10T15:00:00+02:00",
+    "location": "Marco Bailey Backyard",
+    "city": "Hoeleden",
+    "country": "Unknown"
+  },
+  {
+    "name": "Elsom Open Air",
+    "date": "2025-05-10T16:00:00+02:00",
+    "location": "Festivalweide",
+    "city": "Oud-Turnhout",
+    "country": "Unknown"
+  },
+  {
+    "name": "Fairytale Festival",
+    "date": "2025-05-10T15:00:00+02:00",
+    "location": "De Nieuwe Pater",
+    "city": "Kaatsheuvel",
+    "country": "Unknown"
+  },
+  {
+    "name": "Geheime Liefde",
+    "date": "2025-05-10T14:00:00+02:00",
+    "location": "Fort bij de Vechten",
+    "city": "Bunnik",
+    "country": "Unknown"
+  },
+  {
+    "name": "Gevoelig Feestje · Indoor Festival 10 Years Anniversary",
+    "date": "2025-05-11T01:00:00+02:00",
+    "location": "Maassilo",
+    "city": "Rotterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Headlines Festival",
+    "date": "2025-05-10T17:00:00+02:00",
+    "location": "Poppodium 013",
+    "city": "Tilburg",
+    "country": "Unknown"
+  },
+  {
+    "name": "Het Verzet Festival",
+    "date": "2025-05-10T15:00:00+02:00",
+    "location": "Unknown",
+    "city": "Gemert",
+    "country": "Unknown"
+  },
+  {
+    "name": "Iconic Festival",
+    "date": "2025-05-10T15:00:00+02:00",
+    "location": "Valkhofpark",
+    "city": "Nijmegen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Intercell Outdoor × Dax J · Summer Opening",
+    "date": "2025-05-10T16:00:00+02:00",
+    "location": "De Binnenplaats",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Lente Fest",
+    "date": "2025-05-10T17:00:00+02:00",
+    "location": "Lijm & Cultuur",
+    "city": "Delft",
+    "country": "Unknown"
+  },
+  {
+    "name": "Music On Festival",
+    "date": "2025-05-10T14:00:00+02:00",
+    "location": "Meerpark",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "PIEKEN! Festival",
+    "date": "2025-05-10T17:00:00+02:00",
+    "location": "'t Zoet",
+    "city": "Breda",
+    "country": "Unknown"
+  },
+  {
+    "name": "Rong Open Air Festival",
+    "date": "2025-05-10T14:00:00+02:00",
+    "location": "Il Fosos Square",
+    "city": "Valletta",
+    "country": "Unknown"
+  },
+  {
+    "name": "Soulful Sessions Festival",
+    "date": "2025-05-10T15:00:00+02:00",
+    "location": "Boeienweide",
+    "city": "Antwerpen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Stamp Outdoor · The final echo of humanity",
+    "date": "2025-05-10T21:00:00+02:00",
+    "location": "Hinneboomstraat",
+    "city": "Hoogstraten",
+    "country": "Unknown"
+  },
+  {
+    "name": "Subcultuur Festival · Hemelvaart",
+    "date": "2025-05-10T16:00:00+02:00",
+    "location": "NYMA",
+    "city": "Nijmegen",
+    "country": "Unknown"
+  },
+  {
+    "name": "TAPT Festival",
+    "date": "2025-05-10T15:00:00+02:00",
+    "location": "Flevopark",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Tripkouw",
+    "date": "2025-05-10T22:30:00+02:00",
+    "location": "Café De Post",
+    "city": "Midwoud",
+    "country": "Unknown"
+  },
+  {
+    "name": "Elektronik Zoo",
+    "date": "2025-05-11T15:00:00+02:00",
+    "location": "Marco Bailey Backyard",
+    "city": "Hoeleden",
+    "country": "Unknown"
+  },
+  {
+    "name": "Intercell Outdoor",
+    "date": "2025-05-11T16:00:00+02:00",
+    "location": "De Binnenplaats",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Music On Festival",
+    "date": "2025-05-11T14:00:00+02:00",
+    "location": "Meerpark",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Rong Open Air Festival",
+    "date": "2025-05-11T14:00:00+02:00",
+    "location": "Il Fosos Square",
+    "city": "Valletta",
+    "country": "Unknown"
+  },
+  {
+    "name": "Anticipate · De Zon, Bodegraven",
+    "date": "2025-05-16T23:00:00+02:00",
+    "location": "De Zon",
+    "city": "Bodegraven",
+    "country": "Unknown"
+  },
+  {
+    "name": "ASM Festival",
+    "date": "2025-05-17T16:00:00+02:00",
+    "location": "Strand Zuid",
+    "city": "Arnhem",
+    "country": "Unknown"
+  },
+  {
+    "name": "Atomium open air",
+    "date": "2025-05-17T16:00:00+02:00",
+    "location": "Atomiumsquare",
+    "city": "Brussel",
+    "country": "Unknown"
+  },
+  {
+    "name": "Groove Garden Festival",
+    "date": "2025-05-17T16:00:00+02:00",
+    "location": "Kunstcentrum Sittard",
+    "city": "Sittard",
+    "country": "Unknown"
+  },
+  {
+    "name": "Het Zusje van Debbie Festival",
+    "date": "2025-05-17T16:00:00+02:00",
+    "location": "NYMA",
+    "city": "Nijmegen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Lakedance · 20 Years of Summer",
+    "date": "2025-05-17T15:00:00+02:00",
+    "location": "Aquabest",
+    "city": "Best",
+    "country": "Unknown"
+  },
+  {
+    "name": "Groove Garden Festival",
+    "date": "2025-05-18T16:00:00+02:00",
+    "location": "Kunstcentrum Sittard",
+    "city": "Sittard",
+    "country": "Unknown"
+  },
+  {
+    "name": "Beachfestival Zeewolde",
+    "date": "2025-05-23T20:00:00+02:00",
+    "location": "Beachfestival zeewolde",
+    "city": "Zeewolde",
+    "country": "Unknown"
+  },
+  {
+    "name": "Free Your Mind × Holy Priest",
+    "date": "2025-05-24T01:59:59+02:00",
+    "location": "Paradiso",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Harder Force Open Air",
+    "date": "2025-05-23T18:00:00+02:00",
+    "location": "Westcoast",
+    "city": "Heide",
+    "country": "Unknown"
+  },
+  {
+    "name": "Koekwaus Festival",
+    "date": "2025-05-23T21:00:00+02:00",
+    "location": "Festivalterrein Hennemeeuwis",
+    "city": "Neerpelt",
+    "country": "Unknown"
+  },
+  {
+    "name": "TAPT Festival",
+    "date": "2025-05-23T19:00:00+02:00",
+    "location": "Archeologisch Park Matilo",
+    "city": "Leiden",
+    "country": "Unknown"
+  },
+  {
+    "name": "44 Festival",
+    "date": "2025-05-24T13:00:00+02:00",
+    "location": "Autoschrottplatz",
+    "city": "Karlsruhe",
+    "country": "Unknown"
+  },
+  {
+    "name": "Beachfestival Zeewolde",
+    "date": "2025-05-24T15:00:00+02:00",
+    "location": "Beachfestival zeewolde",
+    "city": "Zeewolde",
+    "country": "Unknown"
+  },
+  {
+    "name": "Emporium Festival",
+    "date": "2025-05-24T14:00:00+02:00",
+    "location": "Recreatieterrein De Berendonck",
+    "city": "Wijchen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Harder Force Open Air",
+    "date": "2025-05-24T14:00:00+02:00",
+    "location": "Westcoast",
+    "city": "Heide",
+    "country": "Unknown"
+  },
+  {
+    "name": "Ivory · Open Air",
+    "date": "2025-05-24T14:00:00+02:00",
+    "location": "Haus Witten",
+    "city": "Witten",
+    "country": "Unknown"
+  },
+  {
+    "name": "Koekwaus Festival",
+    "date": "2025-05-24T18:00:00+02:00",
+    "location": "Festivalterrein Hennemeeuwis",
+    "city": "Neerpelt",
+    "country": "Unknown"
+  },
+  {
+    "name": "Last Minute Party",
+    "date": "2025-05-24T16:00:00+02:00",
+    "location": "EDEN",
+    "city": "Breda",
+    "country": "Unknown"
+  },
+  {
+    "name": "Lost Memories · Outdoor Festival",
+    "date": "2025-05-24T15:00:00+02:00",
+    "location": "Breepark",
+    "city": "Breda",
+    "country": "Unknown"
+  },
+  {
+    "name": "Ohm Festival",
+    "date": "2025-05-24T15:00:00+02:00",
+    "location": "Lijm & Cultuur",
+    "city": "Delft",
+    "country": "Unknown"
+  },
+  {
+    "name": "Overstag Festival",
+    "date": "2025-05-24T16:00:00+02:00",
+    "location": "Spoorzone",
+    "city": "Zwolle",
+    "country": "Unknown"
+  },
+  {
+    "name": "Springbreak Festival",
+    "date": "2025-05-24T15:00:00+02:00",
+    "location": "Thuishaven terrein",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "TAPT Festival",
+    "date": "2025-05-24T15:00:00+02:00",
+    "location": "Archeologisch Park Matilo",
+    "city": "Leiden",
+    "country": "Unknown"
+  },
+  {
+    "name": "Overstag Festival",
+    "date": "2025-05-25T14:00:00+02:00",
+    "location": "Spoorzone",
+    "city": "Zwolle",
+    "country": "Unknown"
+  },
+  {
+    "name": "Heaven Open Air · Back To The 90s & 00s",
+    "date": "2025-05-28T20:00:00+02:00",
+    "location": "P6 Parkeerterrein",
+    "city": "Heerenveen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Intergalactic",
+    "date": "2025-05-29T02:00:00+02:00",
+    "location": "PIP",
+    "city": "Den Haag",
+    "country": "Unknown"
+  },
+  {
+    "name": "Meifestival",
+    "date": "2025-05-28T21:00:00+02:00",
+    "location": "Dorpsweide",
+    "city": "Wijk aan zee",
+    "country": "Unknown"
+  },
+  {
+    "name": "Heaven Open Air",
+    "date": "2025-05-29T16:00:00+02:00",
+    "location": "P6 Parkeerterrein",
+    "city": "Heerenveen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Hemels Festival",
+    "date": "2025-05-29T19:00:00+02:00",
+    "location": "Het Oldehoofsterkerkhof",
+    "city": "Leeuwarden",
+    "country": "Unknown"
+  },
+  {
+    "name": "Meifestival",
+    "date": "2025-05-29T17:00:00+02:00",
+    "location": "Dorpsweide",
+    "city": "Wijk aan zee",
+    "country": "Unknown"
+  },
+  {
+    "name": "Op de T Festival",
+    "date": "2025-05-29T15:30:00+02:00",
+    "location": "Wilhelminaveld",
+    "city": "Bergen op Zoom",
+    "country": "Unknown"
+  },
+  {
+    "name": "Royal Festival · A Trip to WonderSand",
+    "date": "2025-05-29T14:00:00+02:00",
+    "location": "Beachclub Royal",
+    "city": "Hoek van Holland",
+    "country": "Unknown"
+  },
+  {
+    "name": "Und draußen tanzt der Bär · Das Herrentags Openair",
+    "date": "2025-05-29T15:00:00+02:00",
+    "location": "Freilichtbühne Schwerin",
+    "city": "Schwerin",
+    "country": "Unknown"
+  },
+  {
+    "name": "Bosburcht Festival",
+    "date": "2025-05-30T14:00:00+02:00",
+    "location": "Kasteel De Berckt",
+    "city": "Baarlo",
+    "country": "Unknown"
+  },
+  {
+    "name": "Dauwpop",
+    "date": "2025-05-30T17:00:00+02:00",
+    "location": "Evenemententerrein Luttenberger",
+    "city": "Hellendoorn",
+    "country": "Unknown"
+  },
+  {
+    "name": "Intents Festival · Capital of Craziness",
+    "date": "2025-05-30T16:00:00+02:00",
+    "location": "Sportpark d'n Donk",
+    "city": "Oisterwijk",
+    "country": "Unknown"
+  },
+  {
+    "name": "Intergalactic",
+    "date": "2025-05-30T14:00:00+02:00",
+    "location": "PIP",
+    "city": "Den Haag",
+    "country": "Unknown"
+  },
+  {
+    "name": "Lost Lake Festival",
+    "date": "2025-05-30T18:00:00+02:00",
+    "location": "Recreatieterrein De Geffense Plas",
+    "city": "Oss",
+    "country": "Unknown"
+  },
+  {
+    "name": "Maifeld Derby Festival",
+    "date": "2025-05-30T18:00:00+02:00",
+    "location": "Maifeld Derby",
+    "city": "Mannheim",
+    "country": "Unknown"
+  },
+  {
+    "name": "PIV 10-Year Festival",
+    "date": "2025-05-30T15:00:00+02:00",
+    "location": "Noorderlicht Café",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "TAPT Festival",
+    "date": "2025-05-30T19:00:00+02:00",
+    "location": "Mijnbouwweg",
+    "city": "Amersfoort",
+    "country": "Unknown"
+  },
+  {
+    "name": "Tijdreis",
+    "date": "2025-05-31T01:45:00+02:00",
+    "location": "Paradiso",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Boogie Nights Festival",
+    "date": "2025-05-31T19:00:00+02:00",
+    "location": "Scholtenburgpark",
+    "city": "Winterswijk",
+    "country": "Unknown"
+  },
+  {
+    "name": "Bosburcht Festival",
+    "date": "2025-05-31T14:00:00+02:00",
+    "location": "Kasteel De Berckt",
+    "city": "Baarlo",
+    "country": "Unknown"
+  },
+  {
+    "name": "Dauwpop",
+    "date": "2025-05-31T14:00:00+02:00",
+    "location": "Evenemententerrein Luttenberger",
+    "city": "Hellendoorn",
+    "country": "Unknown"
+  },
+  {
+    "name": "Docklands Festival",
+    "date": "2025-05-31T14:00:00+02:00",
+    "location": "Hawerkamp Gelände",
+    "city": "Münster",
+    "country": "Unknown"
+  },
+  {
+    "name": "Festival Aan Zee",
+    "date": "2025-05-31T16:00:00+02:00",
+    "location": "Strand Vlissingen",
+    "city": "Vlissingen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Heaven & Hill Festival",
+    "date": "2025-05-31T15:00:00+02:00",
+    "location": "Evenemententerrein Halde Norddeutschland",
+    "city": "Neukirchen-Vluyn",
+    "country": "Unknown"
+  },
+  {
+    "name": "Intents Festival · Capital of Craziness",
+    "date": "2025-05-31T13:00:00+02:00",
+    "location": "Sportpark d'n Donk",
+    "city": "Oisterwijk",
+    "country": "Unknown"
+  },
+  {
+    "name": "Intergalactic",
+    "date": "2025-05-31T14:00:00+02:00",
+    "location": "PIP",
+    "city": "Den Haag",
+    "country": "Unknown"
+  },
+  {
+    "name": "KOZ Weekender · Festival",
+    "date": "2025-05-31T16:00:00+02:00",
+    "location": "Walsbergseweg",
+    "city": "Deurne",
+    "country": "Unknown"
+  },
+  {
+    "name": "Lost Lake Festival",
+    "date": "2025-05-31T18:00:00+02:00",
+    "location": "Recreatieterrein De Geffense Plas",
+    "city": "Oss",
+    "country": "Unknown"
+  },
+  {
+    "name": "Maifeld Derby Festival",
+    "date": "2025-05-31T14:00:00+02:00",
+    "location": "Maifeld Derby",
+    "city": "Mannheim",
+    "country": "Unknown"
+  },
+  {
+    "name": "Meifestival · Foute Feestje",
+    "date": "2025-05-31T21:00:00+02:00",
+    "location": "Dorpsweide",
+    "city": "Wijk aan zee",
+    "country": "Unknown"
+  },
+  {
+    "name": "Planet Paradigm · A One Day Festival Trip",
+    "date": "2025-05-31T15:00:00+02:00",
+    "location": "Paradigm",
+    "city": "Groningen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Play! Festival · Honey, I shrunk the ravers",
+    "date": "2025-05-31T15:00:00+02:00",
+    "location": "Fun Farm Lytsewierrum",
+    "city": "Lytsewierrum",
+    "country": "Unknown"
+  },
+  {
+    "name": "Soenda Festival",
+    "date": "2025-05-31T14:00:00+02:00",
+    "location": "Recreatiegebied Ruigenhoekse Polder",
+    "city": "Utrecht",
+    "country": "Unknown"
+  },
+  {
+    "name": "TAPT Festival",
+    "date": "2025-05-31T15:00:00+02:00",
+    "location": "Mijnbouwweg",
+    "city": "Amersfoort",
+    "country": "Unknown"
+  },
+  {
+    "name": "Toffler Festival",
+    "date": "2025-05-31T14:00:00+02:00",
+    "location": "Roel Langerakpark",
+    "city": "Rotterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Bosburcht Festival",
+    "date": "2025-06-01T14:00:00+02:00",
+    "location": "Kasteel De Berckt",
+    "city": "Baarlo",
+    "country": "Unknown"
+  },
+  {
+    "name": "Intents Festival · Capital of Craziness",
+    "date": "2025-06-01T15:00:00+02:00",
+    "location": "Sportpark d'n Donk",
+    "city": "Oisterwijk",
+    "country": "Unknown"
+  },
+  {
+    "name": "Maifeld Derby Festival",
+    "date": "2025-06-01T14:00:00+02:00",
+    "location": "Maifeld Derby",
+    "city": "Mannheim",
+    "country": "Unknown"
+  },
+  {
+    "name": "Meifestival",
+    "date": "2025-06-01T16:00:00+02:00",
+    "location": "Dorpsweide",
+    "city": "Wijk aan zee",
+    "country": "Unknown"
+  },
+  {
+    "name": "Extrema Outdoor",
+    "date": "2025-06-06T14:00:00+02:00",
+    "location": "Evenemententerrein De Plas",
+    "city": "Houthalen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Gladiolen Festival",
+    "date": "2025-06-06T20:00:00+02:00",
+    "location": "Festivalterrein Gladiolen Boekel",
+    "city": "Olen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Ikarus Festival",
+    "date": "2025-06-06T16:00:00+02:00",
+    "location": "Militärflugplatz Memmingen",
+    "city": "Memmingerberg",
+    "country": "Unknown"
+  },
+  {
+    "name": "Moers Festival",
+    "date": "2025-06-06T14:00:00+02:00",
+    "location": "ENNI Eventhalle",
+    "city": "Moers",
+    "country": "Unknown"
+  },
+  {
+    "name": "Rock Hard Festival",
+    "date": "2025-06-06T14:00:00+02:00",
+    "location": "Amphitheater Gelsenkirchen",
+    "city": "Gelsenkirchen",
+    "country": "Unknown"
+  },
+  {
+    "name": "909 Festival · 15YRS Anniversary",
+    "date": "2025-06-07T14:00:00+02:00",
+    "location": "Amsterdamse Bos",
+    "city": "Amstelveen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Amsterdam Open Air",
+    "date": "2025-06-07T15:00:00+02:00",
+    "location": "Gaasperpark",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Buitensporig Festival",
+    "date": "2025-06-07T17:00:00+02:00",
+    "location": "Brasserie Buitenhuis",
+    "city": "Valkenburg",
+    "country": "Unknown"
+  },
+  {
+    "name": "De Zoetermeerse Reunie",
+    "date": "2025-06-07T17:00:00+02:00",
+    "location": "marktplein Zoetermeer",
+    "city": "Zoetermeer",
+    "country": "Unknown"
+  },
+  {
+    "name": "Drift Festival",
+    "date": "2025-06-07T16:00:00+02:00",
+    "location": "NYMA",
+    "city": "Nijmegen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Extrema Outdoor",
+    "date": "2025-06-07T14:00:00+02:00",
+    "location": "Evenemententerrein De Plas",
+    "city": "Houthalen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Free Your Mind Festival",
+    "date": "2025-06-07T15:00:00+02:00",
+    "location": "Unknown",
+    "city": "Arnhem",
+    "country": "Unknown"
+  },
+  {
+    "name": "Gladiolen Festival",
+    "date": "2025-06-07T18:00:00+02:00",
+    "location": "Festivalterrein Gladiolen Boekel",
+    "city": "Olen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Ikarus Festival",
+    "date": "2025-06-07T14:00:00+02:00",
+    "location": "Militärflugplatz Memmingen",
+    "city": "Memmingerberg",
+    "country": "Unknown"
+  },
+  {
+    "name": "Klub Dramatik Festival",
+    "date": "2025-06-07T14:00:00+02:00",
+    "location": "Nachtegalenpark",
+    "city": "Antwerpen",
+    "country": "Unknown"
+  },
+  {
+    "name": "komm schon Alter",
+    "date": "2025-06-07T14:00:00+02:00",
+    "location": "Tuinen van West",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Moers Festival",
+    "date": "2025-06-07T14:00:00+02:00",
+    "location": "ENNI Eventhalle",
+    "city": "Moers",
+    "country": "Unknown"
+  },
+  {
+    "name": "Op Dreef Festival",
+    "date": "2025-06-07T15:00:00+02:00",
+    "location": "BillyBird Park Drakenrijk",
+    "city": "Reuver",
+    "country": "Unknown"
+  },
+  {
+    "name": "Rock Hard Festival",
+    "date": "2025-06-07T14:00:00+02:00",
+    "location": "Amphitheater Gelsenkirchen",
+    "city": "Gelsenkirchen",
+    "country": "Unknown"
+  },
+  {
+    "name": "The Crave Festival",
+    "date": "2025-06-07T15:00:00+02:00",
+    "location": "Zuiderpark",
+    "city": "Den Haag",
+    "country": "Unknown"
+  },
+  {
+    "name": "Verknipt Festival",
+    "date": "2025-06-07T14:00:00+02:00",
+    "location": "Recreatieplas Strijkviertel",
+    "city": "De Meern",
+    "country": "Unknown"
+  },
+  {
+    "name": "7th Sunday · Mirrors of Elegance",
+    "date": "2025-06-08T15:00:00+02:00",
+    "location": "Festivalterrein De Roost",
+    "city": "Erp",
+    "country": "Unknown"
+  },
+  {
+    "name": "909 Festival · 15YRS Anniversary",
+    "date": "2025-06-08T14:00:00+02:00",
+    "location": "Amsterdamse Bos",
+    "city": "Amstelveen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Amsterdam Open Air",
+    "date": "2025-06-08T15:00:00+02:00",
+    "location": "Gaasperpark",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Extrema Outdoor",
+    "date": "2025-06-08T14:00:00+02:00",
+    "location": "Evenemententerrein De Plas",
+    "city": "Houthalen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Femmazing Festival · XXL",
+    "date": "2025-06-08T17:00:00+02:00",
+    "location": "IJland",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Free Your Mind Festival",
+    "date": "2025-06-08T15:00:00+02:00",
+    "location": "Unknown",
+    "city": "Arnhem",
+    "country": "Unknown"
+  },
+  {
+    "name": "Ikarus Festival",
+    "date": "2025-06-08T14:00:00+02:00",
+    "location": "Militärflugplatz Memmingen",
+    "city": "Memmingerberg",
+    "country": "Unknown"
+  },
+  {
+    "name": "Klub Dramatik Festival",
+    "date": "2025-06-08T14:00:00+02:00",
+    "location": "Nachtegalenpark",
+    "city": "Antwerpen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Op Dreef Festival",
+    "date": "2025-06-08T15:00:00+02:00",
+    "location": "BillyBird Park Drakenrijk",
+    "city": "Reuver",
+    "country": "Unknown"
+  },
+  {
+    "name": "Over De Top Festival",
+    "date": "2025-06-08T15:00:00+02:00",
+    "location": "Swite terrein",
+    "city": "Lichtenvoorde",
+    "country": "Unknown"
+  },
+  {
+    "name": "PollerWiesen Festival",
+    "date": "2025-06-08T13:00:00+02:00",
+    "location": "Revierpark Wischlingen",
+    "city": "Dortmund",
+    "country": "Unknown"
+  },
+  {
+    "name": "Rock Hard Festival",
+    "date": "2025-06-08T14:00:00+02:00",
+    "location": "Amphitheater Gelsenkirchen",
+    "city": "Gelsenkirchen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Urban Festival",
+    "date": "2025-06-09T00:00:00+02:00",
+    "location": "Versuz",
+    "city": "Hasselt",
+    "country": "Unknown"
+  },
+  {
+    "name": "Verknipt Festival",
+    "date": "2025-06-08T14:00:00+02:00",
+    "location": "Recreatieplas Strijkviertel",
+    "city": "De Meern",
+    "country": "Unknown"
+  },
+  {
+    "name": "Vrije Volk Festival",
+    "date": "2025-06-08T15:00:00+02:00",
+    "location": "Zevenhuizer Plas",
+    "city": "Zevenhuizen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Ikarus Festival",
+    "date": "2025-06-09T14:00:00+02:00",
+    "location": "Militärflugplatz Memmingen",
+    "city": "Memmingerberg",
+    "country": "Unknown"
+  },
+  {
+    "name": "6* Festival",
+    "date": "2025-06-12T22:00:00+02:00",
+    "location": "Schokofabrik",
+    "city": "Bayreuth",
+    "country": "Unknown"
+  },
+  {
+    "name": "BALAROCK FESTIVAL",
+    "date": "2025-06-13T19:00:00+02:00",
+    "location": "Rockpalast Laasphe",
+    "city": "Bad Laasphe",
+    "country": "Unknown"
+  },
+  {
+    "name": "Blade Festival",
+    "date": "2025-06-13T14:00:00+02:00",
+    "location": "Unknown",
+    "city": "Leipzig",
+    "country": "Unknown"
+  },
+  {
+    "name": "Central Park",
+    "date": "2025-06-13T19:00:00+02:00",
+    "location": "Park Transwijk",
+    "city": "Utrecht",
+    "country": "Unknown"
+  },
+  {
+    "name": "Ledûb Volleybal Festival",
+    "date": "2025-06-13T20:30:00+02:00",
+    "location": "Sportpark Budel",
+    "city": "Budel",
+    "country": "Unknown"
+  },
+  {
+    "name": "Legacy Festival",
+    "date": "2025-06-13T17:00:00+02:00",
+    "location": "Recreatiedomein Zilvermeer",
+    "city": "Mol",
+    "country": "Unknown"
+  },
+  {
+    "name": "TAPT Festival",
+    "date": "2025-06-13T19:00:00+02:00",
+    "location": "Oosterplas",
+    "city": "'s-Hertogenbosch",
+    "country": "Unknown"
+  },
+  {
+    "name": "Veerplas Festival",
+    "date": "2025-06-13T17:00:00+02:00",
+    "location": "Veerplas",
+    "city": "Haarlem",
+    "country": "Unknown"
+  },
+  {
+    "name": "BALAROCK FESTIVAL",
+    "date": "2025-06-14T14:00:00+02:00",
+    "location": "Rockpalast Laasphe",
+    "city": "Bad Laasphe",
+    "country": "Unknown"
+  },
+  {
+    "name": "BergenopZoomNL",
+    "date": "2025-06-14T20:30:00+02:00",
+    "location": "Evenemententerrein De Boulevard",
+    "city": "Bergen op Zoom",
+    "country": "Unknown"
+  },
+  {
+    "name": "Blade Festival",
+    "date": "2025-06-14T14:00:00+02:00",
+    "location": "Unknown",
+    "city": "Leipzig",
+    "country": "Unknown"
+  },
+  {
+    "name": "Bontgenoten Festival",
+    "date": "2025-06-14T16:00:00+02:00",
+    "location": "Karpendonkse plas",
+    "city": "Eindhoven",
+    "country": "Unknown"
+  },
+  {
+    "name": "Central Park",
+    "date": "2025-06-14T14:00:00+02:00",
+    "location": "Park Transwijk",
+    "city": "Utrecht",
+    "country": "Unknown"
+  },
+  {
+    "name": "De Weide Festival",
+    "date": "2025-06-14T14:00:00+02:00",
+    "location": "Bij Huub",
+    "city": "Alkmaar",
+    "country": "Unknown"
+  },
+  {
+    "name": "Ell Niño · 25th Anniversary",
+    "date": "2025-06-14T17:30:00+02:00",
+    "location": "Festivalweide Kunnekoel",
+    "city": "Ell",
+    "country": "Unknown"
+  },
+  {
+    "name": "Glorification Festival",
+    "date": "2025-06-14T16:00:00+02:00",
+    "location": "De Oranjeboom",
+    "city": "'s-Heer-Hendrikskinderen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Hello Festival",
+    "date": "2025-06-14T15:00:00+02:00",
+    "location": "Grote Rietplas",
+    "city": "Emmen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Hype Festival",
+    "date": "2025-06-14T14:00:00+02:00",
+    "location": "Jugendpark",
+    "city": "Keulen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Intercell Outdoor · Sweet Nothing",
+    "date": "2025-06-14T15:00:00+02:00",
+    "location": "De Binnenplaats",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Julianapop",
+    "date": "2025-06-14T16:00:00+02:00",
+    "location": "Evenemententerrein Julianadorp",
+    "city": "Julianadorp",
+    "country": "Unknown"
+  },
+  {
+    "name": "Ledûb Volleybal Festival",
+    "date": "2025-06-14T12:00:00+02:00",
+    "location": "Sportpark Budel",
+    "city": "Budel",
+    "country": "Unknown"
+  },
+  {
+    "name": "Magnus Festival",
+    "date": "2025-06-14T14:00:00+02:00",
+    "location": "Natuurijsschaatsbaan Schagen",
+    "city": "Schagen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Mystic Garden Festival",
+    "date": "2025-06-14T14:00:00+02:00",
+    "location": "Sloterpark",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Paradijs van het Zuiden",
+    "date": "2025-06-14T15:00:00+02:00",
+    "location": "Strandbad Engelermeer",
+    "city": "'s-Hertogenbosch",
+    "country": "Unknown"
+  },
+  {
+    "name": "Solstice Festival",
+    "date": "2025-06-14T14:00:00+02:00",
+    "location": "Ruigoord",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "TAPT Festival",
+    "date": "2025-06-14T15:00:00+02:00",
+    "location": "Oosterplas",
+    "city": "'s-Hertogenbosch",
+    "country": "Unknown"
+  },
+  {
+    "name": "Veerplas Festival",
+    "date": "2025-06-14T15:00:00+02:00",
+    "location": "Veerplas",
+    "city": "Haarlem",
+    "country": "Unknown"
+  },
+  {
+    "name": "Waves Open Air",
+    "date": "2025-06-14T14:00:00+02:00",
+    "location": "Spaßbad Wedemark",
+    "city": "Hannover",
+    "country": "Unknown"
+  },
+  {
+    "name": "Blade Festival",
+    "date": "2025-06-15T14:00:00+02:00",
+    "location": "Unknown",
+    "city": "Leipzig",
+    "country": "Unknown"
+  },
+  {
+    "name": "Central Park",
+    "date": "2025-06-15T14:00:00+02:00",
+    "location": "Park Transwijk",
+    "city": "Utrecht",
+    "country": "Unknown"
+  },
+  {
+    "name": "Intercell Outdoor · Funk Tribu All Day + B2B's",
+    "date": "2025-06-15T16:00:00+02:00",
+    "location": "De Binnenplaats",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Ledûb Volleybal Festival",
+    "date": "2025-06-15T12:00:00+02:00",
+    "location": "Sportpark Budel",
+    "city": "Budel",
+    "country": "Unknown"
+  },
+  {
+    "name": "Freak Valley Festival",
+    "date": "2025-06-19T17:00:00+02:00",
+    "location": "Freak Valley",
+    "city": "Tarmow",
+    "country": "Unknown"
+  },
+  {
+    "name": "Graspop Metal Meeting",
+    "date": "2025-06-19T12:00:00+02:00",
+    "location": "Festivalpark Stenehei",
+    "city": "Dessel",
+    "country": "Unknown"
+  },
+  {
+    "name": "Electrifinity Festival",
+    "date": "2025-06-20T14:00:00+02:00",
+    "location": "Ehemalige US-Kaserne",
+    "city": "Bad Aibling",
+    "country": "Unknown"
+  },
+  {
+    "name": "Freak Valley Festival",
+    "date": "2025-06-20T14:00:00+02:00",
+    "location": "Freak Valley",
+    "city": "Tarmow",
+    "country": "Unknown"
+  },
+  {
+    "name": "Graspop Metal Meeting",
+    "date": "2025-06-20T12:00:00+02:00",
+    "location": "Festivalpark Stenehei",
+    "city": "Dessel",
+    "country": "Unknown"
+  },
+  {
+    "name": "HIVE Festival",
+    "date": "2025-06-20T14:00:00+02:00",
+    "location": "Ferropolis",
+    "city": "Gräfenhainichen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Outlands Festival · Rhythm of the Natives",
+    "date": "2025-06-20T21:00:00+02:00",
+    "location": "Sportpark Soetendaal",
+    "city": "Vierlingsbeek",
+    "country": "Unknown"
+  },
+  {
+    "name": "Pinkpop #54",
+    "date": "2025-06-20T15:00:00+02:00",
+    "location": "Megaland",
+    "city": "Schaesberg",
+    "country": "Unknown"
+  },
+  {
+    "name": "TAPT Festival",
+    "date": "2025-06-20T19:00:00+02:00",
+    "location": "Evenemententerrein Olympiaweg",
+    "city": "Alkmaar",
+    "country": "Unknown"
+  },
+  {
+    "name": "Traumzeit Festival",
+    "date": "2025-06-20T20:00:00+02:00",
+    "location": "Landschaftspark",
+    "city": "Duisburg",
+    "country": "Unknown"
+  },
+  {
+    "name": "Deventer Stadsfestival",
+    "date": "2025-06-21T15:00:00+02:00",
+    "location": "Evenementen terrein",
+    "city": "Deventer",
+    "country": "Unknown"
+  },
+  {
+    "name": "Eastlake Festival",
+    "date": "2025-06-21T15:00:00+02:00",
+    "location": "Oostplas",
+    "city": "Goirle",
+    "country": "Unknown"
+  },
+  {
+    "name": "Electrifinity Festival",
+    "date": "2025-06-21T14:00:00+02:00",
+    "location": "Ehemalige US-Kaserne",
+    "city": "Bad Aibling",
+    "country": "Unknown"
+  },
+  {
+    "name": "Feest In Het Park Festival",
+    "date": "2025-06-21T17:00:00+02:00",
+    "location": "Reeshofpark",
+    "city": "Tilburg",
+    "country": "Unknown"
+  },
+  {
+    "name": "Freak Valley Festival",
+    "date": "2025-06-21T14:00:00+02:00",
+    "location": "Freak Valley",
+    "city": "Tarmow",
+    "country": "Unknown"
+  },
+  {
+    "name": "Graspop Metal Meeting",
+    "date": "2025-06-21T12:00:00+02:00",
+    "location": "Festivalpark Stenehei",
+    "city": "Dessel",
+    "country": "Unknown"
+  },
+  {
+    "name": "HASARDEUR FESTIVAL",
+    "date": "2025-06-21T13:00:00+02:00",
+    "location": "Autoschrottplatz",
+    "city": "Karlsruhe",
+    "country": "Unknown"
+  },
+  {
+    "name": "HIVE Festival",
+    "date": "2025-06-21T14:00:00+02:00",
+    "location": "Ferropolis",
+    "city": "Gräfenhainichen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Just Dance Outdoor",
+    "date": "2025-06-21T16:00:00+02:00",
+    "location": "Brabantpark",
+    "city": "Etten-Leur",
+    "country": "Unknown"
+  },
+  {
+    "name": "No Diggity · Blockparty",
+    "date": "2025-06-21T16:00:00+02:00",
+    "location": "Beton-T",
+    "city": "Utrecht",
+    "country": "Unknown"
+  },
+  {
+    "name": "Outlands Festival · Rhythm of the Natives",
+    "date": "2025-06-21T15:00:00+02:00",
+    "location": "Sportpark Soetendaal",
+    "city": "Vierlingsbeek",
+    "country": "Unknown"
+  },
+  {
+    "name": "Pinkpop #54",
+    "date": "2025-06-21T13:00:00+02:00",
+    "location": "Megaland",
+    "city": "Schaesberg",
+    "country": "Unknown"
+  },
+  {
+    "name": "Psy-Fly · Frequencies Invasion",
+    "date": "2025-06-21T18:00:00+02:00",
+    "location": "Westerbroeken",
+    "city": "Elp",
+    "country": "Unknown"
+  },
+  {
+    "name": "Retro Classics · XXL Outdoor",
+    "date": "2025-06-21T20:00:00+02:00",
+    "location": "be-MINE",
+    "city": "Beringen",
+    "country": "Unknown"
+  },
+  {
+    "name": "TAPT Festival",
+    "date": "2025-06-21T15:00:00+02:00",
+    "location": "Evenemententerrein Olympiaweg",
+    "city": "Alkmaar",
+    "country": "Unknown"
+  },
+  {
+    "name": "Transit Festival",
+    "date": "2025-06-21T14:00:00+02:00",
+    "location": "Park Vogelzang",
+    "city": "Antwerpen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Traumzeit Festival",
+    "date": "2025-06-21T14:00:00+02:00",
+    "location": "Landschaftspark",
+    "city": "Duisburg",
+    "country": "Unknown"
+  },
+  {
+    "name": "ZomerZon Festival",
+    "date": "2025-06-21T15:00:00+02:00",
+    "location": "Evenemententerrein Parklaan",
+    "city": "Uden",
+    "country": "Unknown"
+  },
+  {
+    "name": "Graspop Metal Meeting",
+    "date": "2025-06-22T12:00:00+02:00",
+    "location": "Festivalpark Stenehei",
+    "city": "Dessel",
+    "country": "Unknown"
+  },
+  {
+    "name": "HIVE Festival",
+    "date": "2025-06-22T14:00:00+02:00",
+    "location": "Ferropolis",
+    "city": "Gräfenhainichen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Outlands Festival · Rhythm of the Natives",
+    "date": "2025-06-22T15:00:00+02:00",
+    "location": "Sportpark Soetendaal",
+    "city": "Vierlingsbeek",
+    "country": "Unknown"
+  },
+  {
+    "name": "Pinkpop #54",
+    "date": "2025-06-22T13:00:00+02:00",
+    "location": "Megaland",
+    "city": "Schaesberg",
+    "country": "Unknown"
+  },
+  {
+    "name": "Traumzeit Festival",
+    "date": "2025-06-22T14:00:00+02:00",
+    "location": "Landschaftspark",
+    "city": "Duisburg",
+    "country": "Unknown"
+  },
+  {
+    "name": "Fusion Festival",
+    "date": "2025-06-25T22:00:00+02:00",
+    "location": "Kulturkosmos Müritz",
+    "city": "Lärz",
+    "country": "Unknown"
+  },
+  {
+    "name": "Fusion Festival",
+    "date": "2025-06-26T14:00:00+02:00",
+    "location": "Kulturkosmos Müritz",
+    "city": "Lärz",
+    "country": "Unknown"
+  },
+  {
+    "name": "Jera On Air",
+    "date": "2025-06-26T17:00:00+02:00",
+    "location": "Zeilbergseweg",
+    "city": "Ysselsteyn",
+    "country": "Unknown"
+  },
+  {
+    "name": "Luminosity Beach Festival",
+    "date": "2025-06-26T14:00:00+02:00",
+    "location": "Bernie's Beachclub",
+    "city": "Zandvoort",
+    "country": "Unknown"
+  },
+  {
+    "name": "Sunrise Festival",
+    "date": "2025-06-26T14:00:00+02:00",
+    "location": "De Lilse Bergen",
+    "city": "Lille",
+    "country": "Unknown"
+  },
+  {
+    "name": "Sunset Beach Festival · Open-Air-Konzert",
+    "date": "2025-06-26T18:30:00+02:00",
+    "location": "Seebad Haltern",
+    "city": "Haltern",
+    "country": "Unknown"
+  },
+  {
+    "name": "Fusion Festival",
+    "date": "2025-06-27T14:00:00+02:00",
+    "location": "Kulturkosmos Müritz",
+    "city": "Lärz",
+    "country": "Unknown"
+  },
+  {
+    "name": "Hype-O-Dream",
+    "date": "2025-06-27T15:00:00+02:00",
+    "location": "Weymeerschen",
+    "city": "Waregem",
+    "country": "Unknown"
+  },
+  {
+    "name": "Jera On Air",
+    "date": "2025-06-27T13:00:00+02:00",
+    "location": "Zeilbergseweg",
+    "city": "Ysselsteyn",
+    "country": "Unknown"
+  },
+  {
+    "name": "Kei Foute Party · Zomereditie",
+    "date": "2025-06-27T20:00:00+02:00",
+    "location": "Mijnbouwweg",
+    "city": "Amersfoort",
+    "country": "Unknown"
+  },
+  {
+    "name": "Luminosity Beach Festival",
+    "date": "2025-06-27T14:00:00+02:00",
+    "location": "Bernie's Beachclub",
+    "city": "Zandvoort",
+    "country": "Unknown"
+  },
+  {
+    "name": "Paradise City Festival",
+    "date": "2025-06-27T14:00:00+02:00",
+    "location": "Domein van Ribaucourt",
+    "city": "Steenokkerzeel",
+    "country": "Unknown"
+  },
+  {
+    "name": "Sunrise Festival",
+    "date": "2025-06-27T16:00:00+02:00",
+    "location": "De Lilse Bergen",
+    "city": "Lille",
+    "country": "Unknown"
+  },
+  {
+    "name": "Baja Beach Festival · Secret Underground",
+    "date": "2025-06-28T17:00:00+02:00",
+    "location": "PartyPlayers Lifestyle & Swingersclub",
+    "city": "Lelystad",
+    "country": "Unknown"
+  },
+  {
+    "name": "Boulevard Outdoor",
+    "date": "2025-06-28T16:00:00+02:00",
+    "location": "Het Lageveld",
+    "city": "Wierden",
+    "country": "Unknown"
+  },
+  {
+    "name": "Bruut! Festival",
+    "date": "2025-06-28T17:00:00+02:00",
+    "location": "Graanfabriek",
+    "city": "Groningen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Dreambeats #10",
+    "date": "2025-06-28T14:00:00+02:00",
+    "location": "Krekemeersen",
+    "city": "Kortemark",
+    "country": "Unknown"
+  },
+  {
+    "name": "Festifoort Festival",
+    "date": "2025-06-28T16:00:00+02:00",
+    "location": "Mijnbouwweg",
+    "city": "Amersfoort",
+    "country": "Unknown"
+  },
+  {
+    "name": "Fusion Festival",
+    "date": "2025-06-28T14:00:00+02:00",
+    "location": "Kulturkosmos Müritz",
+    "city": "Lärz",
+    "country": "Unknown"
+  },
+  {
+    "name": "Hype-O-Dream",
+    "date": "2025-06-28T15:00:00+02:00",
+    "location": "Weymeerschen",
+    "city": "Waregem",
+    "country": "Unknown"
+  },
+  {
+    "name": "Jera On Air",
+    "date": "2025-06-28T13:00:00+02:00",
+    "location": "Zeilbergseweg",
+    "city": "Ysselsteyn",
+    "country": "Unknown"
+  },
+  {
+    "name": "Luminosity Beach Festival",
+    "date": "2025-06-28T14:00:00+02:00",
+    "location": "Bernie's Beachclub",
+    "city": "Zandvoort",
+    "country": "Unknown"
+  },
+  {
+    "name": "Nous'klaer Festival",
+    "date": "2025-06-28T14:00:00+02:00",
+    "location": "Brutus",
+    "city": "Rotterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Paradise City Festival",
+    "date": "2025-06-28T14:00:00+02:00",
+    "location": "Domein van Ribaucourt",
+    "city": "Steenokkerzeel",
+    "country": "Unknown"
+  },
+  {
+    "name": "ParkCity Live",
+    "date": "2025-06-28T14:00:00+02:00",
+    "location": "Bekkerveld",
+    "city": "Heerlen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Stadsfestival",
+    "date": "2025-06-28T15:00:00+02:00",
+    "location": "Marktplein",
+    "city": "Hilversum",
+    "country": "Unknown"
+  },
+  {
+    "name": "Sunrise Festival",
+    "date": "2025-06-28T14:00:00+02:00",
+    "location": "De Lilse Bergen",
+    "city": "Lille",
+    "country": "Unknown"
+  },
+  {
+    "name": "Sunset Beach Festival",
+    "date": "2025-06-28T17:00:00+02:00",
+    "location": "Seebad Haltern",
+    "city": "Haltern",
+    "country": "Unknown"
+  },
+  {
+    "name": "Tropikali Festival",
+    "date": "2025-06-28T15:00:00+02:00",
+    "location": "NDSM-Werf",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Westwood Festival",
+    "date": "2025-06-28T15:30:00+02:00",
+    "location": "Club Westwood",
+    "city": "Den Haag",
+    "country": "Unknown"
+  },
+  {
+    "name": "Hollandstentfeest",
+    "date": "2025-06-29T16:00:00+02:00",
+    "location": "Unknown",
+    "city": "Middenbeemster",
+    "country": "Unknown"
+  },
+  {
+    "name": "Luminosity Beach Festival",
+    "date": "2025-06-29T14:00:00+02:00",
+    "location": "Bernie's Beachclub",
+    "city": "Zandvoort",
+    "country": "Unknown"
+  },
+  {
+    "name": "Paradise City Festival",
+    "date": "2025-06-29T14:00:00+02:00",
+    "location": "Domein van Ribaucourt",
+    "city": "Steenokkerzeel",
+    "country": "Unknown"
+  },
+  {
+    "name": "ParkCity Live",
+    "date": "2025-06-29T15:00:00+02:00",
+    "location": "Bekkerveld",
+    "city": "Heerlen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Sunrise Festival",
+    "date": "2025-06-29T14:00:00+02:00",
+    "location": "De Lilse Bergen",
+    "city": "Lille",
+    "country": "Unknown"
+  },
+  {
+    "name": "Tropikali Festival",
+    "date": "2025-06-29T14:00:00+02:00",
+    "location": "NDSM-Werf",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Verknipt Croatia · Holiday Festival",
+    "date": "2025-06-29T20:00:00+02:00",
+    "location": "Zrce beach",
+    "city": "Novalja",
+    "country": "Unknown"
+  },
+  {
+    "name": "Verknipt Croatia · Holiday Festival",
+    "date": "2025-06-30T14:00:00+02:00",
+    "location": "Zrce beach",
+    "city": "Novalja",
+    "country": "Unknown"
+  },
+  {
+    "name": "Verknipt Croatia · Holiday Festival",
+    "date": "2025-07-01T14:00:00+02:00",
+    "location": "Zrce beach",
+    "city": "Novalja",
+    "country": "Unknown"
+  },
+  {
+    "name": "Verknipt Croatia · Holiday Festival",
+    "date": "2025-07-02T14:00:00+02:00",
+    "location": "Zrce beach",
+    "city": "Novalja",
+    "country": "Unknown"
+  },
+  {
+    "name": "Electric Love Festival",
+    "date": "2025-07-03T18:00:00+02:00",
+    "location": "Festivalterrein Salzburgring",
+    "city": "Plainfeld",
+    "country": "Unknown"
+  },
+  {
+    "name": "Memento Festival",
+    "date": "2025-07-03T18:00:00+02:00",
+    "location": "Kloster Graefenthal",
+    "city": "Goch",
+    "country": "Unknown"
+  },
+  {
+    "name": "splash! Festival",
+    "date": "2025-07-03T14:00:00+02:00",
+    "location": "Ferropolis",
+    "city": "Gräfenhainichen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Verknipt Croatia · Holiday Festival",
+    "date": "2025-07-03T14:00:00+02:00",
+    "location": "Zrce beach",
+    "city": "Novalja",
+    "country": "Unknown"
+  },
+  {
+    "name": "Beachrockers Festival · Back To The 90s & 00s",
+    "date": "2025-07-04T20:00:00+02:00",
+    "location": "De Ulesprong",
+    "city": "Sint Nicolaasga",
+    "country": "Unknown"
+  },
+  {
+    "name": "Electric Love Festival",
+    "date": "2025-07-04T14:00:00+02:00",
+    "location": "Festivalterrein Salzburgring",
+    "city": "Plainfeld",
+    "country": "Unknown"
+  },
+  {
+    "name": "Gelderpop",
+    "date": "2025-07-04T19:00:00+02:00",
+    "location": "Recreatiegebied Zeumeren",
+    "city": "Voorthuizen",
+    "country": "Unknown"
+  },
+  {
+    "name": "KARMA · Outdoor",
+    "date": "2025-07-04T18:00:00+02:00",
+    "location": "Landsard Beach",
+    "city": "Eindhoven",
+    "country": "Unknown"
+  },
+  {
+    "name": "Main Square Festival",
+    "date": "2025-07-04T16:45:00+02:00",
+    "location": "De Gaulle's Boulevard",
+    "city": "Parijs",
+    "country": "Unknown"
+  },
+  {
+    "name": "Memento Festival",
+    "date": "2025-07-04T14:00:00+02:00",
+    "location": "Kloster Graefenthal",
+    "city": "Goch",
+    "country": "Unknown"
+  },
+  {
+    "name": "Rampage Open Air",
+    "date": "2025-07-04T16:00:00+02:00",
+    "location": "Festivalweide Kristalpark",
+    "city": "Lommel",
+    "country": "Unknown"
+  },
+  {
+    "name": "Speeltijd Festival",
+    "date": "2025-07-04T14:00:00+02:00",
+    "location": "Lange Meentweg",
+    "city": "Woerdense Verlaat",
+    "country": "Unknown"
+  },
+  {
+    "name": "splash! Festival",
+    "date": "2025-07-04T14:00:00+02:00",
+    "location": "Ferropolis",
+    "city": "Gräfenhainichen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Stereo Sunday #15",
+    "date": "2025-07-04T19:00:00+02:00",
+    "location": "Julianapark",
+    "city": "Venlo",
+    "country": "Unknown"
+  },
+  {
+    "name": "Summerjam Festival · Full of Energy",
+    "date": "2025-07-04T16:00:00+02:00",
+    "location": "Fühlinger See",
+    "city": "Keulen",
+    "country": "Unknown"
+  },
+  {
+    "name": "TAPT Festival",
+    "date": "2025-07-04T19:00:00+02:00",
+    "location": "Julianapark",
+    "city": "Utrecht",
+    "country": "Unknown"
+  },
+  {
+    "name": "Wilde Weide",
+    "date": "2025-07-04T14:00:00+02:00",
+    "location": "Netl de Wildste Tuin",
+    "city": "Kraggenburg",
+    "country": "Unknown"
+  },
+  {
+    "name": "WiSH Outdoor",
+    "date": "2025-07-04T20:00:00+02:00",
+    "location": "Festivalterrein de Aa",
+    "city": "Beek en Donk",
+    "country": "Unknown"
+  },
+  {
+    "name": "Beachrockers Festival",
+    "date": "2025-07-05T16:00:00+02:00",
+    "location": "De Ulesprong",
+    "city": "Sint Nicolaasga",
+    "country": "Unknown"
+  },
+  {
+    "name": "By the Creek",
+    "date": "2025-07-05T15:00:00+02:00",
+    "location": "Recreatiegebied Middelwaard",
+    "city": "Vianen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Dreamfields Festival",
+    "date": "2025-07-05T14:00:00+02:00",
+    "location": "Recreatieterrein Rhederlaag",
+    "city": "Lathum",
+    "country": "Unknown"
+  },
+  {
+    "name": "Electric Love Festival",
+    "date": "2025-07-05T14:00:00+02:00",
+    "location": "Festivalterrein Salzburgring",
+    "city": "Plainfeld",
+    "country": "Unknown"
+  },
+  {
+    "name": "Forever Festival",
+    "date": "2025-07-05T16:00:00+02:00",
+    "location": "Megaland",
+    "city": "Schaesberg",
+    "country": "Unknown"
+  },
+  {
+    "name": "Gelderpop",
+    "date": "2025-07-05T15:00:00+02:00",
+    "location": "Recreatiegebied Zeumeren",
+    "city": "Voorthuizen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Guilty Pleasure Festival · De Finale",
+    "date": "2025-07-05T15:00:00+02:00",
+    "location": "Recreatiegebied Gaasperplas",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "In Het Volkspark Festival",
+    "date": "2025-07-05T16:00:00+02:00",
+    "location": "Volkspark",
+    "city": "Enschede",
+    "country": "Unknown"
+  },
+  {
+    "name": "KARMA · Outdoor",
+    "date": "2025-07-05T15:00:00+02:00",
+    "location": "Landsard Beach",
+    "city": "Eindhoven",
+    "country": "Unknown"
+  },
+  {
+    "name": "Main Square Festival",
+    "date": "2025-07-05T16:30:00+02:00",
+    "location": "De Gaulle's Boulevard",
+    "city": "Parijs",
+    "country": "Unknown"
+  },
+  {
+    "name": "Memento Festival",
+    "date": "2025-07-05T14:00:00+02:00",
+    "location": "Kloster Graefenthal",
+    "city": "Goch",
+    "country": "Unknown"
+  },
+  {
+    "name": "Network Festival",
+    "date": "2025-07-05T16:00:00+02:00",
+    "location": "Roel Langerakpark",
+    "city": "Rotterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Oosterhout Live",
+    "date": "2025-07-05T16:00:00+02:00",
+    "location": "Lukwelpark",
+    "city": "Oosterhout",
+    "country": "Unknown"
+  },
+  {
+    "name": "Open Air Am See",
+    "date": "2025-07-05T16:00:00+02:00",
+    "location": "Dürener Badesee",
+    "city": "Düren",
+    "country": "Unknown"
+  },
+  {
+    "name": "Parkzicht Outdoor",
+    "date": "2025-07-05T16:00:00+02:00",
+    "location": "Krabbeplas",
+    "city": "Vlaardingen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Playtime Festival",
+    "date": "2025-07-05T16:00:00+02:00",
+    "location": "Lange Meentweg",
+    "city": "Woerdense Verlaat",
+    "country": "Unknown"
+  },
+  {
+    "name": "Ploegendienst",
+    "date": "2025-07-05T15:00:00+02:00",
+    "location": "Galderse Meren",
+    "city": "Breda",
+    "country": "Unknown"
+  },
+  {
+    "name": "Rampage Open Air",
+    "date": "2025-07-05T14:00:00+02:00",
+    "location": "Festivalweide Kristalpark",
+    "city": "Lommel",
+    "country": "Unknown"
+  },
+  {
+    "name": "Ruhr-in-Love",
+    "date": "2025-07-05T14:00:00+02:00",
+    "location": "Olgapark",
+    "city": "Oberhausen",
+    "country": "Unknown"
+  },
+  {
+    "name": "splash! Festival",
+    "date": "2025-07-05T14:00:00+02:00",
+    "location": "Ferropolis",
+    "city": "Gräfenhainichen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Stadsfestival Hoogeveen",
+    "date": "2025-07-05T15:00:00+02:00",
+    "location": "Steenberger Park",
+    "city": "Hoogeveen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Stereo Sunday #15",
+    "date": "2025-07-05T14:00:00+02:00",
+    "location": "Julianapark",
+    "city": "Venlo",
+    "country": "Unknown"
+  },
+  {
+    "name": "Summerjam Festival · Full of Energy",
+    "date": "2025-07-05T14:00:00+02:00",
+    "location": "Fühlinger See",
+    "city": "Keulen",
+    "country": "Unknown"
+  },
+  {
+    "name": "TAPT Festival",
+    "date": "2025-07-05T15:00:00+02:00",
+    "location": "Julianapark",
+    "city": "Utrecht",
+    "country": "Unknown"
+  },
+  {
+    "name": "The Promised Land Festival",
+    "date": "2025-07-05T15:00:00+02:00",
+    "location": "De Ven",
+    "city": "Spaarnwoude",
+    "country": "Unknown"
+  },
+  {
+    "name": "Under The Bridge Festival",
+    "date": "2025-07-05T15:00:00+02:00",
+    "location": "De Spijkenisserbrug",
+    "city": "Spijkenisse",
+    "country": "Unknown"
+  },
+  {
+    "name": "Vunzige Deuntjes Festival",
+    "date": "2025-07-05T14:00:00+02:00",
+    "location": "Amsterdamse Bos",
+    "city": "Amstelveen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Wilde Weide",
+    "date": "2025-07-05T14:00:00+02:00",
+    "location": "Netl de Wildste Tuin",
+    "city": "Kraggenburg",
+    "country": "Unknown"
+  },
+  {
+    "name": "WiSH Outdoor",
+    "date": "2025-07-05T15:00:00+02:00",
+    "location": "Festivalterrein de Aa",
+    "city": "Beek en Donk",
+    "country": "Unknown"
+  },
+  {
+    "name": "By the Creek",
+    "date": "2025-07-06T15:00:00+02:00",
+    "location": "Recreatiegebied Middelwaard",
+    "city": "Vianen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Main Square Festival",
+    "date": "2025-07-06T15:30:00+02:00",
+    "location": "De Gaulle's Boulevard",
+    "city": "Parijs",
+    "country": "Unknown"
+  },
+  {
+    "name": "Memento Festival",
+    "date": "2025-07-06T14:00:00+02:00",
+    "location": "Kloster Graefenthal",
+    "city": "Goch",
+    "country": "Unknown"
+  },
+  {
+    "name": "Ploegendienst",
+    "date": "2025-07-06T15:00:00+02:00",
+    "location": "Galderse Meren",
+    "city": "Breda",
+    "country": "Unknown"
+  },
+  {
+    "name": "Rampage Open Air",
+    "date": "2025-07-06T14:00:00+02:00",
+    "location": "Festivalweide Kristalpark",
+    "city": "Lommel",
+    "country": "Unknown"
+  },
+  {
+    "name": "Summerjam Festival · Full of Energy",
+    "date": "2025-07-06T14:00:00+02:00",
+    "location": "Fühlinger See",
+    "city": "Keulen",
+    "country": "Unknown"
+  },
+  {
+    "name": "TAPT Festival",
+    "date": "2025-07-06T15:00:00+02:00",
+    "location": "Julianapark",
+    "city": "Utrecht",
+    "country": "Unknown"
+  },
+  {
+    "name": "Wilde Weide",
+    "date": "2025-07-06T14:00:00+02:00",
+    "location": "Netl de Wildste Tuin",
+    "city": "Kraggenburg",
+    "country": "Unknown"
+  },
+  {
+    "name": "WiSH Outdoor",
+    "date": "2025-07-06T15:00:00+02:00",
+    "location": "Festivalterrein de Aa",
+    "city": "Beek en Donk",
+    "country": "Unknown"
+  },
+  {
+    "name": "Airbeat One Festival",
+    "date": "2025-07-09T12:00:00+02:00",
+    "location": "Airport Neustadt-Glewe",
+    "city": "Neustadt-Glewe",
+    "country": "Unknown"
+  },
+  {
+    "name": "Airbeat One Festival",
+    "date": "2025-07-10T14:00:00+02:00",
+    "location": "Airport Neustadt-Glewe",
+    "city": "Neustadt-Glewe",
+    "country": "Unknown"
+  },
+  {
+    "name": "Albufeira Open Air",
+    "date": "2025-07-11T01:00:00+02:00",
+    "location": "Unknown",
+    "city": "Albufeira",
+    "country": "Unknown"
+  },
+  {
+    "name": "Affenkäfig Festival",
+    "date": "2025-07-11T22:00:00+02:00",
+    "location": "Am Alten Fort",
+    "city": "Mendig",
+    "country": "Unknown"
+  },
+  {
+    "name": "Airbeat One Festival",
+    "date": "2025-07-11T14:00:00+02:00",
+    "location": "Airport Neustadt-Glewe",
+    "city": "Neustadt-Glewe",
+    "country": "Unknown"
+  },
+  {
+    "name": "Awakenings Festival",
+    "date": "2025-07-11T18:00:00+02:00",
+    "location": "Beekse Bergen",
+    "city": "Hilvarenbeek",
+    "country": "Unknown"
+  },
+  {
+    "name": "Bospop",
+    "date": "2025-07-11T17:45:00+02:00",
+    "location": "Evenemententerrein A2 Weert Noord",
+    "city": "Weert",
+    "country": "Unknown"
+  },
+  {
+    "name": "Leeuwarden Open Air",
+    "date": "2025-07-11T18:00:00+02:00",
+    "location": "De Oldehove",
+    "city": "Leeuwarden",
+    "country": "Unknown"
+  },
+  {
+    "name": "Meadow Festival #10",
+    "date": "2025-07-11T16:00:00+02:00",
+    "location": "L.T.C. Keenenburg",
+    "city": "Schipluiden",
+    "country": "Unknown"
+  },
+  {
+    "name": "Middagje Outsiders Festival",
+    "date": "2025-07-11T17:00:00+02:00",
+    "location": "Zuiderpark",
+    "city": "Den Haag",
+    "country": "Unknown"
+  },
+  {
+    "name": "Moonfield Festival",
+    "date": "2025-07-11T19:00:00+02:00",
+    "location": "Evenemententerrein Oude Bleken",
+    "city": "Mol",
+    "country": "Unknown"
+  },
+  {
+    "name": "So W'Happy Festival",
+    "date": "2025-07-11T20:00:00+02:00",
+    "location": "Evenemententerrein Rongy",
+    "city": "Rongy",
+    "country": "Unknown"
+  },
+  {
+    "name": "Stone Techno Festival",
+    "date": "2025-07-11T14:00:00+02:00",
+    "location": "Zeche Zollverein",
+    "city": "Essen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Affenkäfig Festival",
+    "date": "2025-07-12T14:00:00+02:00",
+    "location": "Am Alten Fort",
+    "city": "Mendig",
+    "country": "Unknown"
+  },
+  {
+    "name": "Afro-Latino Festival",
+    "date": "2025-07-12T15:00:00+02:00",
+    "location": "Thor Park",
+    "city": "Genk",
+    "country": "Unknown"
+  },
+  {
+    "name": "Airbeat One Festival",
+    "date": "2025-07-12T14:00:00+02:00",
+    "location": "Airport Neustadt-Glewe",
+    "city": "Neustadt-Glewe",
+    "country": "Unknown"
+  },
+  {
+    "name": "Awakenings Festival",
+    "date": "2025-07-12T15:00:00+02:00",
+    "location": "Beekse Bergen",
+    "city": "Hilvarenbeek",
+    "country": "Unknown"
+  },
+  {
+    "name": "Boothstock",
+    "date": "2025-07-12T15:00:00+02:00",
+    "location": "Kralingse Bos",
+    "city": "Rotterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Bospop",
+    "date": "2025-07-12T13:40:00+02:00",
+    "location": "Evenemententerrein A2 Weert Noord",
+    "city": "Weert",
+    "country": "Unknown"
+  },
+  {
+    "name": "Brabants Verbond",
+    "date": "2025-07-12T15:00:00+02:00",
+    "location": "Karpendonkse plas",
+    "city": "Eindhoven",
+    "country": "Unknown"
+  },
+  {
+    "name": "Dagje Outsiders Festival",
+    "date": "2025-07-12T15:00:00+02:00",
+    "location": "Zuiderpark",
+    "city": "Den Haag",
+    "country": "Unknown"
+  },
+  {
+    "name": "Deine Festival",
+    "date": "2025-07-12T15:00:00+02:00",
+    "location": "Sportpark De Valken",
+    "city": "Venhuizen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Fantasia Festival",
+    "date": "2025-07-12T15:00:00+02:00",
+    "location": "Festivalweide Hamme-Zogge",
+    "city": "Hamme",
+    "country": "Unknown"
+  },
+  {
+    "name": "Full Moon Festival",
+    "date": "2025-07-12T15:00:00+02:00",
+    "location": "De Ven",
+    "city": "Spaarnwoude",
+    "country": "Unknown"
+  },
+  {
+    "name": "Intercell Outdoor · ATW",
+    "date": "2025-07-12T15:00:00+02:00",
+    "location": "De Binnenplaats",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "JOY × Flow Festival",
+    "date": "2025-07-12T14:00:00+02:00",
+    "location": "Hembrugterrein",
+    "city": "Zaandam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Klutensee Festival",
+    "date": "2025-07-12T19:00:00+02:00",
+    "location": "Klutensee",
+    "city": "Lüdinghausen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Leeuwarden Open Air",
+    "date": "2025-07-12T16:00:00+02:00",
+    "location": "De Oldehove",
+    "city": "Leeuwarden",
+    "country": "Unknown"
+  },
+  {
+    "name": "Meadow Festival #10",
+    "date": "2025-07-12T16:00:00+02:00",
+    "location": "L.T.C. Keenenburg",
+    "city": "Schipluiden",
+    "country": "Unknown"
+  },
+  {
+    "name": "Moonfield Festival",
+    "date": "2025-07-12T17:00:00+02:00",
+    "location": "Evenemententerrein Oude Bleken",
+    "city": "Mol",
+    "country": "Unknown"
+  },
+  {
+    "name": "Ostend Beach Festival",
+    "date": "2025-07-12T16:00:00+02:00",
+    "location": "Klein Strand",
+    "city": "Oostende",
+    "country": "Unknown"
+  },
+  {
+    "name": "So W'Happy Festival",
+    "date": "2025-07-12T15:00:00+02:00",
+    "location": "Evenemententerrein Rongy",
+    "city": "Rongy",
+    "country": "Unknown"
+  },
+  {
+    "name": "Stone Techno Festival",
+    "date": "2025-07-12T14:00:00+02:00",
+    "location": "Zeche Zollverein",
+    "city": "Essen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Subset Festival",
+    "date": "2025-07-12T15:00:00+02:00",
+    "location": "Espaco das Americas",
+    "city": "São Paulo",
+    "country": "Unknown"
+  },
+  {
+    "name": "Ultrasonic Festival",
+    "date": "2025-07-12T14:00:00+02:00",
+    "location": "Maarsseveense Plassen",
+    "city": "Maarssen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Vroeger Was Alles Beter Festival · Classics City",
+    "date": "2025-07-12T15:00:00+02:00",
+    "location": "Autotron",
+    "city": "Rosmalen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Affenkäfig Festival",
+    "date": "2025-07-13T14:00:00+02:00",
+    "location": "Am Alten Fort",
+    "city": "Mendig",
+    "country": "Unknown"
+  },
+  {
+    "name": "Afro-Latino Festival",
+    "date": "2025-07-13T15:00:00+02:00",
+    "location": "Thor Park",
+    "city": "Genk",
+    "country": "Unknown"
+  },
+  {
+    "name": "Awakenings Festival",
+    "date": "2025-07-13T15:00:00+02:00",
+    "location": "Beekse Bergen",
+    "city": "Hilvarenbeek",
+    "country": "Unknown"
+  },
+  {
+    "name": "Bospop",
+    "date": "2025-07-13T14:40:00+02:00",
+    "location": "Evenemententerrein A2 Weert Noord",
+    "city": "Weert",
+    "country": "Unknown"
+  },
+  {
+    "name": "Ostend Beach Festival",
+    "date": "2025-07-13T16:00:00+02:00",
+    "location": "Klein Strand",
+    "city": "Oostende",
+    "country": "Unknown"
+  },
+  {
+    "name": "So W'Happy Festival",
+    "date": "2025-07-13T14:00:00+02:00",
+    "location": "Evenemententerrein Rongy",
+    "city": "Rongy",
+    "country": "Unknown"
+  },
+  {
+    "name": "Stone Techno Festival",
+    "date": "2025-07-13T14:00:00+02:00",
+    "location": "Zeche Zollverein",
+    "city": "Essen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Stone Techno Festival",
+    "date": "2025-07-14T01:00:00+02:00",
+    "location": "Weststadthalle",
+    "city": "Essen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Dour festival",
+    "date": "2025-07-16T14:00:00+02:00",
+    "location": "Festivalterrein",
+    "city": "Dour",
+    "country": "Unknown"
+  },
+  {
+    "name": "Albufeira Open Air",
+    "date": "2025-07-18T01:00:00+02:00",
+    "location": "Unknown",
+    "city": "Albufeira",
+    "country": "Unknown"
+  },
+  {
+    "name": "Boom Festival",
+    "date": "2025-07-17T22:00:00+02:00",
+    "location": "Idanha-a-Nova Lake",
+    "city": "Idanha-a-nova",
+    "country": "Unknown"
+  },
+  {
+    "name": "Dour festival",
+    "date": "2025-07-17T14:00:00+02:00",
+    "location": "Festivalterrein",
+    "city": "Dour",
+    "country": "Unknown"
+  },
+  {
+    "name": "Happiness Festival",
+    "date": "2025-07-17T17:00:00+02:00",
+    "location": "Happiness Festival",
+    "city": "Pforzheim",
+    "country": "Unknown"
+  },
+  {
+    "name": "Zwarte Cross",
+    "date": "2025-07-17T10:00:00+02:00",
+    "location": "Festivalterrein De Schans",
+    "city": "Lichtenvoorde",
+    "country": "Unknown"
+  },
+  {
+    "name": "Boom Festival",
+    "date": "2025-07-18T14:00:00+02:00",
+    "location": "Idanha-a-Nova Lake",
+    "city": "Idanha-a-nova",
+    "country": "Unknown"
+  },
+  {
+    "name": "City of Dance festival",
+    "date": "2025-07-18T18:00:00+02:00",
+    "location": "Veerseweg",
+    "city": "Middelburg",
+    "country": "Unknown"
+  },
+  {
+    "name": "Dominator · 20 Years of Hardcore Domination",
+    "date": "2025-07-18T13:00:00+02:00",
+    "location": "E3 strand",
+    "city": "Eersel",
+    "country": "Unknown"
+  },
+  {
+    "name": "Dour festival",
+    "date": "2025-07-18T14:00:00+02:00",
+    "location": "Festivalterrein",
+    "city": "Dour",
+    "country": "Unknown"
+  },
+  {
+    "name": "Happiness Festival",
+    "date": "2025-07-18T14:00:00+02:00",
+    "location": "Happiness Festival",
+    "city": "Pforzheim",
+    "country": "Unknown"
+  },
+  {
+    "name": "Parookaville",
+    "date": "2025-07-18T16:00:00+02:00",
+    "location": "Airport Weeze",
+    "city": "Weeze",
+    "country": "Unknown"
+  },
+  {
+    "name": "TAPT Festival",
+    "date": "2025-07-18T19:00:00+02:00",
+    "location": "Esplanade",
+    "city": "Almere",
+    "country": "Unknown"
+  },
+  {
+    "name": "Tomorrowland",
+    "date": "2025-07-18T14:00:00+02:00",
+    "location": "De Schorre",
+    "city": "Boom",
+    "country": "Unknown"
+  },
+  {
+    "name": "Verkes Outdoor",
+    "date": "2025-07-18T20:30:00+02:00",
+    "location": "Verkeswei",
+    "city": "Meterik",
+    "country": "Unknown"
+  },
+  {
+    "name": "Zwarte Cross",
+    "date": "2025-07-18T14:00:00+02:00",
+    "location": "Festivalterrein De Schans",
+    "city": "Lichtenvoorde",
+    "country": "Unknown"
+  },
+  {
+    "name": "Amphi Festival",
+    "date": "2025-07-19T12:00:00+02:00",
+    "location": "Tanzbrunnen",
+    "city": "Keulen",
+    "country": "Unknown"
+  },
+  {
+    "name": "AtmoZ Open Air",
+    "date": "2025-07-19T16:00:00+02:00",
+    "location": "Evenemententerrein Heerenlaak",
+    "city": "Maaseik",
+    "country": "Unknown"
+  },
+  {
+    "name": "Boogie Festival",
+    "date": "2025-07-19T15:00:00+02:00",
+    "location": "Stadshaven Brouwerij",
+    "city": "Rotterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Boom Festival",
+    "date": "2025-07-19T14:00:00+02:00",
+    "location": "Idanha-a-Nova Lake",
+    "city": "Idanha-a-nova",
+    "country": "Unknown"
+  },
+  {
+    "name": "City of Dance festival",
+    "date": "2025-07-19T16:00:00+02:00",
+    "location": "Veerseweg",
+    "city": "Middelburg",
+    "country": "Unknown"
+  },
+  {
+    "name": "Club Hacienda Festival",
+    "date": "2025-07-19T15:00:00+02:00",
+    "location": "Parkeerplats Stadion De Koel",
+    "city": "Venlo",
+    "country": "Unknown"
+  },
+  {
+    "name": "Contrair Open Air",
+    "date": "2025-07-19T17:00:00+02:00",
+    "location": "OLT Rivierenhof",
+    "city": "Deurne",
+    "country": "Unknown"
+  },
+  {
+    "name": "Dominator · 20 Years of Hardcore Domination",
+    "date": "2025-07-19T13:00:00+02:00",
+    "location": "E3 strand",
+    "city": "Eersel",
+    "country": "Unknown"
+  },
+  {
+    "name": "Dour festival",
+    "date": "2025-07-19T14:00:00+02:00",
+    "location": "Festivalterrein",
+    "city": "Dour",
+    "country": "Unknown"
+  },
+  {
+    "name": "Festival Macumba",
+    "date": "2025-07-19T15:00:00+02:00",
+    "location": "De Ven",
+    "city": "Spaarnwoude",
+    "country": "Unknown"
+  },
+  {
+    "name": "Habitat Festival",
+    "date": "2025-07-19T16:00:00+02:00",
+    "location": "Habitat Festival",
+    "city": "Hamburg",
+    "country": "Unknown"
+  },
+  {
+    "name": "Happiness Festival",
+    "date": "2025-07-19T14:00:00+02:00",
+    "location": "Happiness Festival",
+    "city": "Pforzheim",
+    "country": "Unknown"
+  },
+  {
+    "name": "Hoognodig Festival",
+    "date": "2025-07-19T16:00:00+02:00",
+    "location": "Recreatieterrein De Weijver",
+    "city": "Hoogwoud",
+    "country": "Unknown"
+  },
+  {
+    "name": "I Love Urban · Outdoor Music Festival",
+    "date": "2025-07-19T15:00:00+02:00",
+    "location": "Oeverpark",
+    "city": "Rotterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Melody Garden",
+    "date": "2025-07-19T15:00:00+02:00",
+    "location": "Ouderkerkerplas",
+    "city": "Ouderkerk aan de Amstel",
+    "country": "Unknown"
+  },
+  {
+    "name": "METZ Festival",
+    "date": "2025-07-19T16:00:00+02:00",
+    "location": "Paviljoen Breezze",
+    "city": "Vierpolders",
+    "country": "Unknown"
+  },
+  {
+    "name": "Parookaville",
+    "date": "2025-07-19T16:00:00+02:00",
+    "location": "Airport Weeze",
+    "city": "Weeze",
+    "country": "Unknown"
+  },
+  {
+    "name": "TAPT Festival",
+    "date": "2025-07-19T15:00:00+02:00",
+    "location": "Esplanade",
+    "city": "Almere",
+    "country": "Unknown"
+  },
+  {
+    "name": "Timeless Festival · 10th anniversary",
+    "date": "2025-07-19T16:00:00+02:00",
+    "location": "Sportpark Strijthagen",
+    "city": "Landgraaf",
+    "country": "Unknown"
+  },
+  {
+    "name": "Tomorrowland",
+    "date": "2025-07-19T14:00:00+02:00",
+    "location": "De Schorre",
+    "city": "Boom",
+    "country": "Unknown"
+  },
+  {
+    "name": "Verkes Outdoor",
+    "date": "2025-07-19T14:00:00+02:00",
+    "location": "Verkeswei",
+    "city": "Meterik",
+    "country": "Unknown"
+  },
+  {
+    "name": "Wet 'n Wild Beachfestival · 10-year anniversary",
+    "date": "2025-07-19T18:00:00+02:00",
+    "location": "Zegerplas",
+    "city": "Alphen aan den Rijn",
+    "country": "Unknown"
+  },
+  {
+    "name": "Zwarte Cross",
+    "date": "2025-07-19T14:00:00+02:00",
+    "location": "Festivalterrein De Schans",
+    "city": "Lichtenvoorde",
+    "country": "Unknown"
+  },
+  {
+    "name": "Amphi Festival",
+    "date": "2025-07-20T14:00:00+02:00",
+    "location": "Tanzbrunnen",
+    "city": "Keulen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Boom Festival",
+    "date": "2025-07-20T14:00:00+02:00",
+    "location": "Idanha-a-Nova Lake",
+    "city": "Idanha-a-nova",
+    "country": "Unknown"
+  },
+  {
+    "name": "Contrair Open Air",
+    "date": "2025-07-20T14:00:00+02:00",
+    "location": "OLT Rivierenhof",
+    "city": "Deurne",
+    "country": "Unknown"
+  },
+  {
+    "name": "Dour festival",
+    "date": "2025-07-20T14:00:00+02:00",
+    "location": "Festivalterrein",
+    "city": "Dour",
+    "country": "Unknown"
+  },
+  {
+    "name": "Parookaville",
+    "date": "2025-07-20T16:00:00+02:00",
+    "location": "Airport Weeze",
+    "city": "Weeze",
+    "country": "Unknown"
+  },
+  {
+    "name": "Tomorrowland",
+    "date": "2025-07-20T14:00:00+02:00",
+    "location": "De Schorre",
+    "city": "Boom",
+    "country": "Unknown"
+  },
+  {
+    "name": "Zwarte Cross",
+    "date": "2025-07-20T14:00:00+02:00",
+    "location": "Festivalterrein De Schans",
+    "city": "Lichtenvoorde",
+    "country": "Unknown"
+  },
+  {
+    "name": "Boom Festival",
+    "date": "2025-07-21T14:00:00+02:00",
+    "location": "Idanha-a-Nova Lake",
+    "city": "Idanha-a-nova",
+    "country": "Unknown"
+  },
+  {
+    "name": "Boom Festival",
+    "date": "2025-07-22T14:00:00+02:00",
+    "location": "Idanha-a-Nova Lake",
+    "city": "Idanha-a-nova",
+    "country": "Unknown"
+  },
+  {
+    "name": "Boom Festival",
+    "date": "2025-07-23T14:00:00+02:00",
+    "location": "Idanha-a-Nova Lake",
+    "city": "Idanha-a-nova",
+    "country": "Unknown"
+  },
+  {
+    "name": "Albufeira Open Air",
+    "date": "2025-07-25T01:00:00+02:00",
+    "location": "Unknown",
+    "city": "Albufeira",
+    "country": "Unknown"
+  },
+  {
+    "name": "Boom Festival",
+    "date": "2025-07-24T14:00:00+02:00",
+    "location": "Idanha-a-Nova Lake",
+    "city": "Idanha-a-nova",
+    "country": "Unknown"
+  },
+  {
+    "name": "Feel Festival",
+    "date": "2025-07-24T16:00:00+02:00",
+    "location": "Bergheider See",
+    "city": "Lichterfeld-Schacksdorf",
+    "country": "Unknown"
+  },
+  {
+    "name": "Mit Dir Festival",
+    "date": "2025-07-24T19:00:00+02:00",
+    "location": "Klingemühle",
+    "city": "Trier",
+    "country": "Unknown"
+  },
+  {
+    "name": "Bachblyten Festival",
+    "date": "2025-07-25T12:00:00+02:00",
+    "location": "Flugplatz Husum-Schwesing",
+    "city": "Schwesing",
+    "country": "Unknown"
+  },
+  {
+    "name": "Feel Festival",
+    "date": "2025-07-25T14:00:00+02:00",
+    "location": "Bergheider See",
+    "city": "Lichterfeld-Schacksdorf",
+    "country": "Unknown"
+  },
+  {
+    "name": "Juicy Beats",
+    "date": "2025-07-25T16:00:00+02:00",
+    "location": "Westfalenpark",
+    "city": "Dortmund",
+    "country": "Unknown"
+  },
+  {
+    "name": "Liquicity Festival",
+    "date": "2025-07-25T15:00:00+02:00",
+    "location": "Recreatiegebied Geestmerambacht",
+    "city": "Noord-Scharwoude",
+    "country": "Unknown"
+  },
+  {
+    "name": "Mit Dir Festival",
+    "date": "2025-07-25T14:00:00+02:00",
+    "location": "Klingemühle",
+    "city": "Trier",
+    "country": "Unknown"
+  },
+  {
+    "name": "Open Beatz Festival",
+    "date": "2025-07-25T16:00:00+02:00",
+    "location": "Puschendorfer Strasse",
+    "city": "Herzogenaurach",
+    "country": "Unknown"
+  },
+  {
+    "name": "TAPT Festival",
+    "date": "2025-07-25T19:00:00+02:00",
+    "location": "Burgemeester Reinaldapark",
+    "city": "Haarlem",
+    "country": "Unknown"
+  },
+  {
+    "name": "Tomorrowland",
+    "date": "2025-07-25T14:00:00+02:00",
+    "location": "De Schorre",
+    "city": "Boom",
+    "country": "Unknown"
+  },
+  {
+    "name": "Bachblyten Festival",
+    "date": "2025-07-26T14:00:00+02:00",
+    "location": "Flugplatz Husum-Schwesing",
+    "city": "Schwesing",
+    "country": "Unknown"
+  },
+  {
+    "name": "Complex Festival",
+    "date": "2025-07-26T15:00:00+02:00",
+    "location": "Geusseltpark",
+    "city": "Maastricht",
+    "country": "Unknown"
+  },
+  {
+    "name": "Feel Festival",
+    "date": "2025-07-26T14:00:00+02:00",
+    "location": "Bergheider See",
+    "city": "Lichterfeld-Schacksdorf",
+    "country": "Unknown"
+  },
+  {
+    "name": "Festival De Achtertuin",
+    "date": "2025-07-26T14:00:00+02:00",
+    "location": "Outdoor Valley",
+    "city": "Bergschenhoek",
+    "country": "Unknown"
+  },
+  {
+    "name": "Flow In Het Park · Festival Weekender",
+    "date": "2025-07-26T15:00:00+02:00",
+    "location": "Sonsbeekpark",
+    "city": "Arnhem",
+    "country": "Unknown"
+  },
+  {
+    "name": "Free Your Mind Festival",
+    "date": "2025-07-26T15:00:00+02:00",
+    "location": "Drafbaan Stadspark",
+    "city": "Groningen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Geheime Liefde · Tuinen van Geluk",
+    "date": "2025-07-26T14:00:00+02:00",
+    "location": "De Middengaarde",
+    "city": "Nieuwegein",
+    "country": "Unknown"
+  },
+  {
+    "name": "HardClassics Festival",
+    "date": "2025-07-26T15:00:00+02:00",
+    "location": "De Ven",
+    "city": "Spaarnwoude",
+    "country": "Unknown"
+  },
+  {
+    "name": "Housequake · The Outdoor Edition",
+    "date": "2025-07-26T18:00:00+02:00",
+    "location": "Polderfabriek",
+    "city": "Leiderdorp",
+    "country": "Unknown"
+  },
+  {
+    "name": "Juicy Beats",
+    "date": "2025-07-26T14:00:00+02:00",
+    "location": "Westfalenpark",
+    "city": "Dortmund",
+    "country": "Unknown"
+  },
+  {
+    "name": "Liquicity Festival",
+    "date": "2025-07-26T15:00:00+02:00",
+    "location": "Recreatiegebied Geestmerambacht",
+    "city": "Noord-Scharwoude",
+    "country": "Unknown"
+  },
+  {
+    "name": "Milkshake Festival",
+    "date": "2025-07-26T14:00:00+02:00",
+    "location": "Westergasterrein",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Mit Dir Festival",
+    "date": "2025-07-26T14:00:00+02:00",
+    "location": "Klingemühle",
+    "city": "Trier",
+    "country": "Unknown"
+  },
+  {
+    "name": "Monegros Festival",
+    "date": "2025-07-26T16:00:00+02:00",
+    "location": "Monegros Desert N-II",
+    "city": "Fraga",
+    "country": "Unknown"
+  },
+  {
+    "name": "No Art festival",
+    "date": "2025-07-26T14:00:00+02:00",
+    "location": "Flevopark",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Open Beatz Festival",
+    "date": "2025-07-26T16:00:00+02:00",
+    "location": "Puschendorfer Strasse",
+    "city": "Herzogenaurach",
+    "country": "Unknown"
+  },
+  {
+    "name": "Orbit Festival",
+    "date": "2025-07-26T14:00:00+02:00",
+    "location": "Fort bij de Vechten",
+    "city": "Bunnik",
+    "country": "Unknown"
+  },
+  {
+    "name": "Puro Reggaeton · Open Air",
+    "date": "2025-07-26T18:00:00+02:00",
+    "location": "Unknown",
+    "city": "Keulen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Sneekrave Festival",
+    "date": "2025-07-26T16:00:00+02:00",
+    "location": "Starteiland Sneek",
+    "city": "Sneek",
+    "country": "Unknown"
+  },
+  {
+    "name": "TAPT Festival",
+    "date": "2025-07-26T15:00:00+02:00",
+    "location": "Burgemeester Reinaldapark",
+    "city": "Haarlem",
+    "country": "Unknown"
+  },
+  {
+    "name": "Tegendraads Festival",
+    "date": "2025-07-26T13:00:00+02:00",
+    "location": "Autotron",
+    "city": "Rosmalen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Tomorrowland",
+    "date": "2025-07-26T14:00:00+02:00",
+    "location": "De Schorre",
+    "city": "Boom",
+    "country": "Unknown"
+  },
+  {
+    "name": "Bachblyten Festival",
+    "date": "2025-07-27T14:00:00+02:00",
+    "location": "Flugplatz Husum-Schwesing",
+    "city": "Schwesing",
+    "country": "Unknown"
+  },
+  {
+    "name": "Complex Festival",
+    "date": "2025-07-27T15:00:00+02:00",
+    "location": "Geusseltpark",
+    "city": "Maastricht",
+    "country": "Unknown"
+  },
+  {
+    "name": "Feel Festival",
+    "date": "2025-07-27T14:00:00+02:00",
+    "location": "Bergheider See",
+    "city": "Lichterfeld-Schacksdorf",
+    "country": "Unknown"
+  },
+  {
+    "name": "Flow In Het Park · Festival Weekender",
+    "date": "2025-07-27T14:00:00+02:00",
+    "location": "Sonsbeekpark",
+    "city": "Arnhem",
+    "country": "Unknown"
+  },
+  {
+    "name": "Liquicity Festival",
+    "date": "2025-07-27T15:00:00+02:00",
+    "location": "Recreatiegebied Geestmerambacht",
+    "city": "Noord-Scharwoude",
+    "country": "Unknown"
+  },
+  {
+    "name": "Milkshake Festival",
+    "date": "2025-07-27T14:00:00+02:00",
+    "location": "Westergasterrein",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Mit Dir Festival",
+    "date": "2025-07-27T14:00:00+02:00",
+    "location": "Klingemühle",
+    "city": "Trier",
+    "country": "Unknown"
+  },
+  {
+    "name": "Open Beatz Festival",
+    "date": "2025-07-27T16:00:00+02:00",
+    "location": "Puschendorfer Strasse",
+    "city": "Herzogenaurach",
+    "country": "Unknown"
+  },
+  {
+    "name": "Pool Festival · Secret Underground",
+    "date": "2025-07-27T19:00:00+02:00",
+    "location": "Le Jardin de Babylone",
+    "city": "Le Cap d'Agde",
+    "country": "Unknown"
+  },
+  {
+    "name": "Tomorrowland",
+    "date": "2025-07-27T14:00:00+02:00",
+    "location": "De Schorre",
+    "city": "Boom",
+    "country": "Unknown"
+  },
+  {
+    "name": "Dekmantel Festival",
+    "date": "2025-07-30T22:00:00+02:00",
+    "location": "Amsterdamse Bos",
+    "city": "Amstelveen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Albufeira Open Air",
+    "date": "2025-08-01T01:00:00+02:00",
+    "location": "Unknown",
+    "city": "Albufeira",
+    "country": "Unknown"
+  },
+  {
+    "name": "Albufeira Open Air",
+    "date": "2025-08-01T01:00:00+02:00",
+    "location": "Unknown",
+    "city": "Albufeira",
+    "country": "Unknown"
+  },
+  {
+    "name": "Dekmantel Festival",
+    "date": "2025-07-31T14:00:00+02:00",
+    "location": "Amsterdamse Bos",
+    "city": "Amstelveen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Solar Weekend",
+    "date": "2025-07-31T16:00:00+02:00",
+    "location": "Recreatiegebied Maasplassen: Noorderplas",
+    "city": "Roermond",
+    "country": "Unknown"
+  },
+  {
+    "name": "Dekmantel Festival",
+    "date": "2025-08-01T14:00:00+02:00",
+    "location": "Amsterdamse Bos",
+    "city": "Amstelveen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Green Juice Festival",
+    "date": "2025-08-01T16:00:00+02:00",
+    "location": "Park Neu-Vilich",
+    "city": "Bonn",
+    "country": "Unknown"
+  },
+  {
+    "name": "Janey · Pride Mini Festival",
+    "date": "2025-08-01T23:00:00+02:00",
+    "location": "Paradiso",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Open Air · Hain & Zunder",
+    "date": "2025-08-01T21:00:00+02:00",
+    "location": "Unknown",
+    "city": "Brandenburg an der Havel",
+    "country": "Unknown"
+  },
+  {
+    "name": "Reggae Geel",
+    "date": "2025-08-01T14:30:00+02:00",
+    "location": "Festivalterrein Malosewaver",
+    "city": "Geel",
+    "country": "Unknown"
+  },
+  {
+    "name": "Solar Weekend",
+    "date": "2025-08-01T14:00:00+02:00",
+    "location": "Recreatiegebied Maasplassen: Noorderplas",
+    "city": "Roermond",
+    "country": "Unknown"
+  },
+  {
+    "name": "Summer Dream Open Air Festival",
+    "date": "2025-08-01T08:00:00+02:00",
+    "location": "Blievensdorf",
+    "city": "Mecklenburg",
+    "country": "Unknown"
+  },
+  {
+    "name": "TAPT Festival",
+    "date": "2025-08-01T19:00:00+02:00",
+    "location": "Zwitsalterrein",
+    "city": "Apeldoorn",
+    "country": "Unknown"
+  },
+  {
+    "name": "BASIS Outdoor",
+    "date": "2025-08-02T15:00:00+02:00",
+    "location": "BASIS",
+    "city": "Utrecht",
+    "country": "Unknown"
+  },
+  {
+    "name": "Church of Techno",
+    "date": "2025-08-02T16:00:00+02:00",
+    "location": "Beachclub MEER",
+    "city": "Winterswijk",
+    "country": "Unknown"
+  },
+  {
+    "name": "CSC Festival",
+    "date": "2025-08-02T15:00:00+02:00",
+    "location": "Zuiderpark",
+    "city": "Rotterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Dekmantel Festival",
+    "date": "2025-08-02T14:00:00+02:00",
+    "location": "Amsterdamse Bos",
+    "city": "Amstelveen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Dorf of Tomorrow Festival",
+    "date": "2025-08-02T17:00:00+02:00",
+    "location": "Hergstbachtalarena",
+    "city": "Heilbronn",
+    "country": "Unknown"
+  },
+  {
+    "name": "Fantasy Beach Festival",
+    "date": "2025-08-02T18:00:00+02:00",
+    "location": "Thüringenhalle",
+    "city": "Erfurt",
+    "country": "Unknown"
+  },
+  {
+    "name": "Green Juice Festival",
+    "date": "2025-08-02T14:00:00+02:00",
+    "location": "Park Neu-Vilich",
+    "city": "Bonn",
+    "country": "Unknown"
+  },
+  {
+    "name": "Open Air · Hain & Zunder",
+    "date": "2025-08-02T14:00:00+02:00",
+    "location": "Unknown",
+    "city": "Brandenburg an der Havel",
+    "country": "Unknown"
+  },
+  {
+    "name": "REBELLiON Outdoor Festival",
+    "date": "2025-08-02T13:00:00+02:00",
+    "location": "Almeerderstrand",
+    "city": "Almere",
+    "country": "Unknown"
+  },
+  {
+    "name": "Reggae Geel",
+    "date": "2025-08-02T14:00:00+02:00",
+    "location": "Festivalterrein Malosewaver",
+    "city": "Geel",
+    "country": "Unknown"
+  },
+  {
+    "name": "Smashed Potatoes Festival",
+    "date": "2025-08-02T16:00:00+02:00",
+    "location": "BillyBird Park Drakenrijk",
+    "city": "Reuver",
+    "country": "Unknown"
+  },
+  {
+    "name": "Solar Weekend",
+    "date": "2025-08-02T14:00:00+02:00",
+    "location": "Recreatiegebied Maasplassen: Noorderplas",
+    "city": "Roermond",
+    "country": "Unknown"
+  },
+  {
+    "name": "Summer Dream Open Air Festival",
+    "date": "2025-08-02T14:00:00+02:00",
+    "location": "Blievensdorf",
+    "city": "Mecklenburg",
+    "country": "Unknown"
+  },
+  {
+    "name": "Summer of Love Festival",
+    "date": "2025-08-02T15:00:00+02:00",
+    "location": "Contactweg 60",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "TAPT Festival",
+    "date": "2025-08-02T15:00:00+02:00",
+    "location": "Zwitsalterrein",
+    "city": "Apeldoorn",
+    "country": "Unknown"
+  },
+  {
+    "name": "Tendance Festival",
+    "date": "2025-08-02T15:00:00+02:00",
+    "location": "Evenementen terrein",
+    "city": "Kapellen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Timeless Festival",
+    "date": "2025-08-02T15:00:00+02:00",
+    "location": "Vélodrome",
+    "city": "Rochefort",
+    "country": "Unknown"
+  },
+  {
+    "name": "Dekmantel Festival",
+    "date": "2025-08-03T14:00:00+02:00",
+    "location": "Amsterdamse Bos",
+    "city": "Amstelveen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Pool Festival · Secret Underground",
+    "date": "2025-08-03T19:00:00+02:00",
+    "location": "Le Jardin de Babylone",
+    "city": "Le Cap d'Agde",
+    "country": "Unknown"
+  },
+  {
+    "name": "Solar Weekend",
+    "date": "2025-08-03T14:00:00+02:00",
+    "location": "Recreatiegebied Maasplassen: Noorderplas",
+    "city": "Roermond",
+    "country": "Unknown"
+  },
+  {
+    "name": "Summer Dream Open Air Festival",
+    "date": "2025-08-03T14:00:00+02:00",
+    "location": "Blievensdorf",
+    "city": "Mecklenburg",
+    "country": "Unknown"
+  },
+  {
+    "name": "Timeless Festival",
+    "date": "2025-08-03T14:00:00+02:00",
+    "location": "Vélodrome",
+    "city": "Rochefort",
+    "country": "Unknown"
+  },
+  {
+    "name": "Feier Dein buntes Leben Festival",
+    "date": "2025-08-04T20:00:00+02:00",
+    "location": "Leuther Muhle",
+    "city": "Nettetal",
+    "country": "Unknown"
+  },
+  {
+    "name": "Mo:Dem Festival",
+    "date": "2025-08-04T14:00:00+02:00",
+    "location": "Event Terrain Primislje",
+    "city": "Primišlje",
+    "country": "Unknown"
+  },
+  {
+    "name": "Feier Dein buntes Leben Festival",
+    "date": "2025-08-05T14:00:00+02:00",
+    "location": "Leuther Muhle",
+    "city": "Nettetal",
+    "country": "Unknown"
+  },
+  {
+    "name": "Mo:Dem Festival",
+    "date": "2025-08-05T14:00:00+02:00",
+    "location": "Event Terrain Primislje",
+    "city": "Primišlje",
+    "country": "Unknown"
+  },
+  {
+    "name": "Feier Dein buntes Leben Festival",
+    "date": "2025-08-06T14:00:00+02:00",
+    "location": "Leuther Muhle",
+    "city": "Nettetal",
+    "country": "Unknown"
+  },
+  {
+    "name": "Mo:Dem Festival",
+    "date": "2025-08-06T14:00:00+02:00",
+    "location": "Event Terrain Primislje",
+    "city": "Primišlje",
+    "country": "Unknown"
+  },
+  {
+    "name": "Sziget Festival",
+    "date": "2025-08-06T11:00:00+02:00",
+    "location": "Óbudai-sziget",
+    "city": "Budapest",
+    "country": "Unknown"
+  },
+  {
+    "name": "Albufeira Open Air",
+    "date": "2025-08-08T01:00:00+02:00",
+    "location": "Unknown",
+    "city": "Albufeira",
+    "country": "Unknown"
+  },
+  {
+    "name": "Alcatraz Open Air",
+    "date": "2025-08-07T12:00:00+02:00",
+    "location": "Sportcampus Lange Munte",
+    "city": "Kortrijk",
+    "country": "Unknown"
+  },
+  {
+    "name": "ANDEREWELT. Festival",
+    "date": "2025-08-07T12:00:00+02:00",
+    "location": "Kragenhof",
+    "city": "Stadtlohn",
+    "country": "Unknown"
+  },
+  {
+    "name": "Feier Dein buntes Leben Festival",
+    "date": "2025-08-07T14:00:00+02:00",
+    "location": "Leuther Muhle",
+    "city": "Nettetal",
+    "country": "Unknown"
+  },
+  {
+    "name": "Het Landjuweel",
+    "date": "2025-08-07T16:00:00+02:00",
+    "location": "Ruigoord",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Mo:Dem Festival",
+    "date": "2025-08-07T14:00:00+02:00",
+    "location": "Event Terrain Primislje",
+    "city": "Primišlje",
+    "country": "Unknown"
+  },
+  {
+    "name": "Sziget Festival",
+    "date": "2025-08-07T14:00:00+02:00",
+    "location": "Óbudai-sziget",
+    "city": "Budapest",
+    "country": "Unknown"
+  },
+  {
+    "name": "Wonderland Festival",
+    "date": "2025-08-07T19:00:00+02:00",
+    "location": "Waldfrieden",
+    "city": "Stemwede",
+    "country": "Unknown"
+  },
+  {
+    "name": "3000Grad Festival",
+    "date": "2025-08-08T17:00:00+02:00",
+    "location": "Küstersteig 5",
+    "city": "Finnentrop",
+    "country": "Unknown"
+  },
+  {
+    "name": "Alcatraz Open Air",
+    "date": "2025-08-08T12:00:00+02:00",
+    "location": "Sportcampus Lange Munte",
+    "city": "Kortrijk",
+    "country": "Unknown"
+  },
+  {
+    "name": "ANDEREWELT. Festival",
+    "date": "2025-08-08T14:00:00+02:00",
+    "location": "Kragenhof",
+    "city": "Stadtlohn",
+    "country": "Unknown"
+  },
+  {
+    "name": "Electrisize",
+    "date": "2025-08-08T18:00:00+02:00",
+    "location": "Kloster Haus Hohenbusch",
+    "city": "Erkelenz",
+    "country": "Unknown"
+  },
+  {
+    "name": "Feier Dein buntes Leben Festival",
+    "date": "2025-08-08T14:00:00+02:00",
+    "location": "Leuther Muhle",
+    "city": "Nettetal",
+    "country": "Unknown"
+  },
+  {
+    "name": "Het Landjuweel",
+    "date": "2025-08-08T14:00:00+02:00",
+    "location": "Ruigoord",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Mo:Dem Festival",
+    "date": "2025-08-08T14:00:00+02:00",
+    "location": "Event Terrain Primislje",
+    "city": "Primišlje",
+    "country": "Unknown"
+  },
+  {
+    "name": "Sziget Festival",
+    "date": "2025-08-08T14:00:00+02:00",
+    "location": "Óbudai-sziget",
+    "city": "Budapest",
+    "country": "Unknown"
+  },
+  {
+    "name": "TAPT Festival",
+    "date": "2025-08-08T19:00:00+02:00",
+    "location": "Park Winkelsteeg",
+    "city": "Nijmegen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Trafostation 61 Festival",
+    "date": "2025-08-08T16:00:00+02:00",
+    "location": "Trafostation 61",
+    "city": "Frechen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Wonderland Festival",
+    "date": "2025-08-08T14:00:00+02:00",
+    "location": "Waldfrieden",
+    "city": "Stemwede",
+    "country": "Unknown"
+  },
+  {
+    "name": "3000Grad Festival",
+    "date": "2025-08-09T14:00:00+02:00",
+    "location": "Küstersteig 5",
+    "city": "Finnentrop",
+    "country": "Unknown"
+  },
+  {
+    "name": "AFTRSUN",
+    "date": "2025-08-09T16:00:00+02:00",
+    "location": "Unknown",
+    "city": "Aarschot",
+    "country": "Unknown"
+  },
+  {
+    "name": "Alcatraz Open Air",
+    "date": "2025-08-09T12:00:00+02:00",
+    "location": "Sportcampus Lange Munte",
+    "city": "Kortrijk",
+    "country": "Unknown"
+  },
+  {
+    "name": "ANDEREWELT. Festival",
+    "date": "2025-08-09T14:00:00+02:00",
+    "location": "Kragenhof",
+    "city": "Stadtlohn",
+    "country": "Unknown"
+  },
+  {
+    "name": "Blijdorp Festival",
+    "date": "2025-08-09T13:00:00+02:00",
+    "location": "Roel Langerakpark",
+    "city": "Rotterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Daycare Festival",
+    "date": "2025-08-09T15:00:00+02:00",
+    "location": "Spoorzone 013",
+    "city": "Tilburg",
+    "country": "Unknown"
+  },
+  {
+    "name": "Electrisize",
+    "date": "2025-08-09T14:00:00+02:00",
+    "location": "Kloster Haus Hohenbusch",
+    "city": "Erkelenz",
+    "country": "Unknown"
+  },
+  {
+    "name": "Feier Dein buntes Leben Festival",
+    "date": "2025-08-09T14:00:00+02:00",
+    "location": "Leuther Muhle",
+    "city": "Nettetal",
+    "country": "Unknown"
+  },
+  {
+    "name": "Het Landjuweel",
+    "date": "2025-08-09T14:00:00+02:00",
+    "location": "Ruigoord",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "In het Zand Festival",
+    "date": "2025-08-09T15:00:00+02:00",
+    "location": "SOIA - Strand Oog in Al",
+    "city": "Utrecht",
+    "country": "Unknown"
+  },
+  {
+    "name": "Intercell Outdoor · Sam Alfred Invites",
+    "date": "2025-08-09T15:00:00+02:00",
+    "location": "De Binnenplaats",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Lakedance · 20 Years of Summer",
+    "date": "2025-08-09T15:00:00+02:00",
+    "location": "Aquabest",
+    "city": "Best",
+    "country": "Unknown"
+  },
+  {
+    "name": "Loveland Festival · 30YRS",
+    "date": "2025-08-09T14:00:00+02:00",
+    "location": "Sloterpark",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Mo:Dem Festival",
+    "date": "2025-08-09T14:00:00+02:00",
+    "location": "Event Terrain Primislje",
+    "city": "Primišlje",
+    "country": "Unknown"
+  },
+  {
+    "name": "Paradigm Festival",
+    "date": "2025-08-09T15:00:00+02:00",
+    "location": "Paradigm",
+    "city": "Groningen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Shangri-La Festival · Tales of Yokai",
+    "date": "2025-08-09T15:00:00+02:00",
+    "location": "Zegerplas",
+    "city": "Alphen aan den Rijn",
+    "country": "Unknown"
+  },
+  {
+    "name": "Shutdown Festival",
+    "date": "2025-08-09T14:00:00+02:00",
+    "location": "AKW Zwentendorf",
+    "city": "Zwentendorf an der Donau",
+    "country": "Unknown"
+  },
+  {
+    "name": "Sziget Festival",
+    "date": "2025-08-09T14:00:00+02:00",
+    "location": "Óbudai-sziget",
+    "city": "Budapest",
+    "country": "Unknown"
+  },
+  {
+    "name": "TAPT Festival",
+    "date": "2025-08-09T15:00:00+02:00",
+    "location": "Park Winkelsteeg",
+    "city": "Nijmegen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Trafostation 61 Festival",
+    "date": "2025-08-09T14:00:00+02:00",
+    "location": "Trafostation 61",
+    "city": "Frechen",
+    "country": "Unknown"
+  },
+  {
+    "name": "TrailerFest",
+    "date": "2025-08-09T15:00:00+02:00",
+    "location": "Park 't Zoet",
+    "city": "Breda",
+    "country": "Unknown"
+  },
+  {
+    "name": "Verknipt · Day & Night Festival",
+    "date": "2025-08-09T16:00:00+02:00",
+    "location": "Turbinenhalle",
+    "city": "Oberhausen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Wonderland Festival",
+    "date": "2025-08-09T14:00:00+02:00",
+    "location": "Waldfrieden",
+    "city": "Stemwede",
+    "country": "Unknown"
+  },
+  {
+    "name": "3000Grad Festival",
+    "date": "2025-08-10T14:00:00+02:00",
+    "location": "Küstersteig 5",
+    "city": "Finnentrop",
+    "country": "Unknown"
+  },
+  {
+    "name": "Alcatraz Open Air",
+    "date": "2025-08-10T12:00:00+02:00",
+    "location": "Sportcampus Lange Munte",
+    "city": "Kortrijk",
+    "country": "Unknown"
+  },
+  {
+    "name": "ANDEREWELT. Festival",
+    "date": "2025-08-10T14:00:00+02:00",
+    "location": "Kragenhof",
+    "city": "Stadtlohn",
+    "country": "Unknown"
+  },
+  {
+    "name": "Anjunadeep · Open Air",
+    "date": "2025-08-10T16:00:00+02:00",
+    "location": "Old Royal Naval College",
+    "city": "London",
+    "country": "Unknown"
+  },
+  {
+    "name": "Electrisize",
+    "date": "2025-08-10T14:00:00+02:00",
+    "location": "Kloster Haus Hohenbusch",
+    "city": "Erkelenz",
+    "country": "Unknown"
+  },
+  {
+    "name": "Feier Dein buntes Leben Festival",
+    "date": "2025-08-10T14:00:00+02:00",
+    "location": "Leuther Muhle",
+    "city": "Nettetal",
+    "country": "Unknown"
+  },
+  {
+    "name": "Het Landjuweel",
+    "date": "2025-08-10T14:00:00+02:00",
+    "location": "Ruigoord",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Intercell Outdoor · Alarico All Day",
+    "date": "2025-08-10T16:00:00+02:00",
+    "location": "De Binnenplaats",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Loveland Festival · 30YRS",
+    "date": "2025-08-10T15:00:00+02:00",
+    "location": "Sloterpark",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Mo:Dem Festival",
+    "date": "2025-08-10T14:00:00+02:00",
+    "location": "Event Terrain Primislje",
+    "city": "Primišlje",
+    "country": "Unknown"
+  },
+  {
+    "name": "Paradigm Festival",
+    "date": "2025-08-10T14:00:00+02:00",
+    "location": "Paradigm",
+    "city": "Groningen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Sziget Festival",
+    "date": "2025-08-10T14:00:00+02:00",
+    "location": "Óbudai-sziget",
+    "city": "Budapest",
+    "country": "Unknown"
+  },
+  {
+    "name": "Trafostation 61 Festival",
+    "date": "2025-08-10T14:00:00+02:00",
+    "location": "Trafostation 61",
+    "city": "Frechen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Wonderland Festival",
+    "date": "2025-08-10T14:00:00+02:00",
+    "location": "Waldfrieden",
+    "city": "Stemwede",
+    "country": "Unknown"
+  },
+  {
+    "name": "Sziget Festival",
+    "date": "2025-08-11T14:00:00+02:00",
+    "location": "Óbudai-sziget",
+    "city": "Budapest",
+    "country": "Unknown"
+  },
+  {
+    "name": "Glitch Festival",
+    "date": "2025-08-13T19:00:00+02:00",
+    "location": "Gianpula",
+    "city": "Rabat",
+    "country": "Unknown"
+  },
+  {
+    "name": "Xperience Festival",
+    "date": "2025-08-13T16:00:00+02:00",
+    "location": "Xperience Festival",
+    "city": "Nauheim",
+    "country": "Unknown"
+  },
+  {
+    "name": "Boerenrock Festival",
+    "date": "2025-08-14T11:00:00+02:00",
+    "location": "Evenemententerrein Drouwenermond",
+    "city": "Drouwenermond",
+    "country": "Unknown"
+  },
+  {
+    "name": "Glitch Festival",
+    "date": "2025-08-14T14:00:00+02:00",
+    "location": "Gianpula",
+    "city": "Rabat",
+    "country": "Unknown"
+  },
+  {
+    "name": "Pukkelpop",
+    "date": "2025-08-14T14:00:00+02:00",
+    "location": "Festivalterrein (Kiewit)",
+    "city": "Hasselt",
+    "country": "Unknown"
+  },
+  {
+    "name": "Xperience Festival",
+    "date": "2025-08-14T14:00:00+02:00",
+    "location": "Xperience Festival",
+    "city": "Nauheim",
+    "country": "Unknown"
+  },
+  {
+    "name": "Boerenrock Festival",
+    "date": "2025-08-15T14:00:00+02:00",
+    "location": "Evenemententerrein Drouwenermond",
+    "city": "Drouwenermond",
+    "country": "Unknown"
+  },
+  {
+    "name": "Decibel Outdoor",
+    "date": "2025-08-15T17:00:00+02:00",
+    "location": "Beekse Bergen",
+    "city": "Hilvarenbeek",
+    "country": "Unknown"
+  },
+  {
+    "name": "Echelon Festival",
+    "date": "2025-08-15T16:00:00+02:00",
+    "location": "Ehemalige US-Kaserne",
+    "city": "Bad Aibling",
+    "country": "Unknown"
+  },
+  {
+    "name": "Ferik Festival · Zwei Tage love, peace and endless memories",
+    "date": "2025-08-15T17:00:00+02:00",
+    "location": "Klutertbad",
+    "city": "Ennepetal",
+    "country": "Unknown"
+  },
+  {
+    "name": "Glitch Festival",
+    "date": "2025-08-15T14:00:00+02:00",
+    "location": "Gianpula",
+    "city": "Rabat",
+    "country": "Unknown"
+  },
+  {
+    "name": "Lowlands Festival",
+    "date": "2025-08-15T14:00:00+02:00",
+    "location": "Walibi Holland",
+    "city": "Biddinghuizen",
+    "country": "Unknown"
+  },
+  {
+    "name": "METI Festival",
+    "date": "2025-08-15T15:00:00+02:00",
+    "location": "Schützenplatz Flingern",
+    "city": "Düsseldorf",
+    "country": "Unknown"
+  },
+  {
+    "name": "Pukkelpop",
+    "date": "2025-08-15T14:00:00+02:00",
+    "location": "Festivalterrein (Kiewit)",
+    "city": "Hasselt",
+    "country": "Unknown"
+  },
+  {
+    "name": "The Lacuna Festival",
+    "date": "2025-08-15T18:00:00+02:00",
+    "location": "Unknown",
+    "city": "Ochtrup",
+    "country": "Unknown"
+  },
+  {
+    "name": "Xperience Festival",
+    "date": "2025-08-15T14:00:00+02:00",
+    "location": "Xperience Festival",
+    "city": "Nauheim",
+    "country": "Unknown"
+  },
+  {
+    "name": "Zomercarnaval Ell #7",
+    "date": "2025-08-15T21:00:00+02:00",
+    "location": "Sportpark Molenveld",
+    "city": "Ell",
+    "country": "Unknown"
+  },
+  {
+    "name": "Boerenrock Festival",
+    "date": "2025-08-16T14:00:00+02:00",
+    "location": "Evenemententerrein Drouwenermond",
+    "city": "Drouwenermond",
+    "country": "Unknown"
+  },
+  {
+    "name": "BuffelUp Festival",
+    "date": "2025-08-16T19:00:00+02:00",
+    "location": "Festivalterrein Coxsebaan 1",
+    "city": "Boerdonk",
+    "country": "Unknown"
+  },
+  {
+    "name": "Decibel Outdoor",
+    "date": "2025-08-16T15:00:00+02:00",
+    "location": "Beekse Bergen",
+    "city": "Hilvarenbeek",
+    "country": "Unknown"
+  },
+  {
+    "name": "Echelon Festival",
+    "date": "2025-08-16T14:00:00+02:00",
+    "location": "Ehemalige US-Kaserne",
+    "city": "Bad Aibling",
+    "country": "Unknown"
+  },
+  {
+    "name": "Ferik Festival · Zwei Tage love, peace and endless memories",
+    "date": "2025-08-16T14:00:00+02:00",
+    "location": "Klutertbad",
+    "city": "Ennepetal",
+    "country": "Unknown"
+  },
+  {
+    "name": "Glitch Festival",
+    "date": "2025-08-16T14:00:00+02:00",
+    "location": "Gianpula",
+    "city": "Rabat",
+    "country": "Unknown"
+  },
+  {
+    "name": "Lowlands Festival",
+    "date": "2025-08-16T14:00:00+02:00",
+    "location": "Walibi Holland",
+    "city": "Biddinghuizen",
+    "country": "Unknown"
+  },
+  {
+    "name": "METI Festival",
+    "date": "2025-08-16T14:00:00+02:00",
+    "location": "Schützenplatz Flingern",
+    "city": "Düsseldorf",
+    "country": "Unknown"
+  },
+  {
+    "name": "Pukkelpop",
+    "date": "2025-08-16T14:00:00+02:00",
+    "location": "Festivalterrein (Kiewit)",
+    "city": "Hasselt",
+    "country": "Unknown"
+  },
+  {
+    "name": "Reggae Lake festival",
+    "date": "2025-08-16T13:00:00+02:00",
+    "location": "Gaasperpark",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "R² Festival",
+    "date": "2025-08-16T15:00:00+02:00",
+    "location": "Unknown",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "SFEER In & Outdoor Festival",
+    "date": "2025-08-16T16:00:00+02:00",
+    "location": "DS party- en eventcenter",
+    "city": "Culemborg",
+    "country": "Unknown"
+  },
+  {
+    "name": "The Lacuna Festival",
+    "date": "2025-08-16T14:00:00+02:00",
+    "location": "Unknown",
+    "city": "Ochtrup",
+    "country": "Unknown"
+  },
+  {
+    "name": "We love the 90's Festival",
+    "date": "2025-08-16T15:00:00+02:00",
+    "location": "Goffertpark",
+    "city": "Nijmegen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Xperience Festival",
+    "date": "2025-08-16T14:00:00+02:00",
+    "location": "Xperience Festival",
+    "city": "Nauheim",
+    "country": "Unknown"
+  },
+  {
+    "name": "Zomerfeest",
+    "date": "2025-08-16T12:00:00+02:00",
+    "location": "Sportpark Molenveld",
+    "city": "Ell",
+    "country": "Unknown"
+  },
+  {
+    "name": "Boerenrock Festival",
+    "date": "2025-08-17T14:00:00+02:00",
+    "location": "Evenemententerrein Drouwenermond",
+    "city": "Drouwenermond",
+    "country": "Unknown"
+  },
+  {
+    "name": "Decibel Outdoor",
+    "date": "2025-08-17T15:00:00+02:00",
+    "location": "Beekse Bergen",
+    "city": "Hilvarenbeek",
+    "country": "Unknown"
+  },
+  {
+    "name": "LatinVillage Festival",
+    "date": "2025-08-17T15:00:00+02:00",
+    "location": "Evenemententerrein Oostbroekerweg",
+    "city": "Velsen-Zuid",
+    "country": "Unknown"
+  },
+  {
+    "name": "Lowlands Festival",
+    "date": "2025-08-17T14:00:00+02:00",
+    "location": "Walibi Holland",
+    "city": "Biddinghuizen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Pukkelpop",
+    "date": "2025-08-17T14:00:00+02:00",
+    "location": "Festivalterrein (Kiewit)",
+    "city": "Hasselt",
+    "country": "Unknown"
+  },
+  {
+    "name": "Reggae Lake festival",
+    "date": "2025-08-17T13:00:00+02:00",
+    "location": "Gaasperpark",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Xperience Festival",
+    "date": "2025-08-17T14:00:00+02:00",
+    "location": "Xperience Festival",
+    "city": "Nauheim",
+    "country": "Unknown"
+  },
+  {
+    "name": "Bautz Festival",
+    "date": "2025-08-22T18:00:00+02:00",
+    "location": "Nattenberg-stadion",
+    "city": "Lüdenscheid",
+    "country": "Unknown"
+  },
+  {
+    "name": "Mysteryland",
+    "date": "2025-08-22T14:00:00+02:00",
+    "location": "Voormalig Floriadeterrein",
+    "city": "Hoofddorp",
+    "country": "Unknown"
+  },
+  {
+    "name": "Nibirii Festival",
+    "date": "2025-08-22T14:00:00+02:00",
+    "location": "Dürener Badesee",
+    "city": "Düren",
+    "country": "Unknown"
+  },
+  {
+    "name": "Waik me Up! Festival",
+    "date": "2025-08-22T18:30:00+02:00",
+    "location": "Evenemententerrein Stadshaven",
+    "city": "Wijk bij Duurstede",
+    "country": "Unknown"
+  },
+  {
+    "name": "Bautz Festival",
+    "date": "2025-08-23T14:00:00+02:00",
+    "location": "Nattenberg-stadion",
+    "city": "Lüdenscheid",
+    "country": "Unknown"
+  },
+  {
+    "name": "Flashback Festival",
+    "date": "2025-08-23T15:00:00+02:00",
+    "location": "Kasteel Bossuit",
+    "city": "Bossuit",
+    "country": "Unknown"
+  },
+  {
+    "name": "Glemmer Beach Festival",
+    "date": "2025-08-23T17:00:00+02:00",
+    "location": "Bungalowpark Plattedijk",
+    "city": "Lemmer",
+    "country": "Unknown"
+  },
+  {
+    "name": "Mysteryland",
+    "date": "2025-08-23T13:00:00+02:00",
+    "location": "Voormalig Floriadeterrein",
+    "city": "Hoofddorp",
+    "country": "Unknown"
+  },
+  {
+    "name": "Nibirii Festival",
+    "date": "2025-08-23T14:00:00+02:00",
+    "location": "Dürener Badesee",
+    "city": "Düren",
+    "country": "Unknown"
+  },
+  {
+    "name": "Oranje Dance",
+    "date": "2025-08-23T19:00:00+02:00",
+    "location": "Duinvallei Katwijk",
+    "city": "Katwijk",
+    "country": "Unknown"
+  },
+  {
+    "name": "Paperclip",
+    "date": "2025-08-23T15:00:00+02:00",
+    "location": "E3 strand",
+    "city": "Eersel",
+    "country": "Unknown"
+  },
+  {
+    "name": "Sommertag Festival",
+    "date": "2025-08-23T13:00:00+02:00",
+    "location": "Epplesee",
+    "city": "Neuburg am Rhein",
+    "country": "Unknown"
+  },
+  {
+    "name": "Valtifest · Je hebt festivals en je hebt Valtifest",
+    "date": "2025-08-23T15:00:00+02:00",
+    "location": "Kaap Oost",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Waailand Outdoor Feest!val",
+    "date": "2025-08-23T18:00:00+02:00",
+    "location": "Evenemententerrein Brieltjenspolder",
+    "city": "Made",
+    "country": "Unknown"
+  },
+  {
+    "name": "Waik me Up! Festival",
+    "date": "2025-08-23T15:30:00+02:00",
+    "location": "Evenemententerrein Stadshaven",
+    "city": "Wijk bij Duurstede",
+    "country": "Unknown"
+  },
+  {
+    "name": "Mysteryland",
+    "date": "2025-08-24T14:00:00+02:00",
+    "location": "Voormalig Floriadeterrein",
+    "city": "Hoofddorp",
+    "country": "Unknown"
+  },
+  {
+    "name": "Nibirii Festival",
+    "date": "2025-08-24T14:00:00+02:00",
+    "location": "Dürener Badesee",
+    "city": "Düren",
+    "country": "Unknown"
+  },
+  {
+    "name": "Paperclip",
+    "date": "2025-08-24T14:00:00+02:00",
+    "location": "E3 strand",
+    "city": "Eersel",
+    "country": "Unknown"
+  },
+  {
+    "name": "Superflirt Festival",
+    "date": "2025-08-24T15:00:00+02:00",
+    "location": "Kaap Oost",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "24-uurs Solexrace Festival",
+    "date": "2025-08-29T17:00:00+02:00",
+    "location": "Festivalterrein Stanserhorn",
+    "city": "Heeswijk-Dinther",
+    "country": "Unknown"
+  },
+  {
+    "name": "Brüggen Open Air an der Burg",
+    "date": "2025-08-29T19:00:00+02:00",
+    "location": "Burgwall",
+    "city": "Brüggen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Festival Strand",
+    "date": "2025-08-29T19:00:00+02:00",
+    "location": "Haarrijnse Plas",
+    "city": "Utrecht",
+    "country": "Unknown"
+  },
+  {
+    "name": "Hintergarten Festival",
+    "date": "2025-08-29T18:00:00+02:00",
+    "location": "Wielerbaan De Heuvelen",
+    "city": "Nieuwkuijk",
+    "country": "Unknown"
+  },
+  {
+    "name": "HomeTown Festival",
+    "date": "2025-08-29T19:00:00+02:00",
+    "location": "Maaslands IJsvermaak",
+    "city": "Maasland",
+    "country": "Unknown"
+  },
+  {
+    "name": "Onder De Radar Festival",
+    "date": "2025-08-29T15:00:00+02:00",
+    "location": "Vliegveld Twenthe",
+    "city": "Enschede",
+    "country": "Unknown"
+  },
+  {
+    "name": "P&V Bomboclat Festival",
+    "date": "2025-08-29T15:00:00+02:00",
+    "location": "Zeedijk",
+    "city": "Zeebrugge",
+    "country": "Unknown"
+  },
+  {
+    "name": "TAPT Festival",
+    "date": "2025-08-29T19:00:00+02:00",
+    "location": "Museumpark",
+    "city": "Rotterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "24-uurs Solexrace Festival",
+    "date": "2025-08-30T14:00:00+02:00",
+    "location": "Festivalterrein Stanserhorn",
+    "city": "Heeswijk-Dinther",
+    "country": "Unknown"
+  },
+  {
+    "name": "Brüggen Open Air an der Burg",
+    "date": "2025-08-30T14:00:00+02:00",
+    "location": "Burgwall",
+    "city": "Brüggen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Doel Festival",
+    "date": "2025-08-30T14:00:00+02:00",
+    "location": "Doel",
+    "city": "Beveren",
+    "country": "Unknown"
+  },
+  {
+    "name": "Duikboot Festival",
+    "date": "2025-08-30T14:00:00+02:00",
+    "location": "Asterdplas",
+    "city": "Breda",
+    "country": "Unknown"
+  },
+  {
+    "name": "Festival Strand",
+    "date": "2025-08-30T15:00:00+02:00",
+    "location": "Haarrijnse Plas",
+    "city": "Utrecht",
+    "country": "Unknown"
+  },
+  {
+    "name": "Ground Zero · The Final Night",
+    "date": "2025-08-30T23:00:00+02:00",
+    "location": "Recreatieplas Bussloo",
+    "city": "Bussloo",
+    "country": "Unknown"
+  },
+  {
+    "name": "Hidden Garden Festival",
+    "date": "2025-08-30T15:00:00+02:00",
+    "location": "Karpendonkse plas",
+    "city": "Eindhoven",
+    "country": "Unknown"
+  },
+  {
+    "name": "Hintergarten Festival",
+    "date": "2025-08-30T18:00:00+02:00",
+    "location": "Wielerbaan De Heuvelen",
+    "city": "Nieuwkuijk",
+    "country": "Unknown"
+  },
+  {
+    "name": "Hollands Live",
+    "date": "2025-08-30T16:00:00+02:00",
+    "location": "Klinkenbergerplas",
+    "city": "Oegstgeest",
+    "country": "Unknown"
+  },
+  {
+    "name": "HomeTown Festival",
+    "date": "2025-08-30T17:00:00+02:00",
+    "location": "Maaslands IJsvermaak",
+    "city": "Maasland",
+    "country": "Unknown"
+  },
+  {
+    "name": "Intercell Outdoor · Anetha Invites",
+    "date": "2025-08-30T15:00:00+02:00",
+    "location": "De Binnenplaats",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Onder De Radar Festival",
+    "date": "2025-08-30T14:00:00+02:00",
+    "location": "Vliegveld Twenthe",
+    "city": "Enschede",
+    "country": "Unknown"
+  },
+  {
+    "name": "P&V Bomboclat Festival",
+    "date": "2025-08-30T14:00:00+02:00",
+    "location": "Zeedijk",
+    "city": "Zeebrugge",
+    "country": "Unknown"
+  },
+  {
+    "name": "POING Festival",
+    "date": "2025-08-30T14:00:00+02:00",
+    "location": "Brutus",
+    "city": "Rotterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Rotterdam Rave Festival",
+    "date": "2025-08-30T15:00:00+02:00",
+    "location": "Rotterdam Ahoy",
+    "city": "Rotterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "SMÈRRIG Zomer Festival",
+    "date": "2025-08-30T16:00:00+02:00",
+    "location": "Pettelaarse Schans",
+    "city": "'s-Hertogenbosch",
+    "country": "Unknown"
+  },
+  {
+    "name": "SonnenBrand Festival",
+    "date": "2025-08-30T16:00:00+02:00",
+    "location": "Neulandpark",
+    "city": "Leverkusen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Superbloom Festival",
+    "date": "2025-08-30T12:00:00+02:00",
+    "location": "Olympiapark",
+    "city": "München",
+    "country": "Unknown"
+  },
+  {
+    "name": "TAPT Festival",
+    "date": "2025-08-30T15:00:00+02:00",
+    "location": "Museumpark",
+    "city": "Rotterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "24-uurs Solexrace Festival",
+    "date": "2025-08-31T14:00:00+02:00",
+    "location": "Festivalterrein Stanserhorn",
+    "city": "Heeswijk-Dinther",
+    "country": "Unknown"
+  },
+  {
+    "name": "Intercell Outdoor · Mutual Rytm",
+    "date": "2025-08-31T15:00:00+02:00",
+    "location": "De Binnenplaats",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Superbloom Festival",
+    "date": "2025-08-31T14:00:00+02:00",
+    "location": "Olympiapark",
+    "city": "München",
+    "country": "Unknown"
+  },
+  {
+    "name": "Evolution Festival",
+    "date": "2025-09-04T14:00:00+02:00",
+    "location": "Garliner See",
+    "city": "Brandenburg an der Havel",
+    "country": "Unknown"
+  },
+  {
+    "name": "Hoessenbosch Festival",
+    "date": "2025-09-04T19:00:00+02:00",
+    "location": "Openluchttheater Hoessenbosch",
+    "city": "Berghem",
+    "country": "Unknown"
+  },
+  {
+    "name": "Draaimolen Festival",
+    "date": "2025-09-05T14:00:00+02:00",
+    "location": "MOB Complex",
+    "city": "Tilburg",
+    "country": "Unknown"
+  },
+  {
+    "name": "Evolution Festival",
+    "date": "2025-09-05T14:00:00+02:00",
+    "location": "Garliner See",
+    "city": "Brandenburg an der Havel",
+    "country": "Unknown"
+  },
+  {
+    "name": "Hartstocht ZomerLiefde Festival",
+    "date": "2025-09-05T16:00:00+02:00",
+    "location": "Westerbroeken",
+    "city": "Elp",
+    "country": "Unknown"
+  },
+  {
+    "name": "Highlight Festival",
+    "date": "2025-09-05T19:00:00+02:00",
+    "location": "Meenseweg 401",
+    "city": "Ieper",
+    "country": "Unknown"
+  },
+  {
+    "name": "Hoessenbosch Festival",
+    "date": "2025-09-05T14:00:00+02:00",
+    "location": "Openluchttheater Hoessenbosch",
+    "city": "Berghem",
+    "country": "Unknown"
+  },
+  {
+    "name": "Live in the Park",
+    "date": "2025-09-05T17:00:00+02:00",
+    "location": "Prinsentuin",
+    "city": "Leeuwarden",
+    "country": "Unknown"
+  },
+  {
+    "name": "TAPT Festival",
+    "date": "2025-09-05T19:00:00+02:00",
+    "location": "Malieveld",
+    "city": "Den Haag",
+    "country": "Unknown"
+  },
+  {
+    "name": "The Hardest · The Gamechanger",
+    "date": "2025-09-05T21:00:00+02:00",
+    "location": "Neushoorn",
+    "city": "Leeuwarden",
+    "country": "Unknown"
+  },
+  {
+    "name": "Convict festival · Prison of the Gods",
+    "date": "2025-09-06T15:00:00+02:00",
+    "location": "Asgraad",
+    "city": "Leeuwarden",
+    "country": "Unknown"
+  },
+  {
+    "name": "Dagvlinder Festival · Outdoor Edition",
+    "date": "2025-09-06T15:00:00+02:00",
+    "location": "Brielse Meer",
+    "city": "Vierpolders",
+    "country": "Unknown"
+  },
+  {
+    "name": "Draaimolen Festival",
+    "date": "2025-09-06T14:00:00+02:00",
+    "location": "MOB Complex",
+    "city": "Tilburg",
+    "country": "Unknown"
+  },
+  {
+    "name": "Evolution Festival",
+    "date": "2025-09-06T14:00:00+02:00",
+    "location": "Garliner See",
+    "city": "Brandenburg an der Havel",
+    "country": "Unknown"
+  },
+  {
+    "name": "Great Love World Festival",
+    "date": "2025-09-06T22:00:00+02:00",
+    "location": "Eissporthalle Solingen",
+    "city": "Solingen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Hartstocht ZomerLiefde Festival",
+    "date": "2025-09-06T14:00:00+02:00",
+    "location": "Westerbroeken",
+    "city": "Elp",
+    "country": "Unknown"
+  },
+  {
+    "name": "Highlight Festival",
+    "date": "2025-09-06T15:00:00+02:00",
+    "location": "Meenseweg 401",
+    "city": "Ieper",
+    "country": "Unknown"
+  },
+  {
+    "name": "Hoessenbosch Festival",
+    "date": "2025-09-06T14:00:00+02:00",
+    "location": "Openluchttheater Hoessenbosch",
+    "city": "Berghem",
+    "country": "Unknown"
+  },
+  {
+    "name": "Hoge Bomen Festival",
+    "date": "2025-09-06T14:00:00+02:00",
+    "location": "Pettelaarse Schans",
+    "city": "'s-Hertogenbosch",
+    "country": "Unknown"
+  },
+  {
+    "name": "Hullabaloo Festival",
+    "date": "2025-09-06T14:00:00+02:00",
+    "location": "Drafbaan Stadspark",
+    "city": "Groningen",
+    "country": "Unknown"
+  },
+  {
+    "name": "LIEF Festival",
+    "date": "2025-09-06T14:00:00+02:00",
+    "location": "Recreatieplas Strijkviertel",
+    "city": "De Meern",
+    "country": "Unknown"
+  },
+  {
+    "name": "Live in the Park",
+    "date": "2025-09-06T16:00:00+02:00",
+    "location": "Prinsentuin",
+    "city": "Leeuwarden",
+    "country": "Unknown"
+  },
+  {
+    "name": "Takkenbende Festival",
+    "date": "2025-09-06T16:00:00+02:00",
+    "location": "Outdoor Delft",
+    "city": "Delft",
+    "country": "Unknown"
+  },
+  {
+    "name": "TAPT Festival",
+    "date": "2025-09-06T15:00:00+02:00",
+    "location": "Malieveld",
+    "city": "Den Haag",
+    "country": "Unknown"
+  },
+  {
+    "name": "The Couch Fest",
+    "date": "2025-09-06T11:00:00+02:00",
+    "location": "Mallegatpark",
+    "city": "Rotterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Total Loss Festival",
+    "date": "2025-09-06T15:00:00+02:00",
+    "location": "Eventcentre Aquabest",
+    "city": "Best",
+    "country": "Unknown"
+  },
+  {
+    "name": "Wooferland Festival",
+    "date": "2025-09-06T14:00:00+02:00",
+    "location": "Spaarnwoude, deelplan Houtrak",
+    "city": "Halfweg",
+    "country": "Unknown"
+  },
+  {
+    "name": "Zino Classixs Outdoor",
+    "date": "2025-09-06T15:00:00+02:00",
+    "location": "Landsard Beach",
+    "city": "Eindhoven",
+    "country": "Unknown"
+  },
+  {
+    "name": "Evolution Festival",
+    "date": "2025-09-07T14:00:00+02:00",
+    "location": "Garliner See",
+    "city": "Brandenburg an der Havel",
+    "country": "Unknown"
+  },
+  {
+    "name": "Hartstocht ZomerLiefde Festival",
+    "date": "2025-09-07T14:00:00+02:00",
+    "location": "Westerbroeken",
+    "city": "Elp",
+    "country": "Unknown"
+  },
+  {
+    "name": "Hoessenbosch Festival",
+    "date": "2025-09-07T14:00:00+02:00",
+    "location": "Openluchttheater Hoessenbosch",
+    "city": "Berghem",
+    "country": "Unknown"
+  },
+  {
+    "name": "Hoge Bomen Festival",
+    "date": "2025-09-07T14:00:00+02:00",
+    "location": "Pettelaarse Schans",
+    "city": "'s-Hertogenbosch",
+    "country": "Unknown"
+  },
+  {
+    "name": "Hullabaloo Festival",
+    "date": "2025-09-07T15:00:00+02:00",
+    "location": "Drafbaan Stadspark",
+    "city": "Groningen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Wooferland Festival",
+    "date": "2025-09-07T14:00:00+02:00",
+    "location": "Spaarnwoude, deelplan Houtrak",
+    "city": "Halfweg",
+    "country": "Unknown"
+  },
+  {
+    "name": "ELEMENTS FESTIVAL",
+    "date": "2025-09-12T14:00:00+02:00",
+    "location": "Schiefererlebnis",
+    "city": "Dormettingen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Glücksgefühle Festival",
+    "date": "2025-09-12T14:00:00+02:00",
+    "location": "Hockenheimring",
+    "city": "Hockenheim",
+    "country": "Unknown"
+  },
+  {
+    "name": "Hollands Hard Festival",
+    "date": "2025-09-12T22:00:00+02:00",
+    "location": "Kruising Burgemeester Posweg & Kooiweg",
+    "city": "Brakel",
+    "country": "Unknown"
+  },
+  {
+    "name": "TAPT Festival",
+    "date": "2025-09-12T19:00:00+02:00",
+    "location": "Rembrandtpark",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "A Day at the Park",
+    "date": "2025-09-13T16:00:00+02:00",
+    "location": "Kralingse Bos",
+    "city": "Rotterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Baroeg Open Air",
+    "date": "2025-09-13T14:00:00+02:00",
+    "location": "Zuiderpark",
+    "city": "Rotterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Dream Village",
+    "date": "2025-09-13T15:00:00+02:00",
+    "location": "Lage Aard",
+    "city": "Bavel",
+    "country": "Unknown"
+  },
+  {
+    "name": "ELEMENTS FESTIVAL",
+    "date": "2025-09-13T14:00:00+02:00",
+    "location": "Schiefererlebnis",
+    "city": "Dormettingen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Folkfield Festival",
+    "date": "2025-09-13T15:00:00+02:00",
+    "location": "Amphitheater Gelsenkirchen",
+    "city": "Gelsenkirchen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Glücksgefühle Festival",
+    "date": "2025-09-13T14:00:00+02:00",
+    "location": "Hockenheimring",
+    "city": "Hockenheim",
+    "country": "Unknown"
+  },
+  {
+    "name": "Hollands Hard Festival",
+    "date": "2025-09-13T18:00:00+02:00",
+    "location": "Kruising Burgemeester Posweg & Kooiweg",
+    "city": "Brakel",
+    "country": "Unknown"
+  },
+  {
+    "name": "Multigroove Festival",
+    "date": "2025-09-13T15:00:00+02:00",
+    "location": "Strand IJmuiden",
+    "city": "IJmuiden",
+    "country": "Unknown"
+  },
+  {
+    "name": "Parels van de Stad",
+    "date": "2025-09-13T14:00:00+02:00",
+    "location": "Sportpark Riekerhaven",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Smeerboel",
+    "date": "2025-09-13T14:00:00+02:00",
+    "location": "Grasweide Papendorp",
+    "city": "Utrecht",
+    "country": "Unknown"
+  },
+  {
+    "name": "Sunglow",
+    "date": "2025-09-13T15:00:00+02:00",
+    "location": "Recreatieoord Binnenmaas",
+    "city": "Mijnsheerenland",
+    "country": "Unknown"
+  },
+  {
+    "name": "TAPT Festival",
+    "date": "2025-09-13T15:00:00+02:00",
+    "location": "Rembrandtpark",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Parels van de Stad",
+    "date": "2025-09-14T15:00:00+02:00",
+    "location": "Sportpark Riekerhaven",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Reeperbahn Festival",
+    "date": "2025-09-17T12:00:00+02:00",
+    "location": "Reeperbahn",
+    "city": "Hamburg",
+    "country": "Unknown"
+  },
+  {
+    "name": "Reeperbahn Festival",
+    "date": "2025-09-18T14:00:00+02:00",
+    "location": "Reeperbahn",
+    "city": "Hamburg",
+    "country": "Unknown"
+  },
+  {
+    "name": "Into the Woods",
+    "date": "2025-09-19T14:00:00+02:00",
+    "location": "Bosbad Amersfoort",
+    "city": "Amersfoort",
+    "country": "Unknown"
+  },
+  {
+    "name": "Malle Molen Festival",
+    "date": "2025-09-19T21:30:00+02:00",
+    "location": "Kweldamweg",
+    "city": "Molenaarsgraaf",
+    "country": "Unknown"
+  },
+  {
+    "name": "Mett(4)All Festival",
+    "date": "2025-09-19T19:00:00+02:00",
+    "location": "Am Freibad 24",
+    "city": "Geldern",
+    "country": "Unknown"
+  },
+  {
+    "name": "Reeperbahn Festival",
+    "date": "2025-09-19T14:00:00+02:00",
+    "location": "Reeperbahn",
+    "city": "Hamburg",
+    "country": "Unknown"
+  },
+  {
+    "name": "Replay Festival",
+    "date": "2025-09-19T20:00:00+02:00",
+    "location": "Netepark",
+    "city": "Herentals",
+    "country": "Unknown"
+  },
+  {
+    "name": "Binnenste Buiten Fest",
+    "date": "2025-09-20T17:00:00+02:00",
+    "location": "Mooie Boules",
+    "city": "Rotterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Intercell Outdoor × Narciss · Summer Closing",
+    "date": "2025-09-20T15:00:00+02:00",
+    "location": "De Binnenplaats",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Limitzz · Outdoor",
+    "date": "2025-09-20T15:00:00+02:00",
+    "location": "Onder de Brug",
+    "city": "Vroenhoven",
+    "country": "Unknown"
+  },
+  {
+    "name": "Malle Molen Festival",
+    "date": "2025-09-20T21:30:00+02:00",
+    "location": "Kweldamweg",
+    "city": "Molenaarsgraaf",
+    "country": "Unknown"
+  },
+  {
+    "name": "Mett(4)All Festival",
+    "date": "2025-09-20T14:00:00+02:00",
+    "location": "Am Freibad 24",
+    "city": "Geldern",
+    "country": "Unknown"
+  },
+  {
+    "name": "Reeperbahn Festival",
+    "date": "2025-09-20T14:00:00+02:00",
+    "location": "Reeperbahn",
+    "city": "Hamburg",
+    "country": "Unknown"
+  },
+  {
+    "name": "Replay Festival",
+    "date": "2025-09-20T14:00:00+02:00",
+    "location": "Netepark",
+    "city": "Herentals",
+    "country": "Unknown"
+  },
+  {
+    "name": "TITANIUM Festival · The Golden Empire",
+    "date": "2025-09-20T14:00:00+02:00",
+    "location": "Recreatiegebied Middelwaard",
+    "city": "Vianen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Mett(4)All Festival",
+    "date": "2025-09-21T14:00:00+02:00",
+    "location": "Am Freibad 24",
+    "city": "Geldern",
+    "country": "Unknown"
+  },
+  {
+    "name": "Euroblast Festival",
+    "date": "2025-09-26T17:00:00+02:00",
+    "location": "Essigfabrik",
+    "city": "Keulen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Dance 2 my Beat · Outdoor",
+    "date": "2025-09-27T17:00:00+02:00",
+    "location": "Recreatiegebied De IJzeren Man",
+    "city": "Eindhoven",
+    "country": "Unknown"
+  },
+  {
+    "name": "Euroblast Festival",
+    "date": "2025-09-27T14:00:00+02:00",
+    "location": "Essigfabrik",
+    "city": "Keulen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Euroblast Festival",
+    "date": "2025-09-28T14:00:00+02:00",
+    "location": "Essigfabrik",
+    "city": "Keulen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Festyland · De Festivaltuin van het Zuiden",
+    "date": "2025-10-03T20:00:00+02:00",
+    "location": "BillyBird Park Hemelrijk",
+    "city": "Volkel",
+    "country": "Unknown"
+  },
+  {
+    "name": "Festyland · De Festivaltuin van het Zuiden",
+    "date": "2025-10-04T16:00:00+02:00",
+    "location": "BillyBird Park Hemelrijk",
+    "city": "Volkel",
+    "country": "Unknown"
+  },
+  {
+    "name": "Heerlijk Hemelrijk Festival",
+    "date": "2025-10-05T14:00:00+02:00",
+    "location": "BillyBird Park Hemelrijk",
+    "city": "Volkel",
+    "country": "Unknown"
+  },
+  {
+    "name": "Spiegeltent Festival",
+    "date": "2025-10-10T20:00:00+02:00",
+    "location": "Lingebos",
+    "city": "Vuren",
+    "country": "Unknown"
+  },
+  {
+    "name": "Blacklist Festial",
+    "date": "2025-10-11T21:00:00+02:00",
+    "location": "Turbinenhalle",
+    "city": "Oberhausen",
+    "country": "Unknown"
+  },
+  {
+    "name": "Elektrum Festival",
+    "date": "2025-10-11T14:00:00+02:00",
+    "location": "Velder Bossen",
+    "city": "Liempde",
+    "country": "Unknown"
+  },
+  {
+    "name": "Spiegeltent Festival",
+    "date": "2025-10-11T18:00:00+02:00",
+    "location": "Lingebos",
+    "city": "Vuren",
+    "country": "Unknown"
+  },
+  {
+    "name": "Puinhoop Festival",
+    "date": "2025-10-17T20:00:00+02:00",
+    "location": "Café de Puinhoop",
+    "city": "Middelbeers",
+    "country": "Unknown"
+  },
+  {
+    "name": "Puinhoop Festival",
+    "date": "2025-10-18T14:00:00+02:00",
+    "location": "Café de Puinhoop",
+    "city": "Middelbeers",
+    "country": "Unknown"
+  },
+  {
+    "name": "Tijdreis",
+    "date": "2025-10-18T22:00:00+02:00",
+    "location": "Maassilo",
+    "city": "Rotterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Puinhoop Festival",
+    "date": "2025-10-19T14:00:00+02:00",
+    "location": "Café de Puinhoop",
+    "city": "Middelbeers",
+    "country": "Unknown"
+  },
+  {
+    "name": "DGTL",
+    "date": "2025-10-23T20:00:00+02:00",
+    "location": "NDSM Loods",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "DGTL",
+    "date": "2025-10-24T20:00:00+02:00",
+    "location": "NDSM Loods",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Into the Woods",
+    "date": "2025-10-24T14:00:00+02:00",
+    "location": "NDSM-Werf",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Into the Woods",
+    "date": "2025-10-25T14:00:00+02:00",
+    "location": "NDSM-Werf",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Mystic Garden",
+    "date": "2025-10-25T14:00:00+02:00",
+    "location": "Havenpark",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Cirque Du Freak Halloween Festival",
+    "date": "2025-10-31T20:00:00+01:00",
+    "location": "Coöperatie Hoogstraten",
+    "city": "Hoogstraten",
+    "country": "Unknown"
+  },
+  {
+    "name": "Oktober festival",
+    "date": "2025-11-01T19:00:00+01:00",
+    "location": "Coöperatie Hoogstraten",
+    "city": "Hoogstraten",
+    "country": "Unknown"
+  },
+  {
+    "name": "Ablazing Sense Indoor Festival #4",
+    "date": "2025-11-08T16:00:00+01:00",
+    "location": "Club Merlijn",
+    "city": "Hengelo",
+    "country": "Unknown"
+  },
+  {
+    "name": "DACKELTON FESTIVAL",
+    "date": "2025-11-08T20:00:00+01:00",
+    "location": "Jugend- und Kulturzentrum Bollwerk 107",
+    "city": "Moers",
+    "country": "Unknown"
+  },
+  {
+    "name": "White Moon · The Indoor Festival",
+    "date": "2025-11-15T17:00:00+01:00",
+    "location": "H7 Warehouse",
+    "city": "Amsterdam",
+    "country": "Unknown"
+  },
+  {
+    "name": "Revolution Calling",
+    "date": "2025-11-22T13:00:00+01:00",
+    "location": "Klokgebouw",
+    "city": "Eindhoven",
+    "country": "Unknown"
+  },
+  {
+    "name": "90's Forever · The Reunion",
+    "date": "2025-11-29T20:00:00+01:00",
+    "location": "MECC Maastricht",
+    "city": "Maastricht",
+    "country": "Unknown"
+  },
+  {
+    "name": "Oblivion Trance Indoor Festival",
+    "date": "2025-11-29T14:00:00+01:00",
+    "location": "Club Rodenburg",
+    "city": "Beesd",
+    "country": "Unknown"
+  },
+  {
+    "name": "De Brabantse Winter",
+    "date": "2025-12-19T11:00:00+01:00",
+    "location": "Brabanthallen",
+    "city": "'s-Hertogenbosch",
+    "country": "Unknown"
+  },
+  {
+    "name": "Dagcollege Indoor Festival",
+    "date": "2025-12-20T14:00:00+01:00",
+    "location": "WTC Expo Leeuwarden",
+    "city": "Leeuwarden",
+    "country": "Unknown"
+  },
+  {
+    "name": "FCKNYE Festival",
+    "date": "2025-12-30T18:00:00+01:00",
+    "location": "Brussels Expo",
+    "city": "Brussel",
+    "country": "Unknown"
+  },
+  {
+    "name": "FCKNYE Festival",
+    "date": "2025-12-31T13:00:00+01:00",
+    "location": "Brussels Expo",
+    "city": "Brussel",
+    "country": "Unknown"
+  },
+  {
+    "name": "FCKNYE Festival",
+    "date": "2026-01-01T13:00:00+01:00",
+    "location": "Brussels Expo",
+    "city": "Brussel",
+    "country": "Unknown"
+  },
+  {
+    "name": "Sneeuwbal Winterfestival",
+    "date": "2026-01-31T15:00:00+01:00",
+    "location": "Unknown",
+    "city": "Utrecht",
+    "country": "Unknown"
+  },
+  {
+    "name": "Blue WinterFestival",
+    "date": "2026-02-06T17:00:00+01:00",
+    "location": "Zevenhuizer Plas",
+    "city": "Zevenhuizen",
+    "country": "Unknown"
+  }
+]

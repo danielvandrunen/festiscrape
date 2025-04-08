@@ -1,8 +1,7 @@
-import type { Festival } from '@/types';
+import type { Festival } from '../../src/types';
 import { v4 as uuidv4 } from 'uuid';
-import axios, { AxiosError } from 'axios';
-import * as cheerio from 'cheerio';
-import https from 'https';
+import { load } from 'cheerio';
+import fetch from 'node-fetch';
 
 export abstract class BaseScraper {
   abstract baseUrl: string;
@@ -11,43 +10,30 @@ export abstract class BaseScraper {
     return uuidv4();
   }
 
-  protected async fetchPage(url: string): Promise<cheerio.CheerioAPI> {
+  protected async fetchPage(url: string): Promise<ReturnType<typeof load>> {
     console.log(`Fetching page: ${url}`);
     try {
-      const response = await axios.get(url, {
+      const response = await fetch(url, {
         headers: {
-          'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
-          'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
-          'Accept-Language': 'en-US,en;q=0.9,nl;q=0.8',
-          'Accept-Encoding': 'gzip, deflate, br',
-          'Cache-Control': 'no-cache',
-          'Pragma': 'no-cache',
-          'Sec-Ch-Ua': '"Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"',
-          'Sec-Ch-Ua-Mobile': '?0',
-          'Sec-Ch-Ua-Platform': '"macOS"',
-          'Sec-Fetch-Dest': 'document',
-          'Sec-Fetch-Mode': 'navigate',
-          'Sec-Fetch-Site': 'none',
-          'Sec-Fetch-User': '?1',
-          'Upgrade-Insecure-Requests': '1'
-        },
-        httpsAgent: new https.Agent({
-          rejectUnauthorized: false
-        })
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+        }
       });
-      console.log(`Successfully fetched page: ${url}`);
-      return cheerio.load(response.data);
-    } catch (error) {
-      if (error instanceof AxiosError) {
-        console.error(`Error fetching page ${url}:`, error.message);
-      } else {
-        console.error(`Unknown error fetching page ${url}`);
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
       }
+
+      const content = await response.text();
+      console.log(`Successfully fetched page: ${url}`);
+      console.log('First 1000 characters of HTML:', content.slice(0, 1000));
+      return load(content);
+    } catch (error) {
+      console.error('Error fetching page:', error instanceof Error ? error.stack : error);
       throw error;
     }
   }
 
-  protected abstract parseFestivals($: cheerio.CheerioAPI): Promise<Festival[]>;
+  protected abstract parseFestivals($: ReturnType<typeof load>): Promise<Festival[]>;
 
   public async scrape(): Promise<Festival[]> {
     try {
@@ -55,8 +41,6 @@ export abstract class BaseScraper {
       const $ = await this.fetchPage(this.baseUrl);
       const festivals = await this.parseFestivals($);
       console.log(`Found ${festivals.length} festivals from ${this.constructor.name}`);
-      
-      // Return festivals with metadata already added
       return festivals;
     } catch (error) {
       if (error instanceof Error) {

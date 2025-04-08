@@ -1,9 +1,9 @@
-import { PartyflockScraper } from './scrapers/partyflock.js';
+import { PartyflockScraper } from './scrapers/partyflock';
 import type { Festival } from '../src/types';
 import dotenv from 'dotenv';
 
 // Load environment variables
-dotenv.config();
+dotenv.config({ path: '.env.local' });
 
 async function testPartyflockScraper() {
   try {
@@ -56,7 +56,7 @@ async function testPartyflockScraper() {
     console.log('\nAll tests passed! The scraper is working correctly.');
     process.exit(0);
   } catch (error) {
-    console.error('\nTest failed:', error);
+    console.error('\nTest failed:', error instanceof Error ? error.stack : error);
     process.exit(1);
   }
 }
