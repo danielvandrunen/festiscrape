@@ -43,10 +43,7 @@ export function Navbar() {
       
       if (response.ok) {
         setScrapeStatus(`Success! ${data.count} festivals scraped.`);
-        // Refresh the count
-        const countResponse = await fetch('/api/festivals/count');
-        const countData = await countResponse.json();
-        setPartyflockCount(countData.count);
+        setPartyflockCount(data.count);
       } else {
         setScrapeStatus(`Error: ${data.error}`);
       }
@@ -59,39 +56,54 @@ export function Navbar() {
   };
 
   return (
-    <header className="bg-white border-b border-gray-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
-          <div className="flex">
-            <div className="flex-shrink-0 flex items-center">
-              <h1 className="text-xl font-bold text-gray-900">FestiScrape</h1>
-            </div>
-            <nav className="ml-6 flex space-x-8">
-              <Link href="/festivals" className="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-gray-300">
+    <header className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/75 backdrop-blur-lg">
+      <div className="container mx-auto px-4">
+        <div className="flex h-16 items-center justify-between">
+          <div className="flex items-center gap-6">
+            <Link href="/" className="flex items-center space-x-2">
+              <span className="text-xl font-bold">FestiScrape</span>
+            </Link>
+            <nav className="flex items-center space-x-6">
+              <Link 
+                href="/festivals" 
+                className="text-sm font-medium text-gray-700 transition-colors hover:text-gray-900"
+              >
                 All Festivals
               </Link>
-              <Link href="/festivals/interested" className="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-gray-300">
-                Interested
+              <Link 
+                href="/festivals/favorites" 
+                className="text-sm font-medium text-gray-700 transition-colors hover:text-gray-900"
+              >
+                Favorites
               </Link>
-              <Link href="/festivals/archived" className="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-gray-300">
+              <Link 
+                href="/festivals/archived" 
+                className="text-sm font-medium text-gray-700 transition-colors hover:text-gray-900"
+              >
                 Archived
               </Link>
             </nav>
           </div>
           <div className="flex items-center space-x-4">
-            <div className="text-sm text-gray-700">
-              Partyflock: {partyflockCount !== null ? partyflockCount : '...'}
+            <div className="flex items-center space-x-2">
+              <span className="text-sm font-medium text-gray-700">
+                Partyflock Festivals:
+              </span>
+              <span className="text-sm font-bold text-gray-900">
+                {partyflockCount !== null ? partyflockCount : '...'}
+              </span>
             </div>
             <Button 
               onClick={runPartyflockScraper} 
               disabled={isLoading}
-              size="sm"
               variant="outline"
+              size="sm"
+              className="min-w-[120px]"
             >
               {isLoading ? 'Running...' : 'Rerun Scraper'}
             </Button>
             {scrapeStatus && (
-              <div className="text-xs text-gray-500">
+              <div className="text-sm text-gray-500 animate-fade-in">
                 {scrapeStatus}
               </div>
             )}

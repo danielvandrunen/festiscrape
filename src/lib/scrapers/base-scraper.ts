@@ -1,8 +1,17 @@
 import { Festival } from '../../types/festival';
 import puppeteer from 'puppeteer';
 import * as cheerio from 'cheerio';
+import axios from 'axios';
 
 export abstract class BaseScraper {
+  protected headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'Accept-Language': 'en-US,en;q=0.5',
+    'Connection': 'keep-alive',
+    'Upgrade-Insecure-Requests': '1'
+  };
+
   abstract name: string;
   abstract baseUrl: string;
   abstract scrape(): Promise<Festival[]>;
@@ -30,14 +39,15 @@ export abstract class BaseScraper {
         }
       });
 
-      let lastError;
+      let lastError: unknown;
       for (let i = 0; i < retries; i++) {
         try {
           await page.goto(url, { waitUntil: 'networkidle0' });
           return await page.content();
         } catch (error) {
           lastError = error;
-          console.warn(`Attempt ${i + 1} failed for ${url}:`, error.message);
+          const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+          console.warn(`Attempt ${i + 1} failed for ${url}:`, errorMessage);
           if (i < retries - 1) {
             await new Promise(resolve => setTimeout(resolve, 2000 * (i + 1))); // Exponential backoff
           }
@@ -156,5 +166,25 @@ export abstract class BaseScraper {
     if (festival.date < new Date()) return false;
     if (!festival.website) return false;
     return true;
+  }
+
+  protected async fetchWithRetries(url: string, retries = 3): Promise<string> {
+    let lastError: unknown;
+    for (let i = 0; i < retries; i++) {
+      try {
+        const response = await axios.get(url, {
+          headers: this.headers
+        });
+        return response.data;
+      } catch (error) {
+        lastError = error;
+        const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+        console.warn(`Attempt ${i + 1} failed for ${url}:`, errorMessage);
+        if (i < retries - 1) {
+          await new Promise(resolve => setTimeout(resolve, 2000 * (i + 1))); // Exponential backoff
+        }
+      }
+    }
+    throw lastError;
   }
 } 
