@@ -1,7 +1,7 @@
 import { BaseScraper } from './base-scraper';
 import { Festival } from '../../types/festival';
 import axios, { AxiosError } from 'axios';
-import * as cheerio from 'cheerio';
+import cheerio from 'cheerio';
 
 export class PartyflockScraper extends BaseScraper {
   name = 'partyflock';
