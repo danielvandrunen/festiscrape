@@ -52,7 +52,13 @@ async function checkFestivals() {
     
     console.log('\nSample festivals:');
     sampleFestivals.forEach(festival => {
-      console.log(`${festival.name}: Date: ${festival.date}, Status: ${festival.status}, URL: ${festival.website}`);
+      console.log(`${festival.name}:`);
+      console.log(`  Date: ${festival.date}`);
+      console.log(`  Source: ${festival.source}`);
+      console.log(`  Status: ${festival.status}`);
+      console.log(`  URL: ${festival.website}`);
+      console.log(`  Location: ${festival.locations?.join(', ')}`);
+      console.log('');
     });
     
   } catch (error) {

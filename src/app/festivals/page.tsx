@@ -78,6 +78,11 @@ export default function FestivalsPage() {
       if (!response.ok) throw new Error('Failed to fetch festivals');
       const data = await response.json();
       console.log('Received festivals:', data);
+      
+      // Check if we have festivals for months other than April
+      const months = data.map(f => new Date(f.date).getMonth()).filter((v, i, a) => a.indexOf(v) === i);
+      console.log('Months with festivals:', months);
+      
       setFestivals(data);
     } catch (error) {
       console.error('Error fetching festivals:', error);
@@ -204,6 +209,49 @@ export default function FestivalsPage() {
   const currentMonthFestivals = filteredFestivals.filter(festival => 
     isSameMonth(parseISO(festival.date), currentMonth)
   );
+
+  // Check if we have any festivals in the current month
+  const hasCurrentMonthFestivals = currentMonthFestivals.length > 0;
+
+  // Get the next month with festivals
+  const findAdjacentMonthWithFestivals = (startMonth: Date, direction: 1 | -1): Date => {
+    let testMonth = addMonths(startMonth, direction);
+    
+    // Look ahead/back up to 12 months
+    for (let i = 0; i < 12; i++) {
+      const hasFestivals = filteredFestivals.some(festival => 
+        isSameMonth(parseISO(festival.date), testMonth)
+      );
+      
+      if (hasFestivals) {
+        return testMonth;
+      }
+      
+      testMonth = addMonths(testMonth, direction);
+    }
+    
+    // If no month with festivals is found, return the original month
+    return startMonth;
+  };
+
+  // Auto-navigate to a month with festivals if current month has none
+  useEffect(() => {
+    if (!hasCurrentMonthFestivals && filteredFestivals.length > 0) {
+      // Find the next or previous month that has festivals
+      const nextMonthWithFestivals = findAdjacentMonthWithFestivals(currentMonth, 1);
+      const prevMonthWithFestivals = findAdjacentMonthWithFestivals(currentMonth, -1);
+      
+      // Choose the closest month
+      const nextDiff = Math.abs(nextMonthWithFestivals.getTime() - currentMonth.getTime());
+      const prevDiff = Math.abs(prevMonthWithFestivals.getTime() - currentMonth.getTime());
+      
+      if (nextDiff <= prevDiff) {
+        setCurrentMonth(nextMonthWithFestivals);
+      } else {
+        setCurrentMonth(prevMonthWithFestivals);
+      }
+    }
+  }, [currentMonth, filteredFestivals, hasCurrentMonthFestivals]);
 
   return (
     <div className="min-h-screen bg-gray-50">

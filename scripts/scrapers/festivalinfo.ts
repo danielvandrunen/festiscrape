@@ -9,48 +9,43 @@ export class FestivalInfoScraper extends BaseScraper {
     const festivals: Festival[] = [];
     console.log('Parsing FestivalInfo page...');
 
+    const yearMatch = $.html().match(/\b(202\d)\b/);
+    const currentYear = yearMatch ? parseInt(yearMatch[1]) : new Date().getFullYear();
+
     $('.festival_rows_info').each((index, element) => {
-      const name = $(element).find('strong a').text().trim();
-      const dateSection = $(element).prevAll('.festival_agenda_date').first();
-      const day = dateSection.find('.festival_dag').text().trim();
-      const month = dateSection.find('span').last().text().trim();
-      const location = $(element).find('.eightcol span').first().text().replace(/,.*$/, '').trim();
-      const website = $(element).find('strong a').attr('href') || '';
+      try {
+        const $element = $(element);
+        const name = $element.find('strong a').text().trim();
+        const website = $element.find('strong a').attr('href') || '';
+        const location = $element.find('.eightcol span').first().text().replace(/,.*$/, '').trim();
 
-      // Get the year from any element on the page containing a year
-      const yearMatch = $.html().match(/\b(202\d)\b/);
-      const year = yearMatch ? yearMatch[1] : new Date().getFullYear().toString();
+        // Broader selector for date section
+        const dateSection = $element.prevAll('.festival_agenda_date').first();
+        const dateText = dateSection.text().trim().replace(/\s+/g, ' '); // Get all text and normalize spaces
 
-      // Parse date
-      const dutchMonths: { [key: string]: number } = {
-        'JAN': 0, 'FEB': 1, 'MRT': 2, 'APR': 3, 'MEI': 4, 'JUN': 5,
-        'JUL': 6, 'AUG': 7, 'SEP': 8, 'OKT': 9, 'NOV': 10, 'DEC': 11
-      };
+        // Use the base scraper's parseDutchDate method for consistent date parsing
+        const date = this.parseDutchDate(dateText);
+        
+        if (!date) {
+          console.warn(`Could not parse date for ${name}: '${dateText}'`);
+          return;
+        }
 
-      const monthIndex = dutchMonths[month.toUpperCase()];
-      if (monthIndex === undefined || !day) {
-        console.log('Could not parse date:', { day, month, year });
-        return;
+        festivals.push({
+          id: this.generateId(),
+          name,
+          date,
+          website: website.startsWith('http') ? website : `https://www.festivalinfo.nl${website}`,
+          locations: location ? [location] : [],
+          source: 'festivalinfo',
+          status: 'active',
+          is_interested: false,
+          last_updated: new Date()
+        });
+        // console.log('Successfully added festival:', name);
+      } catch (error) {
+        console.error(`Error parsing FestivalInfo entry for ${$(element).find('strong a').text().trim()}:`, error);
       }
-
-      const date = new Date(parseInt(year), monthIndex, parseInt(day));
-      if (isNaN(date.getTime()) || date < new Date()) {
-        console.log('Invalid or past date:', date);
-        return;
-      }
-
-      festivals.push({
-        id: this.generateId(),
-        name,
-        date,
-        website: website.startsWith('http') ? website : `https://www.festivalinfo.nl${website}`,
-        locations: [location],
-        source: 'festivalinfo',
-        status: 'active',
-        is_interested: false,
-        last_updated: new Date()
-      });
-      console.log('Successfully added festival:', name);
     });
 
     return festivals;

@@ -26,45 +26,63 @@ async function main() {
       new PartyflockScraper(),
     ];
 
-    // Run all scrapers in parallel
-    const festivalArrays = await Promise.all(
-      scrapers.map(async (scraper) => {
-        console.log(`Running scraper: ${scraper.constructor.name}`);
-        try {
-          return await scraper.scrape();
-        } catch (error) {
-          console.error(`Error running scraper ${scraper.constructor.name}:`, error);
-          return [];
-        }
-      })
-    );
+    // Run each scraper sequentially and store results separately
+    for (const scraper of scrapers) {
+      console.log(`\nRunning scraper: ${scraper.constructor.name}`);
+      try {
+        const festivals = await scraper.scrape();
+        console.log(`Found ${festivals.length} festivals from ${scraper.constructor.name}`);
 
-    // Flatten the arrays of festivals
-    const festivals = festivalArrays.flat();
+        // Insert all festivals from this scraper
+        console.log(`Inserting ${festivals.length} festivals from ${scraper.constructor.name}...`);
+        for (const festival of festivals) {
+          const { error } = await supabase
+            .from('festivals')
+            .insert({
+              ...festival,
+              date: festival.date.toISOString(),
+              last_updated: festival.last_updated.toISOString(),
+            });
 
-    console.log(`Found ${festivals.length} festivals`);
-
-    // Upsert festivals to Supabase
-    for (const festival of festivals) {
-      const { error } = await supabase
-        .from('festivals')
-        .upsert(
-          {
-            ...festival,
-            date: festival.date.toISOString(),
-            last_updated: festival.last_updated.toISOString(),
-          },
-          {
-            onConflict: 'id',
+          if (error) {
+            console.error(`Error inserting festival ${festival.name}:`, error);
           }
-        );
-
-      if (error) {
-        console.error(`Error upserting festival ${festival.name}:`, error);
+        }
+        console.log(`Finished inserting festivals from ${scraper.constructor.name}`);
+      } catch (error) {
+        console.error(`Error running scraper ${scraper.constructor.name}:`, error);
       }
     }
 
-    console.log('Finished updating festivals');
+    // Get total count after all insertions
+    const { count, error } = await supabase
+      .from('festivals')
+      .select('*', { count: 'exact', head: true });
+
+    if (error) {
+      console.error('Error getting total count:', error);
+    } else {
+      console.log(`\nTotal festivals in database: ${count}`);
+    }
+
+    // Get count by source
+    const sources = ['festileaks', 'festivalinfo', 'eblive', 'followthebeat', 'partyflock'];
+    console.log('\nFestivals by source:');
+    
+    for (const source of sources) {
+      const { count, error: countError } = await supabase
+        .from('festivals')
+        .select('*', { count: 'exact', head: true })
+        .eq('source', source);
+
+      if (countError) {
+        console.error(`Error getting count for ${source}:`, countError);
+      } else {
+        console.log(`${source}: ${count} festivals`);
+      }
+    }
+
+    console.log('\nFinished updating festivals');
   } catch (error) {
     console.error('Error running scrapers:', error);
     process.exit(1);

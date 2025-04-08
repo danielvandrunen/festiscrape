@@ -11,8 +11,18 @@ export class EBLiveScraper extends BaseScraper {
 
     // Dutch month names to numbers mapping
     const monthMap: { [key: string]: number } = {
-      'januari': 0, 'februari': 1, 'maart': 2, 'april': 3, 'mei': 4, 'juni': 5,
-      'juli': 6, 'augustus': 7, 'september': 8, 'oktober': 9, 'november': 10, 'december': 11
+      'januari': 0, 'jan': 0,
+      'februari': 1, 'feb': 1,
+      'maart': 2, 'mrt': 2,
+      'april': 3, 'apr': 3,
+      'mei': 4,
+      'juni': 5, 'jun': 5,
+      'juli': 6, 'jul': 6,
+      'augustus': 7, 'aug': 7,
+      'september': 8, 'sep': 8,
+      'oktober': 9, 'okt': 9,
+      'november': 10, 'nov': 10,
+      'december': 11, 'dec': 11
     };
 
     $('.festival').each((_, element) => {
@@ -22,35 +32,26 @@ export class EBLiveScraper extends BaseScraper {
         const location = $(element).find('.festival-location span').text().trim();
         const website = $(element).find('.festival-name a').attr('href') || '';
 
-        // Parse date text (format: "Za 19 apr t/m zo 20 apr" or "Zondag 20 april")
-        const dateMatch = dateText.match(/(\d{1,2})(?:\s*-\s*\d{1,2})?\s+([a-z]+)(?:\s+(\d{4}))?/i);
+        // Use the base scraper's parseDutchDate method for consistent date parsing
+        const date = this.parseDutchDate(dateText);
         
-        if (dateMatch) {
-          const day = parseInt(dateMatch[1]);
-          const monthStr = dateMatch[2].toLowerCase();
-          const year = dateMatch[3] ? parseInt(dateMatch[3]) : new Date().getFullYear();
-          const month = monthMap[monthStr];
-
-          if (month !== undefined) {
-            const date = new Date(year, month, day);
-            
-            // Only add future festivals
-            if (date >= new Date()) {
-              console.log(`Found festival: ${name} on ${date.toISOString()}`);
-              festivals.push({
-                id: this.generateId(),
-                name,
-                date,
-                website,
-                locations: [location],
-                source: 'eblive',
-                status: 'active',
-                is_interested: false,
-                last_updated: new Date()
-              });
-            }
-          }
+        if (!date) {
+          console.warn(`Could not parse date for ${name}: '${dateText}'`);
+          return;
         }
+        
+        console.log(`Found festival: ${name} on ${date.toISOString()}`);
+        festivals.push({
+          id: this.generateId(),
+          name,
+          date,
+          website,
+          locations: [location],
+          source: 'eblive',
+          status: 'active',
+          is_interested: false,
+          last_updated: new Date()
+        });
       } catch (error) {
         console.error('Error parsing festival:', error);
       }
