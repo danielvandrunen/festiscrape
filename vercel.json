@@ -5,7 +5,7 @@
   "framework": "nextjs",
   "regions": ["fra1"],
   "functions": {
-    "api/scrape/partyflock/route.ts": {
+    "src/app/api/scrape/partyflock/route.ts": {
       "memory": 1024,
       "maxDuration": 60
     }
