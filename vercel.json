@@ -6,8 +6,8 @@
   "regions": ["fra1"],
   "functions": {
     "src/app/api/scrape/partyflock/route.ts": {
-      "memory": 3008,
-      "maxDuration": 300
+      "memory": 1024,
+      "maxDuration": 60
     }
   },
   "env": {
